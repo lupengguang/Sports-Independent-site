@@ -1,0 +1,99 @@
+/* ============================================================
+   OROGEN 赛场竞技·篮球分类页 — basketball.css
+   核心价值看板 / 选购指南贴士条
+   （Hero / wl-layer / pcard / tabs / guides / wl-close 复用
+     wilderness.css + climbing.css）
+   ============================================================ */
+
+.bb-page{ background:var(--bg); }
+
+/* ============ 核心价值看板（黑 + 橙红） ============ */
+.bb-values{
+  background:var(--ink);
+  color:var(--cream);
+  position:relative;
+  overflow:hidden;
+}
+.bb-values::before{
+  content:""; position:absolute; inset:auto -10% -60% -10%; height:70%;
+  background:radial-gradient(ellipse at center, rgba(232,67,28,.16), transparent 65%);
+  pointer-events:none;
+}
+.bb-values .section-head .h2{ color:var(--cream); font-weight:900; }
+.bb-values .caption{ color:rgba(242,239,233,.55); }
+.bb-values .label{ color:var(--accent2); }
+
+.bb-value-grid{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:18px;
+  margin-top:10px;
+  position:relative; z-index:1;
+}
+.bb-value{
+  position:relative;
+  border:1px solid rgba(242,239,233,.14);
+  padding:28px 24px 30px;
+  display:flex; flex-direction:column; gap:12px;
+  background:linear-gradient(180deg, rgba(242,239,233,.045), rgba(242,239,233,0));
+  overflow:hidden;
+  transition:transform .5s var(--ease), border-color .5s var(--ease), background .5s var(--ease);
+}
+.bb-value::after{
+  content:""; position:absolute; inset:0 0 auto 0; height:2px;
+  background:var(--accent);
+  transform:scaleX(0); transform-origin:left;
+  transition:transform .6s var(--ease);
+}
+.bb-value:hover{
+  transform:translateY(-6px);
+  border-color:rgba(232,67,28,.55);
+  background:linear-gradient(180deg, rgba(232,67,28,.08), rgba(242,239,233,.02));
+}
+.bb-value:hover::after{ transform:scaleX(1); }
+
+.bb-value-no{
+  font-size:11px; letter-spacing:.22em;
+  color:var(--accent2);
+}
+.bb-value-en{
+  font-size:9.5px; letter-spacing:.18em;
+  color:rgba(242,239,233,.42);
+}
+.bb-value h3{
+  font-size:17px; font-weight:800; letter-spacing:.02em;
+  color:var(--cream);
+}
+.bb-value p{
+  font-size:12.5px; line-height:1.8;
+  color:rgba(242,239,233,.62);
+}
+
+/* ============ 选购指南贴士条 ============ */
+.bb-tip{
+  margin-top:22px;
+  display:flex; align-items:baseline; gap:18px;
+  border:1px dashed rgba(232,67,28,.6);
+  background:rgba(232,67,28,.05);
+  padding:20px 24px;
+}
+.bb-tip-tag{
+  flex:none;
+  font-size:10px; letter-spacing:.2em; color:var(--accent);
+  border:1px solid rgba(232,67,28,.5);
+  padding:5px 10px;
+}
+.bb-tip p{
+  font-size:13.5px; line-height:1.85; color:var(--ink);
+}
+.bb-tip p b{ color:var(--accent); font-weight:700; }
+
+/* 指南卡片内的强调色 */
+.cb-guide p b{ color:var(--ink); font-weight:700; }
+
+/* ============ 响应式 ============ */
+@media (max-width:1080px){
+  .bb-value-grid{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:560px){
+  .bb-value-grid{ grid-template-columns:1fr; }
+  .bb-tip{ flex-direction:column; gap:10px; }
+}

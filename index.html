@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN 奥罗根 — Where the land rises, we follow. 大地隆起之处，即是征途</title>
+<meta name="description" content="OROGEN 奥罗根 — Where the land rises, we follow. 大地隆起之处，即是征途。旷野极限、街头极限、赛场竞技全系列运动装备，全场景穿搭选型知识库与户外文化探险笔记。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">奥罗根</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">WHERE THE LAND RISES, WE FOLLOW — 大地隆起之处，即是征途</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ FIXED TOP STACK ============ -->
+<div class="site-top" id="siteTop">
+
+<!-- ============ ANNOUNCEMENT / CORE SLOGAN ============ -->
+<div class="announce mono" role="note">
+  WHERE THE LAND RISES, WE FOLLOW.&nbsp;&nbsp;—&nbsp;&nbsp;<b>大地隆起之处，即是征途。</b>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <a class="logo" href="#top" aria-label="OROGEN 奥罗根 首页">
+    <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+    OROGEN <span class="logo-cn">奥罗根</span>
+  </a>
+  <nav class="nav" aria-label="主导航">
+    <div class="nav-item">
+      <a href="wilderness.html" class="nav-main" data-wild>旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+      <div class="nav-drop">
+        <a href="climbing.html" data-climb>高海拔登山</a>
+        <a href="snowboard.html" data-snow>单板滑雪</a>
+        <a href="hiking.html" data-hike>荒野徒步</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#shop" class="nav-main">街头极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+      <div class="nav-drop">
+        <a href="#shop">城市滑板 · 全品类</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#shop" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
+      <div class="nav-drop">
+        <a href="basketball.html">篮球</a>
+        <a href="football.html">足球</a>
+        <a href="badminton.html">羽毛球</a>
+        <a href="fencing.html">击剑</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#shop" class="nav-main">装备指南<i class="nav-caret" aria-hidden="true"></i></a>
+      <div class="nav-drop">
+        <a href="#shop">全场景穿搭</a>
+        <a href="#shop">选型知识库</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#journal" class="nav-main">探险笔记<i class="nav-caret" aria-hidden="true"></i></a>
+      <div class="nav-drop">
+        <a href="#journal">科普</a>
+        <a href="#journal">户外文化</a>
+        <a href="#journal">装备干货</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#origin" class="nav-main">关于品牌<i class="nav-caret" aria-hidden="true"></i></a>
+      <div class="nav-drop">
+        <a href="#origin">品牌故事</a>
+        <a href="#origin">设计理念</a>
+        <a href="#team">团队初心</a>
+      </div>
+    </div>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" id="searchBtn" aria-label="搜索">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+    </button>
+    <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+    </button>
+    <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开购物袋">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+      <span class="bag-count mono" id="bagCount">0</span>
+    </button>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+  </div>
+</header>
+</div><!-- /site-top -->
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-inner">
+    <nav class="menu-links" aria-label="移动导航">
+      <div class="menu-group">
+        <a href="wilderness.html" class="menu-link" data-wild><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="climbing.html" data-climb>高海拔登山</a><a href="snowboard.html" data-snow>单板滑雪</a><a href="hiking.html" data-hike>荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="#shop" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+        <div class="menu-subs mono">
+          <a href="#shop">城市滑板 · 全品类</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="#shop" class="menu-link"><span class="mono">04</span>装备指南</a>
+        <div class="menu-subs mono">
+          <a href="#shop">全场景穿搭</a><a href="#shop">选型知识库</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="#journal" class="menu-link"><span class="mono">05</span>探险笔记</a>
+        <div class="menu-subs mono">
+          <a href="#journal">科普</a><a href="#journal">户外文化</a><a href="#journal">装备干货</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+        <div class="menu-subs mono">
+          <a href="#origin">品牌故事</a><a href="#origin">设计理念</a><a href="#team">团队初心</a>
+        </div>
+      </div>
+    </nav>
+    <div class="menu-foot mono">
+      <span>OROGEN® 奥罗根 — WHERE THE LAND RISES, WE FOLLOW</span>
+      <span>大地隆起之处，即是征途</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SEARCH OVERLAY ============ -->
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <button class="overlay-close mono" id="searchClose" aria-label="关闭搜索">关闭 ✕</button>
+  <div class="search-inner">
+    <p class="search-hint mono" data-scramble>搜索 // OROGEN 奥罗根 · 全站搜索</p>
+    <input type="text" class="search-input" id="searchInput" placeholder="搜索系列 / 运动 / 装备…" autocomplete="off">
+    <ul class="search-suggest mono" id="searchSuggest">
+      <li>旷野极限系列</li><li>高海拔登山</li><li>单板滑雪</li><li>荒野徒步</li><li>街头极限系列</li><li>城市滑板</li><li>赛场竞技系列</li><li>篮球</li><li>足球</li><li>羽毛球</li><li>击剑</li><li>装备指南</li><li>探险笔记</li><li>关于品牌</li><li>硬壳夹克 03</li><li>终端软壳裤</li>
+    </ul>
+    <p class="search-empty mono" id="searchEmpty" hidden>这条山脊没有搜到结果，换条路线试试。</p>
+  </div>
+</div>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-media" data-parallax="0.35">
+      <img src="assets/hero.jpg" alt="Trail runner crossing a storm-lit alpine ridge" data-fb="hero.jpg">
+    </div>
+    <div class="hero-veil"></div>
+    <div class="hero-frame container">
+      <div class="hero-corner tl mono">N 45.9327° / E 7.6327°<br>MASSIF DU MONT — 4B 07</div>
+      <div class="hero-corner tr mono">AW26 // ES 07 — 04</div>
+      <p class="hero-tag mono" data-scramble>OROGEN® // 奥罗根</p>
+      <h1 class="hero-title">
+        <span class="line"><span>WHERE THE LAND</span></span>
+        <span class="line"><span>RISES, WE</span></span>
+        <span class="line accent"><span>FOLLOW.</span></span>
+      </h1>
+      <p class="hero-slogan-cn">大地隆起之处，即是征途。</p>
+      <div class="hero-cta">
+        <a href="wilderness.html" class="btn btn-solid-light" data-magnetic data-wild>探索旷野极限 <span class="arr">→</span></a>
+        <a href="#shop" class="btn btn-ghost-light" data-magnetic>浏览全系列</a>
+      </div>
+    </div>
+    <div class="hero-scroll mono"><span></span>SCROLL</div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-skew"><div class="marquee-track" id="marqueeTrack">
+      <span>OROGEN® 奥罗根 — WHERE THE LAND RISES, WE FOLLOW — 大地隆起之处，即是征途 — 旷野极限 · 街头极限 · 赛场竞技 —&nbsp;</span><span>OROGEN® 奥罗根 — WHERE THE LAND RISES, WE FOLLOW — 大地隆起之处，即是征途 — 旷野极限 · 街头极限 · 赛场竞技 —&nbsp;</span>
+    </div></div>
+  </div>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="section categories" id="shop">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2 class="h2">
+          <span class="line"><span>BUILT AROUND</span></span>
+          <span class="line"><span>THREE LAYERS.</span></span>
+        </h2>
+        <a class="text-link mono" href="#system" data-magnetic>VIEW ALL CATEGORIES <span class="arr">→</span></a>
+      </div>
+
+      <div class="cat-grid">
+        <article class="cat-card" data-reveal data-tilt data-cursor="VIEW">
+          <figure class="cat-media img-reveal">
+            <img src="assets/cat-shells.jpg" alt="Climber in a black hardshell in heavy rain" data-fb="cat-shells.jpg">
+            <span class="cat-index mono">01</span>
+            <h3 class="cat-name">SHELLS</h3>
+            <div class="cat-meta mono">OROGEN / 26-003 / category: shells</div>
+          </figure>
+          <p class="cat-desc">Hard- and softshell protection from rain, wind, snowfall.</p>
+          <a class="text-link mono" href="#system">SHOP SHELLS <span class="arr">→</span></a>
+        </article>
+
+        <article class="cat-card" data-reveal data-tilt data-cursor="VIEW">
+          <figure class="cat-media img-reveal">
+            <img src="assets/cat-insulation.jpg" alt="Climber in an orange insulated jacket in deep snow" data-fb="cat-insulation.jpg">
+            <span class="cat-index mono">02</span>
+            <h3 class="cat-name">INSULATION</h3>
+            <div class="cat-meta mono">OROGEN / 26-011 / category: insulation</div>
+          </figure>
+          <p class="cat-desc">Down and synthetic mid-layers tuned to active output.</p>
+          <a class="text-link mono" href="#system">SHOP INSULATION <span class="arr">→</span></a>
+        </article>
+
+        <article class="cat-card" data-reveal data-tilt data-cursor="VIEW">
+          <figure class="cat-media img-reveal">
+            <img src="assets/cat-trail.jpg" alt="Trail runner above a sea of clouds" data-fb="cat-trail.jpg">
+            <span class="cat-index mono">03</span>
+            <h3 class="cat-name">TRAIL</h3>
+            <div class="cat-meta mono">OROGEN / 26-027 / category: trail</div>
+          </figure>
+          <p class="cat-desc">Fast-and-light kit for vertical efforts and ultra distances.</p>
+          <a class="text-link mono" href="#system">SHOP TRAIL <span class="arr">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNAL ============ -->
+  <section class="section journal" id="journal">
+    <div class="container journal-grid">
+      <figure class="journal-media img-reveal" data-reveal data-cursor="READ">
+        <img src="assets/journal.jpg" alt="Mountaineer gazing at dawn-lit peaks" data-fb="journal.jpg" data-parallax="0.12">
+      </figure>
+      <div class="journal-body">
+        <p class="label mono accent" data-reveal data-scramble>01 // JOURNAL</p>
+        <h2 class="h2" data-reveal>
+          <span class="line"><span>THE LINE</span></span>
+          <span class="line"><span>IS THE PLACE</span></span>
+          <span class="line"><span>WE WORK.</span></span>
+        </h2>
+        <p class="body" data-reveal>Forty-two athletes in eleven countries put every prototype through its paces before it reaches production. We do not call it field-tested for the marketing — we call it that because nothing else captures what it takes to put our name on a piece.</p>
+        <p class="caption mono" data-reveal>The product is not the story. The product is what happens on the line. The journal is where the engineering process lives.</p>
+        <a class="text-link mono" href="#origin" data-reveal data-magnetic>READ THE JOURNAL <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ALPINE DROP HERO ============ -->
+  <section class="drop" id="drop">
+    <div class="drop-media" data-parallax="0.3">
+      <img src="assets/drop-hero.jpg" alt="Dark alpine peak under storm clouds" data-fb="drop-hero.jpg">
+    </div>
+    <div class="drop-veil"></div>
+    <div class="container drop-inner">
+      <p class="label mono accent" data-reveal data-scramble>02 // THE DROP</p>
+      <h2 class="drop-title" data-reveal>
+        <span class="line"><span>THE</span></span>
+        <span class="line"><span>ALPINE</span></span>
+        <span class="line"><span>DROP.</span></span>
+      </h2>
+      <p class="drop-sub" data-reveal>Four pieces designed as a system. Cold-weather layering refined across two seasons of testing on three continents. Available in limited quantities, restocked once.</p>
+      <div class="countdown" data-reveal>
+        <div class="cd-group"><div class="cd-digits" id="cdD"></div><span class="cd-label mono">DAYS</span></div>
+        <div class="cd-group"><div class="cd-digits" id="cdH"></div><span class="cd-label mono">HOURS</span></div>
+        <div class="cd-group"><div class="cd-digits" id="cdM"></div><span class="cd-label mono">MINS</span></div>
+        <div class="cd-group"><div class="cd-digits" id="cdS"></div><span class="cd-label mono">SECS</span></div>
+      </div>
+      <p class="drop-launch mono" id="dropLaunch" data-reveal>LAUNCH — — — 09:00 UTC</p>
+    </div>
+  </section>
+
+  <!-- ============ SYSTEM / PRODUCTS ============ -->
+  <section class="section system" id="system">
+    <div class="container">
+      <div class="system-head">
+        <div>
+          <p class="label mono accent" data-reveal data-scramble>03 // SYSTEM</p>
+          <h2 class="h2" data-reveal>
+            <span class="line"><span>FOUR LAYERS,</span></span>
+            <span class="line"><span>ONE LOGIC.</span></span>
+          </h2>
+        </div>
+        <div class="system-intro">
+          <p class="body" data-reveal>Every garment in the AW26 Alpine drop was designed against the same set of conditions: −10°C ambient, sustained winds above 40km/h, mixed precipitation, six to twelve hour outputs.</p>
+          <p class="caption mono" data-reveal>The system is the product. The pieces are its manifestations.</p>
+        </div>
+      </div>
+
+      <div class="products" id="products"><!-- rows injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ ORIGIN ============ -->
+  <section class="section origin" id="origin">
+    <div class="container">
+      <h2 class="origin-title" data-reveal>
+        <span class="line"><span>WE BUILD THE GEAR WE</span></span>
+        <span class="line"><span>WANTED TO FIND ON</span></span>
+        <span class="line"><span>THE SHELF</span></span>
+        <span class="line"><span>AND COULD NOT.</span></span>
+      </h2>
+      <div class="origin-grid">
+        <div class="origin-body">
+          <p class="label mono accent" data-reveal data-scramble>04 // ORIGIN</p>
+          <h3 class="origin-sub mono" data-reveal>PORTLAND, OREGON — 2021</h3>
+          <p class="body" data-reveal>OROGEN（奥罗根）was started by a small group of alpinists, runners and engineers who had spent careers in other brands and could not find what they wanted to wear on their own days off. The first product, a 280g shell, took two years to realize.</p>
+          <p class="caption mono" data-reveal>We are still small. We still test everything. We still refuse to ship a piece because a calendar says it is time.</p>
+        </div>
+        <figure class="origin-media img-reveal" data-reveal data-cursor="VIEW">
+          <img src="assets/workshop.jpg" alt="Designer working at a workshop bench with a mountain view" data-fb="workshop.jpg">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTING NETWORK ============ -->
+  <section class="network" id="testing">
+    <div class="container">
+      <p class="label mono accent" data-reveal data-scramble>05 // TESTING NETWORK</p>
+      <h2 class="network-title mono-num" data-reveal>
+        <span class="line"><span><b data-count="42">0</b> ATHLETES.</span></span>
+        <span class="line"><span><b data-count="11">0</b> COUNTRIES.</span></span>
+        <span class="line"><span><b data-count="4">0</b> CONTINENTS.</span></span>
+      </h2>
+
+      <div class="map-panel" data-reveal>
+        <div class="map-head mono">FIELD ATLAS // GLOBAL NETWORK</div>
+        <div class="map-stage" id="mapStage">
+          <img class="map-img" src="assets/map.jpg" alt="Dotted world map" data-fb="map.jpg">
+          <div class="map-radar"></div>
+          <div class="map-dots" id="mapDots"></div>
+          <div class="map-tooltip mono" id="mapTooltip"><b id="ttName"></b><span id="ttCat"></span><span id="ttTesters"></span></div>
+          <div class="map-legend mono" id="mapLegend">
+            <button class="legend-item active" data-cat="ALL"><i style="--c:#E8431C"></i>ALL<span>9</span></button>
+            <button class="legend-item" data-cat="ALPINE"><i style="--c:#E8431C"></i>ALPINE<span>3</span></button>
+            <button class="legend-item" data-cat="COASTAL"><i style="--c:#FF8A5C"></i>COASTAL<span>1</span></button>
+            <button class="legend-item" data-cat="EXTREME"><i style="--c:#FFB03A"></i>EXTREME<span>2</span></button>
+            <button class="legend-item" data-cat="DESERT"><i style="--c:#D9C08A"></i>DESERT<span>1</span></button>
+            <button class="legend-item" data-cat="FOREST"><i style="--c:#7FA06A"></i>FOREST<span>2</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="section team" id="team">
+    <div class="container">
+      <p class="label mono accent" data-reveal data-scramble>06 // THE TEAM</p>
+      <h2 class="h2" data-reveal>
+        <span class="line"><span>THE PEOPLE WHO</span></span>
+        <span class="line"><span>MAKE THE PIECES.</span></span>
+      </h2>
+      <div class="team-grid" id="teamGrid"><!-- cards injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter">
+    <div class="container news-inner">
+      <div>
+        <p class="label mono accent" data-reveal data-scramble>07 // DISPATCH</p>
+        <h2 class="news-title" data-reveal>JOIN THE LINE.</h2>
+        <p class="caption mono" data-reveal>ONE EMAIL PER DROP. FIELD NOTES, RESTOCKS, ROUTES.</p>
+      </div>
+      <form class="news-form" id="newsForm" data-reveal novalidate>
+        <input type="email" class="news-input" id="newsInput" placeholder="YOUR@EMAIL.COM" aria-label="Email address">
+        <button type="submit" class="btn btn-solid-dark" data-magnetic>SUBSCRIBE <span class="arr">→</span></button>
+        <p class="news-msg mono" id="newsMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <p class="caption mono">WHERE THE LAND RISES, WE FOLLOW.<br>大地隆起之处，即是征途。</p>
+    </div>
+    <nav class="footer-cols mono" aria-label="页脚导航">
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="climbing.html" data-climb>高海拔登山</a><a href="snowboard.html" data-snow>单板滑雪</a><a href="hiking.html" data-hike>荒野徒步</a>
+        <h4 class="f-head f-head-gap">街头极限系列</h4>
+        <a href="#shop">城市滑板 · 全品类</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">赛场竞技系列</h4>
+        <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">关于品牌</h4>
+        <a href="#origin">品牌故事</a><a href="#origin">设计理念</a><a href="#team">团队初心</a>
+        <h4 class="f-head f-head-gap">内容</h4>
+        <a href="#shop">装备指南</a><a href="#journal">探险笔记</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 奥罗根 — 大地隆起之处，即是征途</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>WHERE THE LAND RISES, WE FOLLOW</span>
+  </div>
+</footer>
+
+<!-- ============ QUICK VIEW MODAL ============ -->
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-panel" id="modalPanel">
+    <button class="overlay-close mono" id="modalClose" aria-label="Close">CLOSE ✕</button>
+    <figure class="modal-media"><img id="modalImg" src="" alt=""></figure>
+    <div class="modal-info">
+      <p class="label mono accent" id="modalLabel">LAYER 01</p>
+      <h3 class="modal-name" id="modalName">—</h3>
+      <p class="modal-spec mono" id="modalSpec">—</p>
+      <p class="body" id="modalDesc">—</p>
+      <div class="modal-row">
+        <span class="mono modal-size-label">SIZE</span>
+        <div class="sizes" id="modalSizes">
+          <button class="size" data-size="S">S</button>
+          <button class="size" data-size="M">M</button>
+          <button class="size" data-size="L">L</button>
+          <button class="size" data-size="XL">XL</button>
+        </div>
+      </div>
+      <p class="size-hint mono" id="sizeHint" hidden>SELECT A SIZE FIRST.</p>
+      <button class="btn btn-solid-dark modal-add" id="modalAdd">ADD TO CART <span id="modalPrice">—</span></button>
+      <p class="caption mono modal-note">FREE SHIPPING OVER $150 — 60-DAY RETURNS — LIFETIME REPAIRS</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
+  <div class="cart-head">
+    <span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span>
+    <button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty mono" id="cartEmpty">
+    <span class="cart-empty-mark">⌖</span>
+    YOUR BAG IS EMPTY.<br>THE LINE IS WAITING.
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div>
+    <button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button>
+    <p class="caption mono cart-note">SHIPPING &amp; TAXES CALCULATED AT CHECKOUT</p>
+  </div>
+</aside>
+
+<div class="backdrop" id="backdrop"></div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status"></div>
+
+<!-- ============ PAGE TRANSITION (-> wilderness) ============ -->
+<div class="pagetrans" id="homeTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">WILDERNESS</div>
+    <div class="pt-word-cn mono">进 入 旷 野</div>
+    <div class="pt-bar"><i id="homePtBar"></i></div>
+  </div>
+</div>
+
+<!-- ============ PAGE TRANSITION (-> climbing) ============ -->
+<div class="pagetrans" id="homeTransC" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">CLIMB</div>
+    <div class="pt-word-cn mono">进 入 雪 山</div>
+    <div class="pt-bar"><i id="homePtBarC"></i></div>
+  </div>
+</div>
+
+<!-- ============ PAGE TRANSITION (-> snowboard) ============ -->
+<div class="pagetrans" id="homeTransS" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">RIDE</div>
+    <div class="pt-word-cn mono">进 入 雪 场</div>
+    <div class="pt-bar"><i id="homePtBarS"></i></div>
+  </div>
+</div>
+
+<!-- ============ PAGE TRANSITION (-> hiking) ============ -->
+<div class="pagetrans" id="homeTransH" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">WALK</div>
+    <div class="pt-word-cn mono">进 入 荒 野</div>
+    <div class="pt-bar"><i id="homePtBarH"></i></div>
+  </div>
+</div>
+
+<!-- ============ PAGE TRANSITION (<- back from category) ============ -->
+<div class="pagetrans" id="homeBack" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">HOME</div>
+    <div class="pt-word-cn mono">返 回 首 页</div>
+    <div class="pt-bar"><i id="homePtBarBack"></i></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN｜羽毛球装备 Badminton Gear — 瞬息攻防，捕捉零点几秒的机会</title>
+<meta name="description" content="OROGEN 羽毛球装备 — 胜负往往产生在一次跨步、一记挥拍之间。单打 / 双打差异化装备，侧向防滑球鞋、速干轻薄球服、进攻/均衡/控球分级球拍、轻量化手腕肩肘护具全套竞技方案，满足业余爱好者到专业赛事选手。badminton shoes, badminton racket, non-marking sole, offensive control racket, shuttlecock.">
+<meta name="keywords" content="badminton shoes, lateral anti-slip badminton shoes, badminton racket, offensive racket, control racket, non-marking sole, badminton jersey, shuttlecock, badminton bag">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/wilderness.css">
+<link rel="stylesheet" href="css/climbing.css">
+<link rel="stylesheet" href="css/basketball.css">
+</head>
+<body id="top" class="wl-page cb-page bb-page bm-page">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">赛场竞技 · 羽毛球</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">SEIZE THE SPLIT-SECOND — 瞬息攻防，捕捉零点几秒的机会</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">RALLY</div>
+    <div class="pt-word-cn mono">上 场</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
+<!-- ============ FIXED TOP ============ -->
+<div class="site-top" id="siteTop">
+  <div class="announce mono" role="note">
+    SEIZE THE SPLIT-SECOND.&nbsp;&nbsp;—&nbsp;&nbsp;<b>瞬息攻防，捕捉零点几秒的机会。</b>
+  </div>
+  <header class="header" id="header">
+    <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+      <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+      OROGEN <span class="logo-cn">奥罗根</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <div class="nav-item">
+        <a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="climbing.html">高海拔登山</a>
+          <a href="snowboard.html">单板滑雪</a>
+          <a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">街头极限系列</a>
+      </div>
+      <div class="nav-item is-current">
+        <a href="#top" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="basketball.html">篮球</a>
+          <a href="football.html">足球</a>
+          <a href="#top">羽毛球</a>
+          <a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">装备指南</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#journal" class="nav-main">探险笔记</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#origin" class="nav-main">关于品牌</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索（即将开放）">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+        <span class="bag-count mono" id="bagCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+    </div>
+  </header>
+</div>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-inner">
+    <nav class="menu-links" aria-label="移动导航">
+      <div class="menu-group">
+        <a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+      </div>
+      <div class="menu-group">
+        <a href="#top" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="#top">羽毛球</a><a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">04</span>装备指南</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#journal" class="menu-link"><span class="mono">05</span>探险笔记</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+      </div>
+    </nav>
+    <div class="menu-foot mono">
+      <span>OROGEN® 赛场竞技 · 羽毛球 — RALLY</span>
+      <span>返回首页 index.html</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ 全屏 Hero ============ -->
+  <section class="wl-hero" id="bmHero">
+    <div class="wl-hero-media" data-parallax="0.32">
+      <img src="assets/bm-hero.jpg" alt="室内羽毛球馆高速抓拍挥拍瞬间，羽毛球拖影，暗背景高亮人物">
+    </div>
+    <div class="wl-hero-veil"></div>
+    <div class="wl-hero-frame container">
+      <p class="wl-hero-tag mono" data-scramble>COURT // CATEGORY 03 — 赛场竞技 · 羽毛球分类</p>
+      <h1 class="wl-hero-title">
+        <span class="line"><span>SEIZE THE</span></span>
+        <span class="line"><span>SPLIT-</span></span>
+        <span class="line accent"><span>SECOND.</span></span>
+      </h1>
+      <p class="wl-hero-sub mono">The game is won in a single lunge, a single swing.</p>
+      <p class="wl-hero-desc">羽毛球｜瞬息攻防，捕捉零点几秒的机会。<b>单打 / 双打</b>差异化装备——球鞋、球服、球拍全套竞技方案，从<b>业余爱好者到专业赛事选手</b>，每一次跨步与挥拍都有装备托底。</p>
+      <div class="wl-hero-cta">
+        <a href="#bmTabs" class="btn btn-solid-light" data-magnetic>EXPLORE COURT GEAR <span class="arr">→</span></a>
+        <a href="#bmGuides" class="btn btn-ghost-light" data-magnetic>单打/双打选购指南</a>
+      </div>
+    </div>
+    <div class="wl-stats mono">
+      <div class="wl-stat"><b data-count="2" data-suffix="大">0</b><span>单双打体系</span></div>
+      <div class="wl-stat"><b data-count="3" data-suffix="级">0</b><span>球拍分级</span></div>
+      <div class="wl-stat"><b data-count="8" data-suffix="+">0</b><span>耗材护具</span></div>
+      <div class="wl-stat"><b data-count="15" data-suffix="+">0</b><span>专业单品/套装</span></div>
+    </div>
+  </section>
+
+  <!-- ============ 系列核心价值 ============ -->
+  <section class="section bb-values" id="bmValues">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent2">WHY OROGEN BADMINTON</p>
+          <h2 class="h2">
+            <span class="line"><span>为瞬息攻防而生</span></span>
+            <span class="line"><span>零点几秒定胜负<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">SINGLES / DOUBLES — 按打法选鞋，按风格选拍</p>
+      </div>
+      <div class="bb-value-grid">
+        <article class="bb-value" data-reveal>
+          <span class="bb-value-no mono">01</span>
+          <span class="bb-value-en mono">LATERAL GRIP</span>
+          <h3>专属侧向防滑球鞋</h3>
+          <p>羽毛球专属侧向防滑大底，重点防侧滑，急停跨步保护脚踝——侧向支撑不足，是崴脚的头号原因。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:70ms">
+          <span class="bb-value-no mono">02</span>
+          <span class="bb-value-en mono">FEATHERLIGHT DRY</span>
+          <h3>速干轻薄球服</h3>
+          <p>高强度挥拍不束缚，出汗快速挥发，长时间对抗也无粘腻感，腋下网布持续散热。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:140ms">
+          <span class="bb-value-no mono">03</span>
+          <span class="bb-value-en mono">RACKET TIER</span>
+          <h3>球拍分级体系</h3>
+          <p>进攻拍 / 均衡拍 / 防守控球拍三级体系，头重头轻一目了然，按打法对号入座，不盲目跟风。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:210ms">
+          <span class="bb-value-no mono">04</span>
+          <span class="bb-value-en mono">LIGHT GUARD</span>
+          <h3>轻量化专项护具</h3>
+          <p>针对手腕、肩肘高频受力部位专项防护，轻到忘记它的存在，不影响任何挥拍动作。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Tab 切换栏 ============ -->
+  <div class="cb-tabs-wrap" id="bmTabs">
+    <div class="container cb-tabs" role="tablist">
+      <button class="cb-tab active" data-tab="shoes" role="tab" aria-selected="true">
+        <span class="cb-tab-no mono">01</span>羽毛球球鞋<span class="cb-tab-share mono">核心爆款</span>
+      </button>
+      <button class="cb-tab" data-tab="apparel" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">02</span>服饰套装<span class="cb-tab-share mono">35%</span>
+      </button>
+      <button class="cb-tab" data-tab="gear" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">03</span>球拍 · 耗材 · 护具<span class="cb-tab-share mono">30%</span>
+      </button>
+      <span class="cb-tabs-glider" id="cbGlider"></span>
+    </div>
+  </div>
+
+  <!-- ============ Tab 面板 ============ -->
+  <div class="cb-panels">
+
+    <!-- 面板 1：羽毛球球鞋 -->
+    <section class="cb-panel active" data-panel="shoes">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">BADMINTON SHOES — CORE</p>
+          <h2 class="h2"><span class="line"><span>羽毛球球鞋，核心爆款区</span></span></h2>
+          <p class="cb-panel-note mono">单打大底加宽 · 双打轻量启动 — 共性：非标记无痕橡胶底，不会刮坏室内塑胶场地</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">PICK 01-02</span>
+            <div>
+              <h3>按单双打选鞋 <span class="mono">SINGLES / DOUBLES</span></h3>
+              <p>单打大范围跑动、重杀落地，大底加宽、侧向防滑纹路、缓震更强；双打中前场快速封网、短距离蹬跨，轻量化鞋身、启动更快——<b>两款均为非标记无痕橡胶底</b>，不刮伤室内塑胶场地。</p>
+            </div>
+          </div>
+          <div class="pgrid" data-grid="bm-shoes"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 2：服饰套装 -->
+    <section class="cb-panel" data-panel="apparel">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">COURT APPAREL</p>
+          <h2 class="h2"><span class="line"><span>服饰套装</span></span></h2>
+          <p class="cb-panel-note mono">速干轻薄 · 预留大幅抬手空间 · 腋下透气网布</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">SET &amp; BASICS</span>
+            <div><h3>比赛与训练服饰 <span class="mono">JERSEY / SKORT / JACKET / COMPRESSION</span></h3>
+              <p>比赛短袖、无袖球衣、速干球裙球裤、秋冬热身外套、紧身压缩衣——剪裁均预留大幅度抬手空间，腋下透气网布，挥拍无束缚。</p></div>
+          </div>
+          <div class="pgrid pgrid-4" data-grid="bm-apparel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 3：球拍、耗材与护具 -->
+    <section class="cb-panel" data-panel="gear">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">RACKETS · CONSUMABLES · GUARDS</p>
+          <h2 class="h2"><span class="line"><span>球拍、耗材与护具</span></span></h2>
+          <p class="cb-panel-note mono">进攻拍 / 均衡全能拍 / 控球防守拍 — 手胶 · 羽毛球 · 拍包 · 护腕 · 护肘</p>
+        </div>
+        <div class="wl-layer">
+          <div class="pgrid pgrid-4" data-grid="bm-gear"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ 选购指南 ============ -->
+  <section class="section cb-guides-sec" id="bmGuides">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">BUYING GUIDE — 用户刚需</p>
+          <h2 class="h2">
+            <span class="line"><span>按打法选购指南</span></span>
+            <span class="line"><span>对号入座，不踩坑<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">SINGLES / DOUBLES / ROOKIE — 三种角色，三套装备逻辑</p>
+      </div>
+      <div class="cb-guide-grid">
+        <article class="cb-guide" data-reveal data-cursor="SINGLES">
+          <span class="cb-guide-no mono">GUIDE 01 — 单打 SINGLES</span>
+          <h3>大范围跑动、重杀 → 缓震进攻流</h3>
+          <p><b>缓震更强的单打球鞋</b>扛住大跨步与重杀落地，搭配<b>均衡 / 进攻型球拍</b>，头重杀球有力，拉吊突击两不误。</p>
+          <span class="text-link mono">单打款球鞋 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="DOUBLES" style="transition-delay:70ms">
+          <span class="cb-guide-no mono">GUIDE 02 — 双打 DOUBLES</span>
+          <h3>前场封网、平抽挡 → 轻量启动流</h3>
+          <p><b>轻量化启动球鞋</b>快速蹬跨封网，搭配<b>控球型球拍</b>，头轻挥速快，平抽挡连贯不拖泥带水。</p>
+          <span class="text-link mono">双打款球鞋 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="ROOKIE" style="transition-delay:140ms">
+          <span class="cb-guide-no mono">GUIDE 03 — 新手入门 ROOKIE</span>
+          <h3>容错优先 → 全能均衡流</h3>
+          <p>新手优先选择<b>全能均衡拍</b>，平衡的攻守属性容错率更高，配合侧向防滑专用鞋，先把动作练稳。</p>
+          <span class="text-link mono">均衡全能拍 <span class="arr">→</span></span>
+        </article>
+      </div>
+      <aside class="bb-tip" data-reveal>
+        <span class="bb-tip-tag mono">COURT TIP</span>
+        <p><b>场地提示：</b>室内球场<b>严禁穿普通运动鞋</b>——普通跑鞋侧向支撑不足，急停跨步<b>极易崴脚</b>，必须穿羽毛球专用鞋。</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 收尾 ============ -->
+  <section class="wl-close" id="bmClose">
+    <div class="wl-close-media" data-parallax="0.26"><img src="assets/bm-close.jpg" alt="夜晚室内羽毛球馆，球网在灯光下的剪影"></div>
+    <div class="wl-close-veil"></div>
+    <div class="container wl-close-inner">
+      <p class="wl-close-en mono" data-scramble>SEIZE THE SPLIT-SECOND — THE GAME IS WON IN ONE SWING</p>
+      <h2 class="wl-close-title">
+        <span class="line"><span>胜负，只在一次跨步、一记挥拍之间</span></span>
+        <span class="line"><span>轻量化装备，释放肩腕力量<span class="accent-dot">.</span></span></span>
+      </h2>
+      <p class="wl-close-txt" data-reveal>羽毛球胜负，往往产生在零点几秒的窗口里。<b>OROGEN 羽毛球系列轻量化专业竞技装备</b>，抓住转瞬即逝的得分机会。</p>
+      <div class="wl-close-cta" data-reveal>
+        <a href="#bmTabs" class="btn btn-solid-light" data-magnetic>羽毛球装备 <span class="arr">→</span></a>
+        <a href="football.html" class="btn btn-ghost-light" data-magnetic>足球装备</a>
+        <a href="index.html#top" class="btn btn-ghost-light" data-magnetic>← 返回首页</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="index.html#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <p class="caption mono">SEIZE THE SPLIT-SECOND.<br>瞬息攻防，捕捉零点几秒的机会。</p>
+    </div>
+    <nav class="footer-cols mono" aria-label="页脚导航">
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        <h4 class="f-head f-head-gap">街头极限系列</h4>
+        <a href="index.html#shop">城市滑板 · 全品类</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">赛场竞技系列</h4>
+        <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="#top">羽毛球</a><a href="fencing.html">击剑</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">关于品牌</h4>
+        <a href="index.html#origin">品牌故事</a><a href="index.html#origin">设计理念</a><a href="index.html#team">团队初心</a>
+        <h4 class="f-head f-head-gap">内容</h4>
+        <a href="index.html#shop">装备指南</a><a href="index.html#journal">探险笔记</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 奥罗根 — 赛场竞技 · 羽毛球系列</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>SEIZE THE SPLIT-SECOND</span>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
+  <div class="cart-head">
+    <span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span>
+    <button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty mono" id="cartEmpty">
+    <span class="cart-empty-mark">⌖</span>
+    YOUR BAG IS EMPTY.<br>THE RALLY IS WAITING.
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div>
+    <button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button>
+    <p class="caption mono cart-note">SHIPPING &amp; TAXES CALCULATED AT CHECKOUT</p>
+  </div>
+</aside>
+
+<div class="backdrop" id="backdrop"></div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status"></div>
+
+<script src="js/badminton.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* ============================================================
+   OROGEN 荒野徒步分类页 — hiking.css
+   Tab 切换栏 / 面板过渡 / 选购指南卡片
+   （Hero / wl-layer / pcard / kits / wl-close 复用 wilderness.css；
+    Tab 与面板类名复用 .cb-* 体系）
+   ============================================================ */
+
+.hk-page{ background:var(--bg); }
+
+/* ============ Tab 切换栏 ============ */
+.cb-tabs-wrap{
+  position:sticky; top:0; z-index:160;
+  background:rgba(242,239,233,.9);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.cb-tabs{
+  position:relative; display:flex; align-items:stretch;
+}
+.cb-tab{
+  position:relative; z-index:2; flex:1 1 0;
+  display:inline-flex; align-items:center; justify-content:center; gap:12px;
+  padding:20px 10px; background:none; border:none; border-right:1px solid var(--line);
+  font-family:var(--font-d); font-size:clamp(12px,1.15vw,14.5px); font-weight:700;
+  letter-spacing:.06em; color:var(--ink2); cursor:pointer;
+  transition:color .4s var(--ease), background .4s var(--ease);
+  overflow:hidden;
+}
+.cb-tab:first-child{ border-left:1px solid var(--line); }
+.cb-tab-no{
+  font-size:10px; letter-spacing:.12em; color:var(--accent);
+  transition:color .4s var(--ease);
+}
+.cb-tab-share{
+  font-size:9px; letter-spacing:.08em; opacity:.55;
+}
+.cb-tab::after{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:var(--ink);
+  transform:translateY(101%);
+  transition:transform .55s var(--ease);
+}
+.cb-tab:hover{ color:var(--ink); }
+.cb-tab.active{ color:var(--cream); }
+.cb-tab.active .cb-tab-no{ color:var(--accent2); }
+.cb-tab.active::after{ transform:translateY(0); }
+
+/* 滑动指示条（橙色，随 active 移动） */
+.cb-tabs-glider{
+  position:absolute; left:0; bottom:0; z-index:3;
+  height:2px; width:0;
+  background:var(--accent);
+  transition:left .6s var(--ease), width .6s var(--ease);
+  pointer-events:none;
+}
+
+/* ============ 面板 ============ */
+.cb-panels{ background:var(--bg); }
+.cb-panel{ display:none; }
+.cb-panel.active{ display:block; }
+
+/* 面板切入时的内生动画（display:none -> block 会重播 keyframes） */
+.cb-panel.active .cb-panel-head,
+.cb-panel.active .wl-layer{
+  animation:cbRise .85s var(--ease) both;
+}
+.cb-panel.active .wl-layer:nth-child(2){ animation-delay:.08s; }
+.cb-panel.active .wl-layer:nth-child(3){ animation-delay:.16s; }
+.cb-panel.active .wl-layer:nth-child(4){ animation-delay:.24s; }
+
+@keyframes cbRise{
+  from{ opacity:0; transform:translateY(46px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+
+.cb-panel-head{ padding:clamp(56px,8vh,96px) 0 8px; }
+.cb-panel-head .h2{
+  font-weight:900; margin:14px 0 12px;
+  font-size:clamp(1.9rem,4.2vw,3.4rem);
+}
+.cb-panel-note{
+  font-size:10.5px; letter-spacing:.14em; color:var(--ink2);
+}
+.cb-panel .wl-layer:first-of-type{ padding-top:40px; }
+.cb-panel .wl-layer:last-child{ padding-bottom:clamp(60px,9vh,100px); }
+
+/* 面板内部 wl-layer / pcard 的滚动避让 */
+.cb-tabs-wrap, .cb-panel .wl-layer{ scroll-margin-top:64px; }
+
+/* ============ 套装区 ============ */
+.cb-kits-sec{
+  background:var(--bg2);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.cb-kits-sec .section-head{
+  display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap;
+}
+.cb-kits-sec .h2{ font-weight:900; }
+
+/* kit 卡片追加：适用路线标注 */
+.kit-use{
+  font-size:9.5px; letter-spacing:.1em; color:var(--ink2);
+  margin:-4px 0 2px; line-height:1.6;
+}
+.kit-use b{ color:var(--accent); font-weight:500; }
+
+/* ============ 选购指南卡片 ============ */
+.cb-guides-sec{ background:var(--bg); }
+.cb-guide-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:14px;
+}
+.cb-guide{
+  position:relative; background:#fff; border:1px solid var(--line);
+  padding:26px 24px 28px; display:flex; flex-direction:column; gap:14px;
+  overflow:hidden;
+  transition:transform .5s var(--ease), box-shadow .5s var(--ease);
+}
+.cb-guide::before{
+  content:""; position:absolute; inset:0 0 auto 0; height:3px;
+  background:var(--accent); transform:scaleX(0); transform-origin:left;
+  transition:transform .6s var(--ease);
+}
+.cb-guide:hover{ transform:translateY(-6px); box-shadow:0 26px 52px rgba(20,20,18,.13); }
+.cb-guide:hover::before{ transform:scaleX(1); }
+.cb-guide-no{
+  font-size:9.5px; letter-spacing:.22em; color:var(--accent2);
+}
+.cb-guide h3{
+  font-size:16px; font-weight:800; line-height:1.5; letter-spacing:.01em;
+}
+.cb-guide p{
+  font-size:13px; line-height:1.8; color:var(--ink2);
+}
+.cb-guide .text-link{ margin-top:auto; }
+
+/* ============ 响应式 ============ */
+@media (max-width:900px){
+  .cb-guide-grid{ grid-template-columns:1fr; }
+  .cb-tab-share{ display:none; }
+}
+@media (max-width:560px){
+  .cb-tabs-wrap{ position:static; }
+  .cb-tabs{ flex-direction:column; }
+  .cb-tab{
+    justify-content:flex-start; padding:16px 18px;
+    border-right:none; border-bottom:1px solid var(--line);
+  }
+  .cb-tab:first-child{ border-left:none; }
+  .cb-tab.active::after{ transform:translateY(0); }
+  .cb-tabs-glider{ display:none; }
+}

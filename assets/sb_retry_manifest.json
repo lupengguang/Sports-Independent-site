@@ -1,0 +1,33 @@
+{
+ "sb-base-set": null,
+ "sb-base-pant": {
+  "url": "https://i5.walmartimages.com/seo/DEVOPS-2-Pack-Men-s-thermal-Heated-Warm-fleece-lined-Long-Johns-leggings-Small-Black-Navy_4b9150b5-0b1f-4e40-9a11-fba9de622f42.335115f6af6ba33080c1c35a2781604b.jpeg",
+  "w": 1500,
+  "h": 1268
+ },
+ "sb-mid-puff": {
+  "url": "https://www.outdoorlife.com/wp-content/uploads/2023/08/31/Rab-Microlight-Alpine-Jacket.jpg",
+  "w": 2000,
+  "h": 1252
+ },
+ "sb-shell-jkt": {
+  "url": "https://gwg.imgix.net/86751.jpg?&vib=0&high=0&shad=0&sat=0&exp=0&bri=0&con=0&sharp=0&fp-x=0.5&fp-y=0.4&fp-z=1&rot=0&fit=crop&crop=focal&w=1400&h=600",
+  "w": 1400,
+  "h": 600
+ },
+ "sb-shell-pant": {
+  "url": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1739547382-arc-teryx-norvan-insulated-001-67af62e7d97f6.jpg?crop=0.627xw:0.940xh;0.196xw",
+  "w": 3000,
+  "h": 2000
+ },
+ "sb-glove": {
+  "url": "https://media.gq.com/photos/63613a302b285de4c02a375a/16:9/w_2560%2Cc_limit/gloves-.jpg",
+  "w": 2000,
+  "h": 1125
+ },
+ "sb-mask": {
+  "url": "https://www.rollingstone.com/wp-content/uploads/2021/02/AdobeStock_313557203.jpeg?w=1581&h=1054&crop=1",
+  "w": 1581,
+  "h": 1054
+ }
+}

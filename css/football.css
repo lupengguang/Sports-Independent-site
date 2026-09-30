@@ -1,0 +1,16 @@
+/* ============================================================
+   OROGEN 赛场竞技·足球分类页 — football.css
+   选购指南 4 列网格（前锋/中场/后卫/门将）
+   （Hero / wl-layer / pcard / tabs / guides / wl-close / 价值看板
+     复用 basketball.css）
+   ============================================================ */
+
+.fb-page .cb-guide-grid{ grid-template-columns:repeat(4,1fr); }
+
+/* 响应式 */
+@media (max-width:1080px){
+  .fb-page .cb-guide-grid{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:560px){
+  .fb-page .cb-guide-grid{ grid-template-columns:1fr; }
+}

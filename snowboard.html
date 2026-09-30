@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN｜单板滑雪装备 Snowboard Gear</title>
+<meta name="description" content="OROGEN 单板滑雪装备 — Ride the mountain, not just the slope. 滑行于山野，而非雪场。面向高山野雪、雪场公园、自然雪道的旷野滑手：三层雪地穿搭、防撞护具、雪镜手套全套解决方案。snowboard gear, backcountry snowboard outfit, snowboard protective gear.">
+<meta name="keywords" content="snowboard gear, backcountry snowboard, snowboard jacket pants, snowboard helmet goggles, snowboard protective gear, powder riding equipment">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/wilderness.css">
+<link rel="stylesheet" href="css/climbing.css">
+<link rel="stylesheet" href="css/snowboard.css">
+</head>
+<body id="top" class="wl-page cb-page sb-page">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">单板滑雪</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">RIDE THE MOUNTAIN, NOT JUST THE SLOPE — 滑行于山野，而非雪场</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">RIDE</div>
+    <div class="pt-word-cn mono">进 入 雪 场</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
+<!-- ============ FIXED TOP ============ -->
+<div class="site-top" id="siteTop">
+  <div class="announce mono" role="note">
+    RIDE THE MOUNTAIN, NOT JUST THE SLOPE.&nbsp;&nbsp;—&nbsp;&nbsp;<b>滑行于山野，而非雪场。</b>
+  </div>
+  <header class="header" id="header">
+    <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+      <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+      OROGEN <span class="logo-cn">奥罗根</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <div class="nav-item is-current">
+        <a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="climbing.html">高海拔登山</a>
+          <a href="#top">单板滑雪</a>
+          <a href="wilderness.html#line-hike">荒野徒步</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">街头极限系列</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="basketball.html">篮球</a>
+          <a href="football.html">足球</a>
+          <a href="badminton.html">羽毛球</a>
+          <a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">装备指南</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#journal" class="nav-main">探险笔记</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#origin" class="nav-main">关于品牌</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索（即将开放）">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+        <span class="bag-count mono" id="bagCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+    </div>
+  </header>
+</div>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-inner">
+    <nav class="menu-links" aria-label="移动导航">
+      <div class="menu-group">
+        <a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="climbing.html">高海拔登山</a><a href="#top">单板滑雪</a><a href="wilderness.html#line-hike">荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">04</span>装备指南</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#journal" class="menu-link"><span class="mono">05</span>探险笔记</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+      </div>
+    </nav>
+    <div class="menu-foot mono">
+      <span>OROGEN® 单板滑雪 — RIDE THE MOUNTAIN</span>
+      <span>返回旷野总系列 wilderness.html</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ 全屏 Hero ============ -->
+  <section class="wl-hero" id="sbHero">
+    <div class="wl-hero-media" data-parallax="0.32">
+      <img src="assets/sb-hero.jpg" alt="高山野雪场景，滑手在原始粉雪山脊滑行，冷调蓝调雪山背景是连绵雪山轮廓">
+    </div>
+    <div class="wl-hero-veil"></div>
+    <div class="wl-hero-frame container">
+      <p class="wl-hero-tag mono" data-scramble>WILDERNESS // CATEGORY 02 — 单板滑雪分类</p>
+      <h1 class="wl-hero-title">
+        <span class="line"><span>SNOWBOARD</span></span>
+        <span class="line"><span>BACKCOUNTRY</span></span>
+        <span class="line accent"><span>GEAR.</span></span>
+      </h1>
+      <p class="wl-hero-sub mono">Ride the mountain, not just the slope.</p>
+      <p class="wl-hero-desc">OROGEN 单板滑雪系列，面向<b>高山野雪、雪场公园、自然雪道</b>的旷野滑手。区别于普通室内雪场装备，我们的雪服、护具、内搭针对山野低温、暴雪渗透、高速摔击、大幅度腾空动作设计。兼顾耐寒防水、抗摔防护与动作自由度，让你在旷野雪山自由滑行。</p>
+      <div class="wl-hero-cta">
+        <a href="#sbTabs" class="btn btn-solid-light" data-magnetic>EXPLORE SNOWBOARD GEAR <span class="arr">→</span></a>
+        <a href="#sbKits" class="btn btn-ghost-light" data-magnetic>浏览滑雪装备</a>
+      </div>
+    </div>
+    <div class="wl-stats mono">
+      <div class="wl-stat"><b data-count="3" data-suffix="层">0</b><span>雪地穿搭体系</span></div>
+      <div class="wl-stat"><b data-count="4" data-suffix="大">0</b><span>核心防护部位</span></div>
+      <div class="wl-stat"><b data-count="20" data-suffix="+">0</b><span>专业单品/套装</span></div>
+      <div class="wl-stat"><b data-count="10000" data-suffix="mm">0</b><span>防水指数</span></div>
+    </div>
+  </section>
+
+  <!-- ============ Tab 切换栏 ============ -->
+  <div class="cb-tabs-wrap" id="sbTabs">
+    <div class="container cb-tabs" role="tablist">
+      <button class="cb-tab active" data-tab="layers" role="tab" aria-selected="true">
+        <span class="cb-tab-no mono">01</span>野雪全套穿搭<span class="cb-tab-share mono">60%</span>
+      </button>
+      <button class="cb-tab" data-tab="protect" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">02</span>单板防护护具<span class="cb-tab-share mono">30%</span>
+      </button>
+      <button class="cb-tab" data-tab="acc" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">03</span>雪场配件<span class="cb-tab-share mono">10%</span>
+      </button>
+      <span class="cb-tabs-glider" id="cbGlider"></span>
+    </div>
+  </div>
+
+  <!-- ============ Tab 面板 ============ -->
+  <div class="cb-panels">
+
+    <!-- 面板 1：野雪全套穿搭 -->
+    <section class="cb-panel active" data-panel="layers">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">THE SNOW LAYERING SYSTEM</p>
+          <h2 class="h2"><span class="line"><span>三层穿搭，直面野雪</span></span></h2>
+          <p class="cb-panel-note mono">恒温速干内层 → 锁温保暖中层 → 防水雪服外层 — 按滑行逻辑排序</p>
+        </div>
+
+        <div class="wl-layer" id="sbL1">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">LAYER 01</span>
+            <div>
+              <h3>内层恒温速干层 <span class="mono">拒绝普通保暖棉服</span></h3>
+              <p>核心逻辑：运动出汗快速排湿，静止时锁住体温，贴身不臃肿，适配大幅度转体、跳跃动作。雪地专用恒温速干内衣裤是野雪滑行的第一道防线。</p>
+            </div>
+          </div>
+          <div class="pgrid" data-grid="sb-base"></div>
+        </div>
+
+        <div class="wl-layer" id="sbL2">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">LAYER 02</span>
+            <div>
+              <h3>中层锁温保暖层 <span class="mono">不顶衣 · 不限动作</span></h3>
+              <p>核心逻辑：轻薄高弹保暖棉服，短款剪裁，多层叠加不顶衣，不限制腾空、跳转动作；适合低温山野雪场。</p>
+            </div>
+          </div>
+          <div class="pgrid" data-grid="sb-mid"></div>
+        </div>
+
+        <div class="wl-layer" id="sbL3">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">LAYER 03</span>
+            <div>
+              <h3>外层专业雪服系统 <span class="mono">核心爆款</span></h3>
+              <p>核心逻辑：高防水透气指数，抵御暴雪渗透；袖口防风收口、下摆内置防雪裙，防止雪灌入衣服；宽松立体版型适配单板大幅度动作。</p>
+            </div>
+          </div>
+          <div class="pgrid" data-grid="sb-shell"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 2：单板防护护具 -->
+    <section class="cb-panel" data-panel="protect">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">PROTECTIVE GEAR</p>
+          <h2 class="h2"><span class="line"><span>单板防护护具</span></span></h2>
+          <p class="cb-panel-note mono">头盔 · 雪镜 · 防撞护具 · 专用手套 — 高速摔击与腾空动作的安全底线</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">GROUP A</span>
+            <div><h3>头部与视野防护 <span class="mono">头盔 / 雪镜</span></h3>
+              <p>EPS 内衬 + ABS 外壳头盔，抗冲击，适配野雪高速摔倒；防雾高清雪镜抵御雪地强光紫外线，适配大风降雪天气。</p></div>
+          </div>
+          <div class="pgrid" data-grid="sb-head"></div>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">GROUP B</span>
+            <div><h3>身体缓冲防护 <span class="mono">护臀 / 护膝 / 护腕</span></h3>
+              <p>软质轻量化防撞护具套装，内置缓冲，不卡动作；专为高速摔倒、道具失误、冰面冲击设计。</p></div>
+          </div>
+          <div class="pgrid" data-grid="sb-body"></div>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">GROUP C</span>
+            <div><h3>手部防护 <span class="mono">单板专用手套</span></h3>
+              <p>加厚防水滑雪手套，防风抗寒，掌心耐磨；专为单板滑手抓板、撑地、长时间暴露设计。</p></div>
+          </div>
+          <div class="pgrid" data-grid="sb-glove"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 3：雪场配件 -->
+    <section class="cb-panel" data-panel="acc">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">RESORT & BACKCOUNTRY ACCESSORIES</p>
+          <h2 class="h2"><span class="line"><span>雪场配件</span></span></h2>
+          <p class="cb-panel-note mono">防风护脸 · 防滑袜 · 收纳 · 保养 — 细节决定滑行体验</p>
+        </div>
+        <div class="wl-layer">
+          <div class="pgrid pgrid-4" data-grid="sb-acc"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ 场景化套装 ============ -->
+  <section class="section cb-kits-sec" id="sbKits">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">RIDE KITS</p>
+          <h2 class="h2">
+            <span class="line"><span>场景化成套方案</span></span>
+            <span class="line"><span>按雪场直接出发<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">整套购买立省 $120+ — 穿搭 + 护具一次备齐</p>
+      </div>
+      <div class="kits" id="sbKitGrid"><!-- injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ 选购指南卡片 ============ -->
+  <section class="section cb-guides-sec" id="sbGuides">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">GEAR GUIDES</p>
+          <h2 class="h2"><span class="line"><span>内嵌选购指南</span></span></h2>
+        </div>
+      </div>
+      <div class="cb-guide-grid">
+        <article class="cb-guide" data-reveal data-cursor="READ" data-guide>
+          <span class="cb-guide-no mono">GUIDE 01</span>
+          <h3>野雪雪服选购要点：防水指数、防雪裙为什么是刚需</h3>
+          <p>10000mm 防水指数只是起点，防雪裙、袖口收口、透气拉链如何决定暴雪中的体感。</p>
+          <span class="text-link mono">阅读指南 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="READ" data-guide>
+          <span class="cb-guide-no mono">GUIDE 02</span>
+          <h3>单板护具科普：护臀护膝怎么选，预防高速摔倒损伤</h3>
+          <p>从初学者到跳台玩家，不同滑行强度对应的护具配置与缓冲材质对比。</p>
+          <span class="text-link mono">阅读指南 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="READ" data-guide>
+          <span class="cb-guide-no mono">GUIDE 03</span>
+          <h3>雪地三层穿搭逻辑｜野雪和室内雪场穿搭差异</h3>
+          <p>同样的单板，野雪需要更严谨的防水防风体系，室内雪场则强调透气与灵活。</p>
+          <span class="text-link mono">阅读指南 <span class="arr">→</span></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 收尾 ============ -->
+  <section class="wl-close" id="sbClose">
+    <div class="wl-close-media" data-parallax="0.26"><img src="assets/sb-close.jpg" alt="高山粉雪滑手腾空瞬间"></div>
+    <div class="wl-close-veil"></div>
+    <div class="container wl-close-inner">
+      <p class="wl-close-en mono" data-scramble>POWDER IS EARNED, NOT GIVEN</p>
+      <h2 class="wl-close-title">
+        <span class="line"><span>山野的粉雪，只留给敢于向下滑行的人</span></span>
+        <span class="line"><span>为每一次腾空保驾护航<span class="accent-dot">.</span></span></span>
+      </h2>
+      <p class="wl-close-txt" data-reveal>OROGEN 单板滑雪系列，兼顾耐寒防水、抗摔防护与动作自由度，<b>从雪场公园到高山野雪，为旷野雪场的每一次腾空保驾护航。</b></p>
+      <div class="wl-close-cta" data-reveal>
+        <a href="wilderness.html" class="btn btn-solid-light" data-magnetic>旷野总系列 <span class="arr">→</span></a>
+        <a href="#sbTabs" class="btn btn-ghost-light" data-magnetic>滑雪装备</a>
+        <a href="index.html#top" class="btn btn-ghost-light" data-magnetic>← 返回首页</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="index.html#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <p class="caption mono">RIDE THE MOUNTAIN, NOT JUST THE SLOPE.<br>滑行于山野，而非雪场。</p>
+    </div>
+    <nav class="footer-cols mono" aria-label="页脚导航">
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="wilderness.html#line-hike">荒野徒步</a>
+        <h4 class="f-head f-head-gap">街头极限系列</h4>
+        <a href="index.html#shop">城市滑板 · 全品类</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">赛场竞技系列</h4>
+        <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">关于品牌</h4>
+        <a href="index.html#origin">品牌故事</a><a href="index.html#origin">设计理念</a><a href="index.html#team">团队初心</a>
+        <h4 class="f-head f-head-gap">内容</h4>
+        <a href="index.html#shop">装备指南</a><a href="index.html#journal">探险笔记</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 奥罗根 — 单板滑雪系列</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>RIDE THE MOUNTAIN, NOT JUST THE SLOPE</span>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
+  <div class="cart-head">
+    <span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span>
+    <button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty mono" id="cartEmpty">
+    <span class="cart-empty-mark">⌖</span>
+    YOUR BAG IS EMPTY.<br>THE MOUNTAIN IS WAITING.
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div>
+    <button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button>
+    <p class="caption mono cart-note">SHIPPING &amp; TAXES CALCULATED AT CHECKOUT</p>
+  </div>
+</aside>
+
+<div class="backdrop" id="backdrop"></div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status"></div>
+
+<script src="js/snowboard.js"></script>
+</body>
+</html>

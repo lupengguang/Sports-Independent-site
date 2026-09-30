@@ -1,0 +1,31 @@
+/* ============================================================
+   OROGEN 单板滑雪分类页 — snowboard.css
+   专属微调：面板命名锚点 / 套装卡片横排 2 套 / 雪场配件 4 列
+   （Tab / pcard / kits / wl-close 主体复用 climbing.css）
+   ============================================================ */
+
+.sb-page{ background:var(--bg); }
+
+/* 套装区：2 套横排（窄屏回退单列） */
+#sbKitGrid{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:22px;
+}
+@media (max-width:900px){
+  #sbKitGrid{ grid-template-columns:1fr; }
+}
+
+/* 雪场配件 4 列网格 */
+.pgrid-4{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
+}
+@media (max-width:1100px){
+  .pgrid-4{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:560px){
+  .pgrid-4{ grid-template-columns:1fr; }
+}
+
+/* 单板页专属：Hero 标题行间距微调（SNOWBOARD / BACKCOUNTRY / GEAR. 较长） */
+.sb-page .wl-hero-title{
+  line-height:.92;
+}

@@ -1,0 +1,17 @@
+# 浏览器自动化测试配置目录（非网站文件）
+.qa-prof/
+
+# 系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 日志与临时文件
+*.log
+*.tmp

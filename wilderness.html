@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>旷野极限系列 WILDERNESS EXTREME — OROGEN 奥罗根</title>
+<meta name="description" content="OROGEN 旷野极限系列 — Wilderness Is The Ultimate Arena. 旷野，是终极的赛场。专为高海拔登山、单板滑雪、荒野徒步打造的极端环境专业装备：5000-8000米雪山分层防护系统。high altitude climbing gear, professional snowboard outfit, wilderness hiking gear.">
+<meta name="keywords" content="high altitude climbing gear, professional snowboard outfit, wilderness hiking gear, extreme outdoor equipment, mountain climbing layered clothing system, high-altitude cold protection gear">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/wilderness.css">
+</head>
+<body id="top" class="wl-page">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">旷野极限</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">WILDERNESS IS THE ULTIMATE ARENA — 旷野，是终极的赛场</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">WILDERNESS</div>
+    <div class="pt-word-cn mono">进 入 旷 野</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
+<!-- ============ FIXED TOP ============ -->
+<div class="site-top" id="siteTop">
+  <div class="announce mono" role="note">
+    WILDERNESS IS THE ULTIMATE ARENA.&nbsp;&nbsp;—&nbsp;&nbsp;<b>旷野，是终极的赛场。</b>
+  </div>
+  <header class="header" id="header">
+    <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+      <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+      OROGEN <span class="logo-cn">奥罗根</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <div class="nav-item is-current">
+        <a href="#top" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="#line-mount">高海拔登山</a>
+          <a href="#line-board">单板滑雪</a>
+          <a href="#line-hike">荒野徒步</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">街头极限系列</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="basketball.html">篮球</a>
+          <a href="football.html">足球</a>
+          <a href="badminton.html">羽毛球</a>
+          <a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">装备指南</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#journal" class="nav-main">探险笔记</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#origin" class="nav-main">关于品牌</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索（即将开放）">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+        <span class="bag-count mono" id="bagCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+    </div>
+  </header>
+</div>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-inner">
+    <nav class="menu-links" aria-label="移动导航">
+      <div class="menu-group">
+        <a href="#top" class="menu-link"><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="#line-mount">高海拔登山</a><a href="#line-board">单板滑雪</a><a href="#line-hike">荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">04</span>装备指南</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#journal" class="menu-link"><span class="mono">05</span>探险笔记</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+      </div>
+    </nav>
+    <div class="menu-foot mono">
+      <span>OROGEN® 旷野极限 — WILDERNESS IS THE ULTIMATE ARENA</span>
+      <span>返回首页 index.html</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ 全屏 Banner ============ -->
+  <section class="wl-hero" id="wlHero">
+    <div class="wl-hero-media" data-parallax="0.32">
+      <img src="assets/wl-hero.jpg" alt="7000米级雪山山脊上的登山队伍，逆光冷调晨光">
+    </div>
+    <div class="wl-hero-veil"></div>
+    <div class="wl-hero-frame container">
+      <p class="wl-hero-tag mono" data-scramble>OROGEN CORE LINE — 全站核心系列 / 60%</p>
+      <h1 class="wl-hero-title">
+        <span class="line"><span>WILDERNESS</span></span>
+        <span class="line"><span>EXTREME</span></span>
+        <span class="line accent"><span>SERIES.</span></span>
+      </h1>
+      <p class="wl-hero-sub mono">Professional Gear for High-Altitude &amp; Snow Wilderness</p>
+      <p class="wl-hero-desc">专为高海拔雪山、极地雪原、荒野复杂地貌打造。从 <b>5000 米入门雪山攀登</b>，至 <b>8000 米极寒绝境探险</b>，OROGEN 以分层防护、轻量化抗造、极端气候适配的专业设计，支撑每一次奔赴旷野的征途。</p>
+      <div class="wl-hero-cta">
+        <a href="#line-mount" class="btn btn-solid-light" data-magnetic>EXPLORE SERIES <span class="arr">→</span></a>
+        <a href="#line-mount" class="btn btn-ghost-light" data-magnetic>查看全套旷野装备</a>
+      </div>
+    </div>
+    <div class="wl-stats mono">
+      <div class="wl-stat"><b data-count="8000" data-suffix="m+">0</b><span>极寒雪山覆盖</span></div>
+      <div class="wl-stat"><b data-count="4" data-suffix="大">0</b><span>恶劣环境专项</span></div>
+      <div class="wl-stat"><b data-count="3" data-suffix="层">0</b><span>专业穿衣体系</span></div>
+      <div class="wl-stat"><b data-count="45" data-suffix="+">0</b><span>专业化单品/套装</span></div>
+    </div>
+  </section>
+
+  <!-- ============ 核心价值 3 卡片 ============ -->
+  <section class="section wl-values">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="label mono accent">WHY WILDERNESS LINE</p>
+        <h2 class="h2">
+          <span class="line"><span>不做普通户外穿搭</span></span>
+          <span class="line"><span>只做极端环境方案<span class="accent-dot">.</span></span></span>
+        </h2>
+      </div>
+      <div class="wl-value-grid">
+        <article class="wl-value-card" data-reveal data-tilt data-cursor="VIEW">
+          <figure class="wl-value-media img-reveal">
+            <img src="assets/wl-val-env.jpg" alt="暴雪狂风中的极端山体环境">
+            <span class="wl-value-no mono">01</span>
+          </figure>
+          <h3 class="wl-value-name">极端环境适配系统</h3>
+          <p class="wl-value-txt">拒绝四季通用的平庸设计。针对<b>高海拔低压、强紫外线、零下极寒、暴雪强风</b>四大恶劣环境专项优化，每一件装备均对应具体地貌与气候场景。</p>
+          <div class="wl-value-tags mono"><span>LOW PRESSURE</span><span>UV</span><span>EXTREME COLD</span><span>STORM</span></div>
+        </article>
+        <article class="wl-value-card" data-reveal data-tilt data-cursor="VIEW">
+          <figure class="wl-value-media img-reveal">
+            <img src="assets/wl-val-layer.jpg" alt="身着分层装备的登山者">
+            <span class="wl-value-no mono">02</span>
+          </figure>
+          <h3 class="wl-value-name">专业三层穿衣体系</h3>
+          <p class="wl-value-txt">严格遵循国际高山探险分层穿搭逻辑：<b>速干排汗内层 + 锁温保暖中层 + 防风防水硬壳外层</b>，杜绝穿搭失误导致的失温、受潮、冻伤问题。</p>
+          <div class="wl-value-tags mono"><span>BASE</span><span>MID</span><span>SHELL</span></div>
+        </article>
+        <article class="wl-value-card" data-reveal data-tilt data-cursor="VIEW">
+          <figure class="wl-value-media img-reveal">
+            <img src="assets/wl-val-light.jpg" alt="轻量化攀登者">
+            <span class="wl-value-no mono">03</span>
+          </figure>
+          <h3 class="wl-value-name">轻量化硬核防护</h3>
+          <p class="wl-value-txt">旷野征途拒绝多余负重。在<b>高强度防护、抗撕裂、耐寒防水</b>的基础上，极致控制装备重量，适配长距离徒步、高海拔持续攀登需求。</p>
+          <div class="wl-value-tags mono"><span>LIGHTWEIGHT</span><span>RIPSTOP</span><span>WATERPROOF</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 产品线锚点导航（吸附） ============ -->
+  <div class="wl-subnav" id="wlSubnav">
+    <div class="container wl-subnav-inner mono">
+      <a href="#line-mount" class="wl-subnav-item" data-spy="line-mount"><b>01</b>高海拔登山<span class="wl-subnav-hint">核心 40%</span></a>
+      <a href="#line-board" class="wl-subnav-item" data-spy="line-board"><b>02</b>单板滑雪<span class="wl-subnav-hint">野雪延伸</span></a>
+      <a href="#line-hike" class="wl-subnav-item" data-spy="line-hike"><b>03</b>荒野徒步<span class="wl-subnav-hint">全域基础</span></a>
+      <a href="#wltable" class="wl-subnav-item" data-spy="wltable"><b>04</b>适配对照表</a>
+      <a href="#wlpitfall" class="wl-subnav-item" data-spy="wlpitfall"><b>05</b>避坑指南</a>
+    </div>
+  </div>
+
+  <!-- ============ 产品线 01：高海拔登山 ============ -->
+  <section class="wl-line" id="line-mount">
+    <div class="wl-line-hero">
+      <img src="assets/wl-mount.jpg" alt="高海拔登山者在八千米雪山" data-parallax="0.18">
+      <div class="wl-line-hero-veil"></div>
+      <div class="container wl-line-hero-inner">
+        <p class="label mono accent" data-scramble>LINE 01 — 旷野核心中的核心 / 资源 40%</p>
+        <h2 class="wl-line-title">
+          <span class="line"><span>高海拔</span></span>
+          <span class="line accent"><span>登山系列</span></span>
+        </h2>
+        <p class="wl-line-meta mono">5000m 入门 · 6000m 进阶 · 7000–8000m 专业极寒 · 冰川徒步 · 高山极地探险</p>
+        <p class="wl-line-users mono">为专业登山爱好者 / 雪山探险者 / 硬核玩家 / 地理科考从业者打造</p>
+      </div>
+    </div>
+
+    <div class="container wl-line-body">
+      <!-- 第一层 -->
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">LAYER 01</span>
+          <div>
+            <h3>速干排汗内层 <span class="mono">贴身层 · 核心刚需</span></h3>
+            <p>高海拔最大杀手不是冷，是潮湿出汗。绝对拒绝纯棉——全程快速导湿、瞬干不粘身，静止不发冷、运动不闷汗。</p>
+          </div>
+        </div>
+        <div class="pgrid" data-grid="mount-base"></div>
+      </div>
+      <!-- 第二层 -->
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">LAYER 02</span>
+          <div>
+            <h3>中层锁温保暖层 <span class="mono">保温核心</span></h3>
+            <p>隔绝外界低温、锁住身体热源，轻便不臃肿，方便叠加硬壳，不影响肢体攀爬动作。</p>
+          </div>
+        </div>
+        <div class="pgrid" data-grid="mount-mid"></div>
+      </div>
+      <!-- 第三层 -->
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">LAYER 03</span>
+          <div>
+            <h3>外层防护硬壳 <span class="mono">抗灾防护层 · 门面核心</span></h3>
+            <p>抵御高山强风、暴雪、雨雪渗透与碎石刮擦，高海拔登山的最后一道防护屏障。</p>
+          </div>
+        </div>
+        <div class="pgrid" data-grid="mount-shell"></div>
+      </div>
+      <!-- 专业器材 -->
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">GEAR</span>
+          <div>
+            <h3>专业器材 &amp; 防护装备</h3>
+            <p>足部 / 背负 / 极地配件 / 安全器材，与三层穿搭构成完整高山系统。</p>
+          </div>
+        </div>
+        <div class="pgrid pgrid-4" data-grid="mount-gear"></div>
+      </div>
+      <!-- 成套方案 -->
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">KITS</span>
+          <div>
+            <h3>专属成套搭配方案 <span class="mono">零思考选购 · 提升客单价</span></h3>
+          </div>
+        </div>
+        <div class="kits" data-kits="mount"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 产品线 02：单板滑雪 ============ -->
+  <section class="wl-line" id="line-board">
+    <div class="wl-line-hero">
+      <img src="assets/wl-board.jpg" alt="野外粉雪单板滑行" data-parallax="0.18">
+      <div class="wl-line-hero-veil"></div>
+      <div class="container wl-line-hero-inner">
+        <p class="label mono accent" data-scramble>LINE 02 — 雪地旷野延伸</p>
+        <h2 class="wl-line-title">
+          <span class="line"><span>单板</span></span>
+          <span class="line accent"><span>滑雪系列</span></span>
+        </h2>
+        <p class="wl-line-meta mono">高山野雪 · 户外雪场 · 单板公园 · 自然雪道 · 冬季山地旷野</p>
+        <p class="wl-line-users mono">主打户外野雪耐寒 / 防雪防水 / 抗摔防护 / 动作自由</p>
+      </div>
+    </div>
+    <div class="container wl-line-body">
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">LAYER 01–02</span>
+          <div><h3>内层恒温 &amp; 中层锁温</h3><p>雪地专用速干恒温体系，出汗不潮湿、御寒不发冷；轻薄高弹中层，不顶衣不臃肿。</p></div>
+        </div>
+        <div class="pgrid" data-grid="board-base"></div>
+      </div>
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">LAYER 03</span>
+          <div><h3>外层专业雪服系统 <span class="mono">核心爆款</span></h3><p>高防水指数、防风锁温、宽松版型适配大幅度动作，袖口/下摆防雪灌入。</p></div>
+        </div>
+        <div class="pgrid" data-grid="board-shell"></div>
+      </div>
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">PROTECT</span>
+          <div><h3>专业防护 &amp; 配件</h3><p>头盔、防雾雪镜、护臀护膝护腕、防水手套——摔倒撞击的核心防线。</p></div>
+        </div>
+        <div class="pgrid pgrid-4" data-grid="board-gear"></div>
+      </div>
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">KITS</span>
+          <div><h3>场景化搭配套装</h3></div>
+        </div>
+        <div class="kits" data-kits="board"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 产品线 03：荒野徒步 ============ -->
+  <section class="wl-line" id="line-hike">
+    <div class="wl-line-hero">
+      <img src="assets/wl-hike.jpg" alt="荒野山谷徒步" data-parallax="0.18">
+      <div class="wl-line-hero-veil"></div>
+      <div class="container wl-line-hero-inner">
+        <p class="label mono accent" data-scramble>LINE 03 — 全域旷野基础线</p>
+        <h2 class="wl-line-title">
+          <span class="line"><span>荒野</span></span>
+          <span class="line accent"><span>徒步系列</span></span>
+        </h2>
+        <p class="wl-line-meta mono">高原荒野 · 山林穿越 · 戈壁徒步 · 长线探险 · 复杂地貌</p>
+        <p class="wl-line-users mono">全季节旷野通行：防刮 · 防晒 · 透气 · 耐磨 · 全天候</p>
+      </div>
+    </div>
+    <div class="container wl-line-body">
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">CLOTHING</span>
+          <div><h3>四季徒步服饰矩阵</h3><p>夏防晒速干、春秋防风耐磨、冬季轻量保暖，多口袋弹力工装长裤覆盖全场景。</p></div>
+        </div>
+        <div class="pgrid" data-grid="hike-cloth"></div>
+      </div>
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">GEAR</span>
+          <div><h3>功能装备</h3><p>足部、背负收纳、户外配件，按单日 / 多日路线自由组合。</p></div>
+        </div>
+        <div class="pgrid pgrid-4" data-grid="hike-gear"></div>
+      </div>
+      <div class="wl-layer">
+        <div class="wl-layer-head">
+          <span class="wl-layer-no mono">KITS</span>
+          <div><h3>场景成套方案</h3></div>
+        </div>
+        <div class="kits" data-kits="hike"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 环境装备适配对照表 ============ -->
+  <section class="section wl-table-sec" id="wltable">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="label mono accent">FIELD FIT MATRIX</p>
+        <h2 class="h2">
+          <span class="line"><span>旷野环境装备</span></span>
+          <span class="line"><span>适配对照表<span class="accent-dot">.</span></span></span>
+        </h2>
+        <p class="wl-table-tip mono" data-reveal>点击地貌行 → 查看该环境必须配置的装备</p>
+      </div>
+      <div class="wl-table" data-reveal>
+        <div class="wl-table-row" data-env="alpine">
+          <div class="wl-table-env"><b>高海拔雪山</b><span>5000m+</span></div>
+          <div class="wl-table-chips">
+            <span>必须三层穿衣</span><span>硬壳防水</span><span>极寒保暖</span><span>专业高山防护器材</span>
+          </div>
+          <a class="wl-table-go mono" href="#line-mount">前往高海拔系列 →</a>
+        </div>
+        <div class="wl-table-row" data-env="snow">
+          <div class="wl-table-env"><b>高山野雪场</b><span>单板/野雪</span></div>
+          <div class="wl-table-chips">
+            <span>防水防雪</span><span>抗摔防护</span><span>宽松动作版型</span><span>锁温恒温穿搭</span>
+          </div>
+          <a class="wl-table-go mono" href="#line-board">前往单板系列 →</a>
+        </div>
+        <div class="wl-table-row" data-env="gobi">
+          <div class="wl-table-env"><b>戈壁/高原荒野</b><span>干旱强日照</span></div>
+          <div class="wl-table-chips">
+            <span>高倍防晒</span><span>防刮耐磨</span><span>透气速干</span><span>轻便减负</span>
+          </div>
+          <a class="wl-table-go mono" href="#line-hike">前往徒步系列 →</a>
+        </div>
+        <div class="wl-table-row" data-env="forest">
+          <div class="wl-table-env"><b>山林潮湿地貌</b><span>多雨多虫</span></div>
+          <div class="wl-table-chips">
+            <span>透气防水</span><span>防蚊虫</span><span>抗潮湿</span><span>速干排汗</span>
+          </div>
+          <a class="wl-table-go mono" href="#line-hike">前往徒步系列 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 避坑指南 ============ -->
+  <section class="section wl-pitfall" id="wlpitfall">
+    <div class="container wl-pitfall-grid">
+      <div class="wl-pitfall-left" data-reveal>
+        <p class="label mono accent">FIELD TRUTH / 专属干货</p>
+        <h2 class="h2">
+          <span class="line"><span>旷野装备</span></span>
+          <span class="line accent"><span>避坑指南</span></span>
+        </h2>
+        <p class="body">极端环境里，错误装备不是“不舒服”，而是真正的风险。四条用血与教训换来的原则。</p>
+      </div>
+      <div class="wl-acc" data-reveal>
+        <div class="wl-acc-item">
+          <button class="wl-acc-head"><span class="mono wl-acc-no">01</span>高海拔禁止纯棉衣物<i></i></button>
+          <div class="wl-acc-body"><p>纯棉吸汗后难以干燥，潮湿衣物在高海拔快速带走体温，极易引发<b>高原失温</b>。贴身层一律选择速干功能面料。</p></div>
+        </div>
+        <div class="wl-acc-item">
+          <button class="wl-acc-head"><span class="mono wl-acc-no">02</span>雪山滑雪拒绝臃肿棉衣<i></i></button>
+          <div class="wl-acc-body"><p>厚重棉衣束缚动作、增加负重，摔倒后进入积雪不易干燥。应选择<b>分层功能穿搭</b>：速干内层 + 轻量保暖中层 + 专业雪服。</p></div>
+        </div>
+        <div class="wl-acc-item">
+          <button class="wl-acc-head"><span class="mono wl-acc-no">03</span>荒野徒步不选软底鞋<i></i></button>
+          <div class="wl-acc-body"><p>软底鞋在碎石、岩壁路面缺乏支撑与防滑，极易<b>磨脚、崴脚</b>。按地貌选择带抓地大底与中底支撑的徒步鞋/靴。</p></div>
+        </div>
+        <div class="wl-acc-item">
+          <button class="wl-acc-head"><span class="mono wl-acc-no">04</span>功能性优先于颜值<i></i></button>
+          <div class="wl-acc-body"><p>所有旷野装备优先评估防水、保暖、耐磨等<b>功能指标</b>是否匹配路线，专业场景安全永远优先于版型颜值。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 智能搭配推荐 ============ -->
+  <section class="section wl-match">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="label mono accent">SMART MATCH</p>
+        <h2 class="h2"><span class="line"><span>成套搭配 · 一站购齐</span></span></h2>
+      </div>
+      <div class="wl-match-strip" id="wlMatchStrip"><!-- 智能推荐注入 --></div>
+    </div>
+  </section>
+
+  <!-- ============ 品牌收尾（视差全屏） ============ -->
+  <section class="wl-close" id="wlClose">
+    <div class="wl-close-media" data-parallax="0.26"><img src="assets/wl-close.jpg" alt="雪山顶峰全景"></div>
+    <div class="wl-close-veil"></div>
+    <div class="container wl-close-inner">
+      <p class="wl-close-en mono" data-scramble>THE CALL OF THE WILD</p>
+      <h2 class="wl-close-title">
+        <span class="line"><span>人类对旷野的探索</span></span>
+        <span class="line"><span>从来不是冒险，而是本能<span class="accent-dot">.</span></span></span>
+      </h2>
+      <p class="wl-close-txt" data-reveal>从雪山之巅到荒野戈壁，OROGEN 旷野极限系列，以专业装备赋能每一次山野征途。<br><b>不畏惧极端环境，不妥协平庸设计，以山海为疆，以专业为刃，奔赴每一片无人旷野。</b></p>
+      <div class="wl-close-cta" data-reveal>
+        <a href="#line-mount" class="btn btn-solid-light" data-magnetic>高海拔登山 <span class="arr">→</span></a>
+        <a href="#line-board" class="btn btn-ghost-light" data-magnetic>单板滑雪</a>
+        <a href="#line-hike" class="btn btn-ghost-light" data-magnetic>荒野徒步</a>
+        <a href="index.html#top" class="btn btn-ghost-light" data-magnetic>← 返回首页</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="index.html#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <p class="caption mono">WILDERNESS IS THE ULTIMATE ARENA.<br>旷野，是终极的赛场。</p>
+    </div>
+    <nav class="footer-cols mono" aria-label="页脚导航">
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="#line-mount">高海拔登山</a><a href="#line-board">单板滑雪</a><a href="#line-hike">荒野徒步</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">其他系列</h4>
+        <a href="index.html#shop">街头极限系列</a><a href="football.html">赛场竞技系列</a><a href="index.html#shop">装备指南</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">关于品牌</h4>
+        <a href="index.html#origin">品牌故事</a><a href="index.html#journal">探险笔记</a><a href="index.html#top">返回首页</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-word" aria-hidden="true">WILDERNESS®</div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 旷野极限系列</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>HIGH ALTITUDE · SNOWBOARD · WILDERNESS</span>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<aside class="cart" id="cart" aria-hidden="true" aria-label="装备袋">
+  <div class="cart-head">
+    <span class="cart-title mono">装备袋 (<span id="cartCount">0</span>)</span>
+    <button class="overlay-close mono" id="cartClose" aria-label="关闭装备袋">关闭 ✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty mono" id="cartEmpty">
+    <span class="cart-empty-mark">⌖</span>
+    装备袋是空的。<br>旷野正在等待。
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal mono"><span>小计</span><b id="cartSubtotal">$ 0</b></div>
+    <button class="btn btn-solid-dark cart-checkout" id="cartCheckout">去结算 <span class="arr">→</span></button>
+    <p class="caption mono cart-note">运费与税费在结算时计算</p>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status"></div>
+
+<script src="js/wilderness.js"></script>
+</body>
+</html>

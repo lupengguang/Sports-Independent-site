@@ -1,0 +1,99 @@
+{
+ "sb-hero": {
+  "url": "https://www.10wallpaper.com/wallpaper/2560x1600/1605/Snow_Mountain_Snowboarding_Extreme_HD_Wallpaper_05_2560x1600.jpg",
+  "w": 2560,
+  "h": 1600
+ },
+ "sb-close": {
+  "url": "https://wallpapers.com/images/hd/extreme-sports-snowboarding-jump-hxi9sfpdpvl8w3of.jpg",
+  "w": 5120,
+  "h": 3200
+ },
+ "sb-base-set": null,
+ "sb-base-top": {
+  "url": "https://greatcarcarecenter.com/wp-content/uploads/2025/12/top_ski_thermal_underwear_recl0.jpg",
+  "w": 1022,
+  "h": 575
+ },
+ "sb-base-pant": null,
+ "sb-socks": {
+  "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/43e1fc54-c2f2-46ca-a4ee-5e2f01a227e2.__CR0,0,2910,1800_PT0_SX970_V1___.jpg",
+  "w": 970,
+  "h": 600
+ },
+ "sb-mid-puff": null,
+ "sb-mid-vest": {
+  "url": "https://bsg-i.nbxc.com/product/1e/8d/d4/7d52da53166aeaf54fffe2f2a9.png",
+  "w": 1000,
+  "h": 869
+ },
+ "sb-mid-fleece": {
+  "url": "https://cdn.outsideonline.com/wp-content/uploads/2021/01/11/fleece-pants_h.jpg?width=1200",
+  "w": 1200,
+  "h": 675
+ },
+ "sb-shell-jkt": null,
+ "sb-shell-pant": null,
+ "sb-shell-set": {
+  "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a7663937-6071-4f4f-89cd-24ff038bcff9.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+  "w": 1464,
+  "h": 600
+ },
+ "sb-helmet": {
+  "url": "https://cdn.shortpixel.ai/spai/q_glossy+ret_img+to_auto/www.slopemagazine.com/wp-content/uploads/Snow/smith-method-mips-snow-helmet-side.jpg",
+  "w": 1800,
+  "h": 1200
+ },
+ "sb-goggle": {
+  "url": "https://m.media-amazon.com/images/I/81Sa7x+PBpL._AC_SL1500_.jpg",
+  "w": 1500,
+  "h": 1188
+ },
+ "sb-pads": {
+  "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/00dac177-1cfc-49c7-847b-9556248d8a22.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+  "w": 970,
+  "h": 600
+ },
+ "sb-hip": {
+  "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/3375c6ce-3753-4e7e-9ab5-dcf57c67e2d0.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+  "w": 970,
+  "h": 600
+ },
+ "sb-knee": {
+  "url": "https://absolute-snow-content.cdn.rlab.net/larger/762a69f8-591f-415c-8370-2d6dec498849-033.jpg",
+  "w": 900,
+  "h": 780
+ },
+ "sb-glove": null,
+ "sb-liner": {
+  "url": "https://cdn11.bigcommerce.com/s-oklmpkqg66/images/stencil/1280x1280/products/22131/19623/119ca5ab-21aa-5b78-b8af-998566d22257__85896.1576114173.jpg?c=2?imbypass=on",
+  "w": 1280,
+  "h": 925
+ },
+ "sb-mask": null,
+ "sb-socks2": {
+  "url": "https://m.media-amazon.com/images/I/812IelZjcmL._AC_SL1500_.jpg",
+  "w": 1427,
+  "h": 1137
+ },
+ "sb-bag": {
+  "url": "https://www.travelontv.com/wp-content/uploads/2024/02/71J-epuAzoL._AC_SL1500_-1024x701.jpg",
+  "w": 1024,
+  "h": 701
+ },
+ "sb-boot-cover": {
+  "url": "https://m.media-amazon.com/images/I/61oMVv8cH4L._AC_.jpg",
+  "w": 1398,
+  "h": 843
+ },
+ "sb-wax": {
+  "url": "https://cdn.mos.cms.futurecdn.net/bGoLgzamRjWxdjyeqtBh5W.jpg",
+  "w": 3800,
+  "h": 2137
+ },
+ "sb-boardbag": {
+  "url": "https://hips.hearstapps.com/bpc.h-cdn.co/assets/16/51/1280x640/landscape-1482176977-snowboard-bags.jpg?resize=1200:*",
+  "w": 1200,
+  "h": 600
+ }
+}

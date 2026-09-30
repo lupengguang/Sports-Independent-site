@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN｜足球装备 Football Gear — 脚下奔袭，驰骋整片赛场</title>
+<meta name="description" content="OROGEN 足球装备 — 奔跑、传切、对抗，足球的力量来自持续向前。按场上位置选择战靴与服饰：前锋 / 中场 / 后卫 / 门将全套装备，FG 天然草 / AG 人造草 / TF 碎钉 / IC 室内平底全覆盖，适配业余联赛、校园足球、户外野场。soccer cleats, football boots FG AG TF IC, goalkeeper gloves, shin guards, soccer jersey set.">
+<meta name="keywords" content="soccer cleats, football boots, FG AG TF IC, goalkeeper gloves, shin guards, soccer jersey, football gear, futsal shoes">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/wilderness.css">
+<link rel="stylesheet" href="css/climbing.css">
+<link rel="stylesheet" href="css/basketball.css">
+<link rel="stylesheet" href="css/football.css">
+</head>
+<body id="top" class="wl-page cb-page bb-page fb-page">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">赛场竞技 · 足球</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">KEEP MOVING FORWARD — 奔跑、传切、对抗，足球的力量来自持续向前</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">KICKOFF</div>
+    <div class="pt-word-cn mono">踏 入 赛 场</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
+<!-- ============ FIXED TOP ============ -->
+<div class="site-top" id="siteTop">
+  <div class="announce mono" role="note">
+    KEEP MOVING FORWARD.&nbsp;&nbsp;—&nbsp;&nbsp;<b>奔跑、传切、对抗，足球的力量来自持续向前。</b>
+  </div>
+  <header class="header" id="header">
+    <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+      <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+      OROGEN <span class="logo-cn">奥罗根</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <div class="nav-item">
+        <a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="climbing.html">高海拔登山</a>
+          <a href="snowboard.html">单板滑雪</a>
+          <a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">街头极限系列</a>
+      </div>
+      <div class="nav-item is-current">
+        <a href="#top" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="basketball.html">篮球</a>
+          <a href="#top">足球</a>
+          <a href="badminton.html">羽毛球</a>
+          <a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">装备指南</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#journal" class="nav-main">探险笔记</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#origin" class="nav-main">关于品牌</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索（即将开放）">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+        <span class="bag-count mono" id="bagCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+    </div>
+  </header>
+</div>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-inner">
+    <nav class="menu-links" aria-label="移动导航">
+      <div class="menu-group">
+        <a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+      </div>
+      <div class="menu-group">
+        <a href="#top" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="#top">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">04</span>装备指南</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#journal" class="menu-link"><span class="mono">05</span>探险笔记</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+      </div>
+    </nav>
+    <div class="menu-foot mono">
+      <span>OROGEN® 赛场竞技 · 足球 — KICKOFF</span>
+      <span>返回首页 index.html</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ 全屏 Hero ============ -->
+  <section class="wl-hero" id="fbHero">
+    <div class="wl-hero-media" data-parallax="0.32">
+      <img src="assets/fb-hero.jpg" alt="黄昏球场，球员带球冲刺，草皮飞溅，橙红色夕阳光影">
+    </div>
+    <div class="wl-hero-veil"></div>
+    <div class="wl-hero-frame container">
+      <p class="wl-hero-tag mono" data-scramble>PITCH // CATEGORY 02 — 赛场竞技 · 足球分类</p>
+      <h1 class="wl-hero-title">
+        <span class="line"><span>OWN EVERY</span></span>
+        <span class="line"><span>BLADE OF</span></span>
+        <span class="line accent"><span>THE PITCH.</span></span>
+      </h1>
+      <p class="wl-hero-sub mono">Keep moving forward. The pitch is yours.</p>
+      <p class="wl-hero-desc">足球｜脚下奔袭，驰骋整片赛场。按<b>场上位置</b>选择战靴与服饰——前锋 / 中场 / 后卫 / 门将全套装备，<b>人造草、天然草、室内五人制</b>全覆盖。黄昏的草皮飞溅，都是向前的证据。</p>
+      <div class="wl-hero-cta">
+        <a href="#fbTabs" class="btn btn-solid-light" data-magnetic>EXPLORE PITCH GEAR <span class="arr">→</span></a>
+        <a href="#fbGuides" class="btn btn-ghost-light" data-magnetic>位置选购指南</a>
+      </div>
+    </div>
+    <div class="wl-stats mono">
+      <div class="wl-stat"><b data-count="4" data-suffix="大">0</b><span>位置专属体系</span></div>
+      <div class="wl-stat"><b data-count="4" data-suffix="类">0</b><span>场地细分战靴</span></div>
+      <div class="wl-stat"><b data-count="7" data-suffix="+">0</b><span>护具配件</span></div>
+      <div class="wl-stat"><b data-count="17" data-suffix="+">0</b><span>专业单品/套装</span></div>
+    </div>
+  </section>
+
+  <!-- ============ 系列核心价值 ============ -->
+  <section class="section bb-values" id="fbValues">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent2">WHY OROGEN PITCH</p>
+          <h2 class="h2">
+            <span class="line"><span>位置 × 场地双维度</span></span>
+            <span class="line"><span>为整片赛场而生<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">FG / AG / TF / IC — 按场地选钉，按位置选靴</p>
+      </div>
+      <div class="bb-value-grid">
+        <article class="bb-value" data-reveal>
+          <span class="bb-value-no mono">01</span>
+          <span class="bb-value-en mono">SURFACE-SPECIFIC</span>
+          <h3>场地细分战靴</h3>
+          <p>FG 天然草 / AG 人造草 / TF 碎钉 / IC 室内平底四大鞋钉体系，不挑场地，踩哪都稳。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:70ms">
+          <span class="bb-value-no mono">02</span>
+          <span class="bb-value-en mono">POSITION CUT</span>
+          <h3>位置剪裁球衣</h3>
+          <p>透气排汗、高弹抗拉扯，雨天轻微防水——按位置剪裁，不为动作添一丝束缚。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:140ms">
+          <span class="bb-value-no mono">03</span>
+          <span class="bb-value-en mono">GK LINE</span>
+          <h3>门将专属产品线</h3>
+          <p>门将服、防撞手套、护具全套独立开发——扑救、出击、落地，最后一道防线单独武装。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:210ms">
+          <span class="bb-value-no mono">04</span>
+          <span class="bb-value-en mono">LIGHT GUARD</span>
+          <h3>轻量化护具</h3>
+          <p>护腿板、绑腿带全面减重，不影响跑动与盘带灵活性——防护到位，动作不变形。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Tab 切换栏 ============ -->
+  <div class="cb-tabs-wrap" id="fbTabs">
+    <div class="container cb-tabs" role="tablist">
+      <button class="cb-tab active" data-tab="boots" role="tab" aria-selected="true">
+        <span class="cb-tab-no mono">01</span>足球战靴<span class="cb-tab-share mono">核心爆款</span>
+      </button>
+      <button class="cb-tab" data-tab="apparel" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">02</span>位置服饰套装<span class="cb-tab-share mono">35%</span>
+      </button>
+      <button class="cb-tab" data-tab="acc" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">03</span>护具 &amp; 配件专区<span class="cb-tab-share mono">20%</span>
+      </button>
+      <span class="cb-tabs-glider" id="cbGlider"></span>
+    </div>
+  </div>
+
+  <!-- ============ Tab 面板 ============ -->
+  <div class="cb-panels">
+
+    <!-- 面板 1：足球战靴 -->
+    <section class="cb-panel active" data-panel="boots">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">PITCH BOOTS — CORE</p>
+          <h2 class="h2"><span class="line"><span>足球战靴，核心爆款区</span></span></h2>
+          <p class="cb-panel-note mono">前锋 / 中场 / 后卫 / 五人制室内 — 按位置选靴，按场地选钉</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">PICK 01-04</span>
+            <div>
+              <h3>按位置选战靴 <span class="mono">FW / MF / DF / IC</span></h3>
+              <p>前锋低帮轻量增强停球射门触感，中场中帮均衡包裹足弓，后卫高帮加固抗冲击，五人制平底橡胶底室内防滑——<b>碎钉 / 长钉按需可选</b>。</p>
+            </div>
+          </div>
+          <div class="pgrid pgrid-4" data-grid="fb-boots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 2：位置服饰套装 -->
+    <section class="cb-panel" data-panel="apparel">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">POSITION KITS</p>
+          <h2 class="h2"><span class="line"><span>位置服饰套装</span></span></h2>
+          <p class="cb-panel-note mono">透气排汗 · 高弹抗拉扯 · 雨天轻微防水</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">SET A-D</span>
+            <div><h3>位置套装 <span class="mono">FW / MF / DF / GK</span></h3>
+              <p>前锋、中场、后卫训练比赛球衣球裤；门将加厚防撞长袖上衣 + 加厚球裤，肘部髋部海绵缓冲，飞身扑救不惧落地。</p></div>
+          </div>
+          <div class="pgrid pgrid-4" data-grid="fb-kits"></div>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">BASICS</span>
+            <div><h3>单品补全 <span class="mono">JACKET / COMPRESSION</span></h3>
+              <p>热身冲锋衣、紧身压缩衣——从赛前热身到雨中鏖战，逐层配齐。</p></div>
+          </div>
+          <div class="pgrid" data-grid="fb-singles"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 3：护具 & 配件专区 -->
+    <section class="cb-panel" data-panel="acc">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">PROTECTION &amp; ACCESSORIES</p>
+          <h2 class="h2"><span class="line"><span>护具 &amp; 配件专区</span></span></h2>
+          <p class="cb-panel-note mono">护腿板 · 门将手套 · 背包 · 比赛用球 · 绑腿带 · 防滑球袜 — 一站式配齐</p>
+        </div>
+        <div class="wl-layer">
+          <div class="pgrid pgrid-4" data-grid="fb-acc"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ 选购指南 ============ -->
+  <section class="section cb-guides-sec" id="fbGuides">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">BUYING GUIDE — 用户刚需</p>
+          <h2 class="h2">
+            <span class="line"><span>按位置选购指南</span></span>
+            <span class="line"><span>对号入座，不踩坑<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">FW / MF / DF / GK — 四种角色，四套装备逻辑</p>
+      </div>
+      <div class="cb-guide-grid fb-guide-grid">
+        <article class="cb-guide" data-reveal data-cursor="FW">
+          <span class="cb-guide-no mono">GUIDE 01 — 前锋 FORWARD</span>
+          <h3>追求触球感、爆发冲刺 → 轻量触感流</h3>
+          <p><b>轻薄鞋面战靴</b>增强停球射门触感，配<b>短 AG/FG 钉</b>释放启动爆发力，一击致命。</p>
+          <span class="text-link mono">低帮轻量战靴 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="MF" style="transition-delay:70ms">
+          <span class="cb-guide-no mono">GUIDE 02 — 中场 MIDFIELDER</span>
+          <h3>大范围折返跑 → 均衡续航流</h3>
+          <p><b>均衡包裹战靴</b>稳定足弓，长时间跑动不泄力，搭配<b>透气球衣</b>撑满全场，传球拦截两不误。</p>
+          <span class="text-link mono">中帮均衡战靴 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="DF" style="transition-delay:140ms">
+          <span class="cb-guide-no mono">GUIDE 03 — 后卫 DEFENDER</span>
+          <h3>铲球对抗多 → 加固防护流</h3>
+          <p><b>加厚鞋面 + 高帮保护</b>硬扛冲击，搭配<b>硬质护腿板</b>，放铲不慌。</p>
+          <span class="text-link mono">高帮加固战靴 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="GK" style="transition-delay:210ms">
+          <span class="cb-guide-no mono">GUIDE 04 — 门将 GOALKEEPER</span>
+          <h3>重点防护 → 门线铁闸流</h3>
+          <p><b>防撞门将服</b>缓冲落地冲击，配<b>乳胶防滑手套</b>稳控每一次扑救。</p>
+          <span class="text-link mono">门将专属套装 <span class="arr">→</span></span>
+        </article>
+      </div>
+      <aside class="bb-tip" data-reveal>
+        <span class="bb-tip-tag mono">PITCH TIP</span>
+        <p><b>场地提示：</b>国内校园人造草坪优先选 <b>AG/TF 碎钉</b>，不要使用长 FG 钉——长钉卡在人造草里，<b>容易崴脚</b>。</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 收尾 ============ -->
+  <section class="wl-close" id="fbClose">
+    <div class="wl-close-media" data-parallax="0.26"><img src="assets/fb-close.jpg" alt="夜晚球场，球门在灯光下的剪影"></div>
+    <div class="wl-close-veil"></div>
+    <div class="container wl-close-inner">
+      <p class="wl-close-en mono" data-scramble>KEEP MOVING FORWARD — THE PITCH IS YOURS</p>
+      <h2 class="wl-close-title">
+        <span class="line"><span>足球的力量，来自持续向前</span></span>
+        <span class="line"><span>专业装备，支撑每一次冲刺与扑救<span class="accent-dot">.</span></span></span>
+      </h2>
+      <p class="wl-close-txt" data-reveal>奔跑、传切、对抗——<b>OROGEN 足球系列适配业余联赛、校园足球、户外野场</b>，陪你踢满整片赛场。</p>
+      <div class="wl-close-cta" data-reveal>
+        <a href="#fbTabs" class="btn btn-solid-light" data-magnetic>足球装备 <span class="arr">→</span></a>
+        <a href="basketball.html" class="btn btn-ghost-light" data-magnetic>篮球装备</a>
+        <a href="index.html#top" class="btn btn-ghost-light" data-magnetic>← 返回首页</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="index.html#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <p class="caption mono">KEEP MOVING FORWARD.<br>奔跑、传切、对抗，足球的力量来自持续向前。</p>
+    </div>
+    <nav class="footer-cols mono" aria-label="页脚导航">
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        <h4 class="f-head f-head-gap">街头极限系列</h4>
+        <a href="index.html#shop">城市滑板 · 全品类</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">赛场竞技系列</h4>
+        <a href="basketball.html">篮球</a><a href="#top">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">关于品牌</h4>
+        <a href="index.html#origin">品牌故事</a><a href="index.html#origin">设计理念</a><a href="index.html#team">团队初心</a>
+        <h4 class="f-head f-head-gap">内容</h4>
+        <a href="index.html#shop">装备指南</a><a href="index.html#journal">探险笔记</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 奥罗根 — 赛场竞技 · 足球系列</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>KEEP MOVING FORWARD</span>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
+  <div class="cart-head">
+    <span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span>
+    <button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty mono" id="cartEmpty">
+    <span class="cart-empty-mark">⌖</span>
+    YOUR BAG IS EMPTY.<br>THE PITCH IS WAITING.
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div>
+    <button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button>
+    <p class="caption mono cart-note">SHIPPING &amp; TAXES CALCULATED AT CHECKOUT</p>
+  </div>
+</aside>
+
+<div class="backdrop" id="backdrop"></div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status"></div>
+
+<script src="js/football.js"></script>
+</body>
+</html>

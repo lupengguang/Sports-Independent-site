@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN｜击剑装备 Fencing Gear — 一寸剑锋，精准对抗</title>
+<meta name="description" content="OROGEN 击剑装备 — 速度、判断与控制力的博弈，在方寸剑道完成精准对决。花剑 / 重剑 / 佩剑分剑种全套专业击剑装备：训练服、保护面罩、剑具、竞技配件，符合国内赛事安全标准，高强度抗刺面料、人体工学剪裁、多层防护分层，适配日常训练与正式赛事。fencing equipment, fencing mask, foil epee sabre weapon, fencing jacket, plastron, chest protector.">
+<meta name="keywords" content="fencing equipment, fencing mask, foil epee sabre, fencing weapon, fencing jacket, fencing plastron, chest protector, fencing glove, 击剑装备, 击剑面罩, 花剑重剑佩剑, 击剑服, 护胸">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/wilderness.css">
+<link rel="stylesheet" href="css/climbing.css">
+<link rel="stylesheet" href="css/basketball.css">
+</head>
+<body id="top" class="wl-page cb-page bb-page fn-page">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">赛场竞技 · 击剑</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">AN INCH OF STEEL, PRECISION DUEL — 一寸剑锋，精准对抗</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">EN GARDE</div>
+    <div class="pt-word-cn mono">持 剑 上 场</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
+<!-- ============ FIXED TOP ============ -->
+<div class="site-top" id="siteTop">
+  <div class="announce mono" role="note">
+    AN INCH OF STEEL, PRECISION DUEL.&nbsp;&nbsp;—&nbsp;&nbsp;<b>一寸剑锋，精准对抗。</b>
+  </div>
+  <header class="header" id="header">
+    <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+      <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+      OROGEN <span class="logo-cn">奥罗根</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <div class="nav-item">
+        <a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="climbing.html">高海拔登山</a>
+          <a href="snowboard.html">单板滑雪</a>
+          <a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">街头极限系列</a>
+      </div>
+      <div class="nav-item is-current">
+        <a href="#top" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="basketball.html">篮球</a>
+          <a href="football.html">足球</a>
+          <a href="badminton.html">羽毛球</a>
+          <a href="#top">击剑</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">装备指南</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#journal" class="nav-main">探险笔记</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#origin" class="nav-main">关于品牌</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索（即将开放）">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+        <span class="bag-count mono" id="bagCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+    </div>
+  </header>
+</div>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-inner">
+    <nav class="menu-links" aria-label="移动导航">
+      <div class="menu-group">
+        <a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+      </div>
+      <div class="menu-group">
+        <a href="#top" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="#top">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">04</span>装备指南</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#journal" class="menu-link"><span class="mono">05</span>探险笔记</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+      </div>
+    </nav>
+    <div class="menu-foot mono">
+      <span>OROGEN® 赛场竞技 · 击剑 — EN GARDE</span>
+      <span>返回首页 index.html</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ 全屏 Hero ============ -->
+  <section class="wl-hero" id="fnHero">
+    <div class="wl-hero-media" data-parallax="0.32">
+      <img src="assets/fn-hero.jpg" alt="暗调击剑馆，两名选手持剑对峙，金属面罩冷光反射，低光高级质感">
+    </div>
+    <div class="wl-hero-veil"></div>
+    <div class="wl-hero-frame container">
+      <p class="wl-hero-tag mono" data-scramble>PISTE // CATEGORY 04 — 赛场竞技 · 击剑分类</p>
+      <h1 class="wl-hero-title">
+        <span class="line"><span>AN INCH</span></span>
+        <span class="line"><span>OF STEEL,</span></span>
+        <span class="line accent"><span>PRECISION.</span></span>
+      </h1>
+      <p class="wl-hero-sub mono">Speed, judgement, control — the duel on the piste.</p>
+      <p class="wl-hero-desc">击剑｜一寸剑锋，精准对抗。<b>花剑 / 重剑 / 佩剑</b>全套专业击剑装备——训练服、保护面罩、剑具、竞技配件，<b>适配日常训练与正式赛事</b>。面罩上的金属反光，是冷静博弈的开始。</p>
+      <div class="wl-hero-cta">
+        <a href="#fnTabs" class="btn btn-solid-light" data-magnetic>EXPLORE PISTE GEAR <span class="arr">→</span></a>
+        <a href="#fnGuides" class="btn btn-ghost-light" data-magnetic>剑种选购指南</a>
+      </div>
+    </div>
+    <div class="wl-stats mono">
+      <div class="wl-stat"><b data-count="3" data-suffix="大">0</b><span>分剑种体系</span></div>
+      <div class="wl-stat"><b data-count="4" data-suffix="层">0</b><span>防护分层</span></div>
+      <div class="wl-stat"><b data-count="8" data-suffix="+">0</b><span>剑具配件</span></div>
+      <div class="wl-stat"><b data-count="16" data-suffix="+">0</b><span>专业单品/套装</span></div>
+    </div>
+  </section>
+
+  <!-- ============ 系列核心价值 ============ -->
+  <section class="section bb-values" id="fnValues">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent2">WHY OROGEN FENCING</p>
+          <h2 class="h2">
+            <span class="line"><span>安全标准 × 分剑种</span></span>
+            <span class="line"><span>方寸剑道，精准对决<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">FOIL / EPEE / SABRE — 分剑种选型，多层防护</p>
+      </div>
+      <div class="bb-value-grid">
+        <article class="bb-value" data-reveal>
+          <span class="bb-value-no mono">01</span>
+          <span class="bb-value-en mono">SAFETY STANDARD</span>
+          <h3>符合国内赛事安全标准</h3>
+          <p>高强度抗刺面料配合抗冲击防护组件，防穿刺、耐对抗，满足训练与比赛双重安全要求。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:70ms">
+          <span class="bb-value-no mono">02</span>
+          <span class="bb-value-en mono">BY WEAPON</span>
+          <h3>分剑种全套装备</h3>
+          <p>花剑 / 重剑 / 佩剑分开选型，面罩、金属衣、剑具一一对应，不混用、不将就。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:140ms">
+          <span class="bb-value-no mono">03</span>
+          <span class="bb-value-en mono">ERGONOMIC CUT</span>
+          <h3>人体工学剪裁</h3>
+          <p>针对大幅度弓步、刺击动作立体剪裁，衣裤随身体延展，出剑时不束缚、不紧绷。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:210ms">
+          <span class="bb-value-no mono">04</span>
+          <span class="bb-value-en mono">LAYERED ARMOR</span>
+          <h3>防护分层设计</h3>
+          <p>外套、内胆、护胸、面罩层层叠加，外层抗刺、内层缓冲，多层安全保障各司其职。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Tab 切换栏 ============ -->
+  <div class="cb-tabs-wrap" id="fnTabs">
+    <div class="container cb-tabs" role="tablist">
+      <button class="cb-tab active" data-tab="guard" role="tab" aria-selected="true">
+        <span class="cb-tab-no mono">01</span>击剑护具<span class="cb-tab-share mono">核心爆款</span>
+      </button>
+      <button class="cb-tab" data-tab="apparel" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">02</span>击剑服套装<span class="cb-tab-share mono">35%</span>
+      </button>
+      <button class="cb-tab" data-tab="weapon" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">03</span>剑具与配件<span class="cb-tab-share mono">30%</span>
+      </button>
+      <span class="cb-tabs-glider" id="cbGlider"></span>
+    </div>
+  </div>
+
+  <!-- ============ Tab 面板 ============ -->
+  <div class="cb-panels">
+
+    <!-- 面板 1：击剑护具 -->
+    <section class="cb-panel active" data-panel="guard">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">FENCING PROTECTION — CORE</p>
+          <h2 class="h2"><span class="line"><span>击剑护具，核心爆款区</span></span></h2>
+          <p class="cb-panel-note mono">面罩 · 护胸 · 护臂 · 手套 — 抗冲击面料，防穿刺，满足训练比赛安全要求</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">PICK 01-04</span>
+            <div>
+              <h3>关键防护组件 <span class="mono">MASK / CHEST / ARM / GLOVE</span></h3>
+              <p>击剑金属面罩按剑种区分，高强度金属网抗击打；防护护胸覆盖要害；护臂、手套防穿刺——<b>每一件都为安全检测标准而设计</b>。</p>
+            </div>
+          </div>
+          <div class="pgrid pgrid-4" data-grid="fn-guard"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 2：击剑服套装 -->
+    <section class="cb-panel" data-panel="apparel">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">FENCING UNIFORM</p>
+          <h2 class="h2"><span class="line"><span>击剑服套装</span></span></h2>
+          <p class="cb-panel-note mono">白色比赛外套 · 马甲内胆 · 弹力击剑裤 · 击剑袜 — 训练款 &amp; 专业比赛款两档</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">SET A-D</span>
+            <div><h3>分层服饰 <span class="mono">JACKET / PLASTRON / PANTS / SOCKS</span></h3>
+              <p>白色比赛外套、击剑马甲内胆、弹力击剑裤、击剑袜，分<b>成人 / 青少年尺码</b>，面料耐磨，弓步拉伸不紧绷；训练款与专业比赛款两档可选。</p></div>
+          </div>
+          <div class="pgrid pgrid-4" data-grid="fn-apparel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 3：剑具与配件 -->
+    <section class="cb-panel" data-panel="weapon">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">WEAPONS &amp; PARTS</p>
+          <h2 class="h2"><span class="line"><span>剑具与配件</span></span></h2>
+          <p class="cb-panel-note mono">花剑 / 重剑 / 佩剑整剑 · 剑条 · 剑包 · 手线 · 剑头配件 · 保养耗材</p>
+        </div>
+        <div class="wl-layer">
+          <div class="pgrid pgrid-4" data-grid="fn-weapon"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ 选购指南 ============ -->
+  <section class="section cb-guides-sec" id="fnGuides">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">BUYING GUIDE — 用户刚需</p>
+          <h2 class="h2">
+            <span class="line"><span>按剑种选购指南</span></span>
+            <span class="line"><span>对号入座，不踩坑<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">FOIL / EPEE / SABRE — 三种剑种，三套装备逻辑</p>
+      </div>
+      <div class="cb-guide-grid">
+        <article class="cb-guide" data-reveal data-cursor="FOIL">
+          <span class="cb-guide-no mono">GUIDE 01 — 花剑 FOIL</span>
+          <h3>攻击仅限躯干，灵活刺击 → 轻量灵活流</h3>
+          <p>花剑有效面积小、讲究灵活刺击，选<b>轻量化面罩</b>与<b>灵活剪裁击剑服</b>，释放连续弓步的速度。</p>
+          <span class="text-link mono">花剑整剑 + 轻量装备 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="EPEE" style="transition-delay:70ms">
+          <span class="cb-guide-no mono">GUIDE 02 — 重剑 EPEE</span>
+          <h3>全身有效击中，冲击力强 → 加厚防护流</h3>
+          <p>重剑全身可刺、对抗冲击直接，选<b>加厚防护面料</b>与<b>加固面罩</b>，把每一次硬抗都接住。</p>
+          <span class="text-link mono">重剑整剑 + 加固防护 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="SABRE" style="transition-delay:140ms">
+          <span class="cb-guide-no mono">GUIDE 03 — 佩剑 SABRE</span>
+          <h3>劈砍 + 刺击，上半身对抗 → 金属衣必备</h3>
+          <p>佩剑以劈砍为主、上半身有效，<b>金属衣是必备配件</b>，配合灵活面罩与佩剑专用护层。</p>
+          <span class="text-link mono">佩剑整剑 + 金属衣 <span class="arr">→</span></span>
+        </article>
+      </div>
+      <aside class="bb-tip" data-reveal>
+        <span class="bb-tip-tag mono">PISTE TIP</span>
+        <p><b>安全提示：</b>正式比赛装备需要满足<b>安全检测</b>，训练款适合日常场馆练习——参赛前请确认器材符合赛事认证要求。</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 收尾 ============ -->
+  <section class="wl-close" id="fnClose">
+    <div class="wl-close-media" data-parallax="0.26"><img src="assets/fn-close.jpg" alt="夜晚剑道，面罩与交叉的剑在追光下"></div>
+    <div class="wl-close-veil"></div>
+    <div class="container wl-close-inner">
+      <p class="wl-close-en mono" data-scramble>AN INCH OF STEEL — THE PRECISION DUEL ON THE PISTE</p>
+      <h2 class="wl-close-title">
+        <span class="line"><span>速度、判断与控制力的博弈</span></span>
+        <span class="line"><span>可靠防护，支撑每一次弓步出击<span class="accent-dot">.</span></span></span>
+      </h2>
+      <p class="wl-close-txt" data-reveal">每一次弓步出击，都需要可靠防护与无束缚的装备支撑。<b>OROGEN 击剑系列在方寸剑道，陪你完成精准对决。</b></p>
+      <div class="wl-close-cta" data-reveal>
+        <a href="#fnTabs" class="btn btn-solid-light" data-magnetic>击剑装备 <span class="arr">→</span></a>
+        <a href="badminton.html" class="btn btn-ghost-light" data-magnetic>羽毛球装备</a>
+        <a href="index.html#top" class="btn btn-ghost-light" data-magnetic>← 返回首页</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="index.html#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <p class="caption mono">AN INCH OF STEEL, PRECISION DUEL.<br>一寸剑锋，精准对抗。</p>
+    </div>
+    <nav class="footer-cols mono" aria-label="页脚导航">
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        <h4 class="f-head f-head-gap">街头极限系列</h4>
+        <a href="index.html#shop">城市滑板 · 全品类</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">赛场竞技系列</h4>
+        <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="#top">击剑</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">关于品牌</h4>
+        <a href="index.html#origin">品牌故事</a><a href="index.html#origin">设计理念</a><a href="index.html#team">团队初心</a>
+        <h4 class="f-head f-head-gap">内容</h4>
+        <a href="index.html#shop">装备指南</a><a href="index.html#journal">探险笔记</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 奥罗根 — 赛场竞技 · 击剑系列</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>EN GARDE — PRÊT — ALLEZ</span>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
+  <div class="cart-head">
+    <span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span>
+    <button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty mono" id="cartEmpty">
+    <span class="cart-empty-mark">⌖</span>
+    YOUR BAG IS EMPTY.<br>EN GARDE, THE PISTE AWAITS.
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div>
+    <button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button>
+    <p class="caption mono cart-note">SHIPPING &amp; TAXES CALCULATED AT CHECKOUT</p>
+  </div>
+</aside>
+
+<div class="backdrop" id="backdrop"></div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status"></div>
+
+<script src="js/fencing.js"></script>
+</body>
+</html>
