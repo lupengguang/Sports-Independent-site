@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN｜城市滑板装备 Skateboard Gear — 以板为足，征服城市肌理</title>
+<meta name="description" content="OROGEN 城市滑板全品类装备 — 以板为足，征服城市肌理。街式双翘 / 陆地冲浪板 / 长板三大板型整板与板面，抗冲击支架、耐磨配方轮、轴承砂纸全套硬件，宽松耐磨街头服饰，新手到 Pro 分层护具方案，适配城市刷街、台阶道具、碗池场地。skateboard, surfskate, longboard, skate deck, trucks, wheels, skate shoes, pads, helmet.">
+<meta name="keywords" content="skateboard, complete skateboard, skate deck, surfskate, longboard, cruiser board, skateboard trucks, skate wheels, bearings, griptape, skate shoes, knee pads, skate helmet, street skateboarding">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/wilderness.css">
+<link rel="stylesheet" href="css/climbing.css">
+<link rel="stylesheet" href="css/basketball.css">
+</head>
+<body id="top" class="wl-page cb-page bb-page sk-page">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">街头极限 · 城市滑板</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">RIDE THE CITY GRAIN — 以板为足，征服城市肌理</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">SKATE</div>
+    <div class="pt-word-cn mono">刷 街</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
+<!-- ============ FIXED TOP ============ -->
+<div class="site-top" id="siteTop">
+  <div class="announce mono" role="note">
+    RIDE THE CITY GRAIN.&nbsp;&nbsp;—&nbsp;&nbsp;<b>以板为足，征服城市肌理。</b>
+  </div>
+  <header class="header" id="header">
+    <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+      <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+      OROGEN <span class="logo-cn">奥罗根</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <div class="nav-item">
+        <a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="climbing.html">高海拔登山</a>
+          <a href="snowboard.html">单板滑雪</a>
+          <a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="nav-item is-current">
+        <a href="#top" class="nav-main">街头极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="#top">城市滑板 · 全品类</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="basketball.html">篮球</a>
+          <a href="football.html">足球</a>
+          <a href="badminton.html">羽毛球</a>
+          <a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="outfits.html" class="nav-main">装备指南<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="outfits.html">全场景穿搭</a>
+          <a href="knowledge.html">选型知识库</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#journal" class="nav-main">探险笔记</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#origin" class="nav-main">关于品牌</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索（即将开放）">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+        <span class="bag-count mono" id="bagCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+    </div>
+  </header>
+</div>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-inner">
+    <nav class="menu-links" aria-label="移动导航">
+      <div class="menu-group">
+        <a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="#top" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+        <div class="menu-subs mono">
+          <a href="#top">城市滑板 · 全品类</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="outfits.html" class="menu-link"><span class="mono">04</span>装备指南</a>
+        <div class="menu-subs mono">
+          <a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#journal" class="menu-link"><span class="mono">05</span>探险笔记</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+      </div>
+    </nav>
+    <div class="menu-foot mono">
+      <span>OROGEN® 街头极限 · 城市滑板 — SKATE</span>
+      <span>返回首页 index.html</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ 全屏 Hero ============ -->
+  <section class="wl-hero" id="skHero">
+    <div class="wl-hero-media" data-parallax="0.32">
+      <img src="assets/sk-hero.jpg" alt="黄昏城市街区，滑手在建筑间腾空做动作，混凝土墙面与城市剪影，深灰橙红胶片质感">
+    </div>
+    <div class="wl-hero-veil"></div>
+    <div class="wl-hero-frame container">
+      <p class="wl-hero-tag mono" data-scramble>STREET // CATEGORY 05 — 街头极限 · 城市滑板分类</p>
+      <h1 class="wl-hero-title">
+        <span class="line"><span>RIDE THE</span></span>
+        <span class="line"><span>CITY</span></span>
+        <span class="line accent"><span>GRAIN.</span></span>
+      </h1>
+      <p class="wl-hero-sub mono">The city is your terrain — streets, stairs, bowls.</p>
+      <p class="wl-hero-desc">城市滑板・全品类｜以板为足，征服城市肌理。<b>街式 / 长板 / 陆地冲浪板</b>全套装备，从新手入门到 Pro 动作套装，适配<b>城市刷街、台阶道具、碗池场地</b>。</p>
+      <div class="wl-hero-cta">
+        <a href="#skTabs" class="btn btn-solid-light" data-magnetic>EXPLORE SKATE GEAR <span class="arr">→</span></a>
+        <a href="#skGuides" class="btn btn-ghost-light" data-magnetic>三大板型选购指南</a>
+      </div>
+    </div>
+    <div class="wl-stats mono">
+      <div class="wl-stat"><b data-count="3" data-suffix="大">0</b><span>板型体系</span></div>
+      <div class="wl-stat"><b data-count="4" data-suffix="类">0</b><span>产品分区</span></div>
+      <div class="wl-stat"><b data-count="8" data-suffix="+">0</b><span>整板与板面</span></div>
+      <div class="wl-stat"><b data-count="24" data-suffix="+">0</b><span>专业单品/套装</span></div>
+    </div>
+  </section>
+
+  <!-- ============ 系列核心价值 ============ -->
+  <section class="section bb-values" id="skValues">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent2">WHY OROGEN SKATE</p>
+          <h2 class="h2">
+            <span class="line"><span>为城市肌理而生</span></span>
+            <span class="line"><span>每一次起跳都有托底<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">STREET / SURFSKATE / LONGBOARD — 按板型选装备，按场景配硬件</p>
+      </div>
+      <div class="bb-value-grid">
+        <article class="bb-value" data-reveal>
+          <span class="bb-value-no mono">01</span>
+          <span class="bb-value-en mono">SCENE MATCH</span>
+          <h3>场景化选品体系</h3>
+          <p>区分街式滑板、陆地冲浪板、长板三大板型，匹配刷街代步、道具动作、碗池特技不同需求，不选错板。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:70ms">
+          <span class="bb-value-no mono">02</span>
+          <span class="bb-value-en mono">IMPACT PROOF</span>
+          <h3>抗冲击硬件</h3>
+          <p>高弹性加拿大枫木板面、高强度支架、耐磨配方轮，承受跳跃与落地冲击，不易断裂。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:140ms">
+          <span class="bb-value-no mono">03</span>
+          <span class="bb-value-en mono">STREET FIT</span>
+          <h3>街头专属服饰</h3>
+          <p>宽松剪裁、耐磨抗撕裂，适配大幅度下蹲跳跃动作，兼顾穿搭审美与运动实用性。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:210ms">
+          <span class="bb-value-no mono">04</span>
+          <span class="bb-value-en mono">LAYERED GUARD</span>
+          <h3>分层防护方案</h3>
+          <p>新手入门护具套装到 Pro 高强度防撞护具，保护手腕、手肘、膝盖，降低摔倒受伤风险。</p>
+        </article>
+        <article class="bb-value" data-reveal style="transition-delay:280ms">
+          <span class="bb-value-no mono">05</span>
+          <span class="bb-value-en mono">DIY ECOSYSTEM</span>
+          <h3>一站式配件生态</h3>
+          <p>板面、支架、轮子、轴承、砂纸、维修工具全套配件，可单独选购、自由 DIY 组装。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Tab 切换栏 ============ -->
+  <div class="cb-tabs-wrap" id="skTabs">
+    <div class="container cb-tabs" role="tablist">
+      <button class="cb-tab active" data-tab="boards" role="tab" aria-selected="true">
+        <span class="cb-tab-no mono">01</span>整板 &amp; 板面<span class="cb-tab-share mono">核心爆款</span>
+      </button>
+      <button class="cb-tab" data-tab="hardware" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">02</span>硬件 · 配件<span class="cb-tab-share mono">DIY</span>
+      </button>
+      <button class="cb-tab" data-tab="apparel" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">03</span>街头服饰<span class="cb-tab-share mono">30%</span>
+      </button>
+      <button class="cb-tab" data-tab="protect" role="tab" aria-selected="false">
+        <span class="cb-tab-no mono">04</span>护具 &amp; 安全<span class="cb-tab-share mono">必配</span>
+      </button>
+      <span class="cb-tabs-glider" id="cbGlider"></span>
+    </div>
+  </div>
+
+  <!-- ============ Tab 面板 ============ -->
+  <div class="cb-panels">
+
+    <!-- 面板 1：整板 & 板面 -->
+    <section class="cb-panel active" data-panel="boards">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">COMPLETE BOARDS &amp; DECKS — CORE</p>
+          <h2 class="h2"><span class="line"><span>滑板整板 &amp; 板面，核心爆款区</span></span></h2>
+          <p class="cb-panel-note mono">街式双翘 · 陆地冲浪板 · 长板 — 七层枫木压制，板面可单独购买 DIY 组装</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">PICK 01-08</span>
+            <div>
+              <h3>三大板型，对号入座 <span class="mono">STREET / SURFSKATE / LONGBOARD</span></h3>
+              <p><b>街式双翘</b>：城市道具玩家首选，七层枫木压制板面，强回弹耐冲击，适合 Ollie、尖翻、台阶跳跃，原创涂鸦 / 简约几何板面可单独购买；<b>陆地冲浪板</b>：弹簧转向支架，小角度灵活转向，无需蹬地持续滑行，通勤与泵道两相宜；<b>长板</b>：板面更长更稳，减震优秀，长距离刷街、速降、dancing 平花皆可。</p>
+            </div>
+          </div>
+          <div class="pgrid pgrid-4" data-grid="sk-boards"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 2：硬件配件 -->
+    <section class="cb-panel" data-panel="hardware">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">HARDWARE &amp; PARTS</p>
+          <h2 class="h2"><span class="line"><span>滑板硬件配件区</span></span></h2>
+          <p class="cb-panel-note mono">砂纸 · 支架 · 轴承 · 轮子 · 维修工具 — 自由组装你的专属滑板</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">BUILD YOURS</span>
+            <div><h3>全套硬件，自由 DIY <span class="mono">GRIP / TRUCKS / BEARINGS / WHEELS / TOOLS</span></h3>
+              <p>全套硬件采用抗冲击材质，满足不同玩法的改装需求，适配不同体重滑手——从一张砂纸到整套支架轮组，皆可单独选购。</p></div>
+          </div>
+          <div class="pgrid pgrid-4" data-grid="sk-hardware"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 3：街头服饰 -->
+    <section class="cb-panel" data-panel="apparel">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">STREET APPAREL</p>
+          <h2 class="h2"><span class="line"><span>街头滑板服饰专区</span></span></h2>
+          <p class="cb-panel-note mono">宽松落肩剪裁 · 做旧质感面料 · 加固耐磨 — 入门休闲款 / Pro 专业动作款</p>
+        </div>
+
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">WEAR &amp; SHOES</span>
+            <div><h3>动作无束缚的街头衣橱 <span class="mono">TEE / HOODIE / PANTS / SHOES</span></h3>
+              <p>重磅耐磨 T 恤、连帽卫衣、工装阔腿长裤与滑板短裤，裤膝加固摔倒摩擦不易破损；低帮耐磨滑板鞋，加厚橡胶鞋头、强抓地大底，砂纸摩擦不易磨破，适合长时间练招。</p></div>
+          </div>
+          <div class="pgrid pgrid-4" data-grid="sk-apparel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 面板 4：护具 & 安全 -->
+    <section class="cb-panel" data-panel="protect">
+      <div class="container">
+        <div class="cb-panel-head" data-reveal>
+          <p class="label mono accent">PROTECTION &amp; SAFETY</p>
+          <h2 class="h2"><span class="line"><span>护具安全专区</span></span></h2>
+          <p class="cb-panel-note mono">护膝 · 护肘 · 护腕护掌 · 头盔 — 新手套装 / Pro 高强度款 分层防护</p>
+        </div>
+        <div class="wl-layer">
+          <div class="wl-layer-head">
+            <span class="wl-layer-no">GUARD UP</span>
+            <div><h3>分层防护，摔得起才练得快 <span class="mono">ROOKIE SET / PRO SHELL</span></h3>
+              <p><b>新手套装</b>：基础防撞海绵护具，性价比高，适合初学练习；<b>Pro 高强度款</b>：硬质外壳 + 高密度缓冲层，抗冲击，适合碗池、大台阶等高风险动作，强力保护关节。另有滑板包、防滑手套等配件。</p></div>
+          </div>
+          <div class="pgrid pgrid-4" data-grid="sk-protect"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ 选购指南 ============ -->
+  <section class="section cb-guides-sec" id="skGuides">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">BUYING GUIDE — 用户刚需</p>
+          <h2 class="h2">
+            <span class="line"><span>按板型选购指南</span></span>
+            <span class="line"><span>对号入座，不踩坑<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">STREET / SURFSKATE / LONGBOARD — 三种板型，三套装备逻辑</p>
+      </div>
+      <div class="cb-guide-grid">
+        <article class="cb-guide" data-reveal data-cursor="STREET">
+          <span class="cb-guide-no mono">GUIDE 01 — 街式双翘 STREET</span>
+          <h3>练动作、跳台阶、街式道具 → 双翘板</h3>
+          <p>想练翻板动作选<b>街式双翘板</b>，搭配<b>硬轮</b>与<b>专业滑板鞋</b>，全套护具上身，道具台台阶随便磕。</p>
+          <span class="text-link mono">街式整板 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="SURFSKATE" style="transition-delay:70ms">
+          <span class="cb-guide-no mono">GUIDE 02 — 陆地冲浪板 SURFSKATE</span>
+          <h3>城市通勤、泵道休闲 → 陆冲板</h3>
+          <p>不想高强度练动作选<b>陆冲板</b>，弹簧转向小角度灵活过弯，搭配<b>抓地软轮</b>与<b>基础护具</b>，刷街泵道两相宜。</p>
+          <span class="text-link mono">陆冲整板 <span class="arr">→</span></span>
+        </article>
+        <article class="cb-guide" data-reveal data-cursor="LONGBOARD" style="transition-delay:140ms">
+          <span class="cb-guide-no mono">GUIDE 03 — 长板 LONGBOARD</span>
+          <h3>长距刷街、速降、平花 → 长板</h3>
+          <p>长距离巡航、高速滑行选<b>长板</b>，<b>减震软轮</b>稳定可控，速降与平花 dancing 皆宜，<b>头盔必备</b>。</p>
+          <span class="text-link mono">长板整板 <span class="arr">→</span></span>
+        </article>
+      </div>
+      <aside class="bb-tip" data-reveal>
+        <span class="bb-tip-tag mono">STREET TIP</span>
+        <p><b>选购贴士：</b>新手优先选购<b>完整整板</b>，无需单独组装；进阶玩家可单独选购板面、支架、轮子 <b>DIY 自定义滑板</b>；练习动作务必佩戴护具，保护关节。</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 收尾 ============ -->
+  <section class="wl-close" id="skClose">
+    <div class="wl-close-media" data-parallax="0.26"><img src="assets/sk-close.jpg" alt="夜晚城市高架桥下滑板广场，一盏灯光下的滑板剪影，胶片颗粒质感"></div>
+    <div class="wl-close-veil"></div>
+    <div class="container wl-close-inner">
+      <p class="wl-close-en mono" data-scramble>THE CITY IS THE WILDERNESS — EVERY LEDGE IS YOURS</p>
+      <h2 class="wl-close-title">
+        <span class="line"><span>城市即是旷野，街巷皆是训练场</span></span>
+        <span class="line"><span>以板为足，突破自我<span class="accent-dot">.</span></span></span>
+      </h2>
+      <p class="wl-close-txt" data-reveal>混凝土台阶、城市坡道、街巷空地，都是你的训练场。滑板不只是技巧，是穿梭城市、突破自我的生活方式。<b>OROGEN 全套专业滑板装备</b>，支撑每一次起跳、落地与出发。</p>
+      <div class="wl-close-cta" data-reveal>
+        <a href="#skTabs" class="btn btn-solid-light" data-magnetic>滑板装备 <span class="arr">→</span></a>
+        <a href="badminton.html" class="btn btn-ghost-light" data-magnetic>羽毛球装备</a>
+        <a href="index.html#top" class="btn btn-ghost-light" data-magnetic>← 返回首页</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="index.html#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <p class="caption mono">RIDE THE CITY GRAIN.<br>以板为足，征服城市肌理。</p>
+    </div>
+    <nav class="footer-cols mono" aria-label="页脚导航">
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        <h4 class="f-head f-head-gap">街头极限系列</h4>
+        <a href="#top">城市滑板 · 全品类</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">赛场竞技系列</h4>
+        <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">关于品牌</h4>
+        <a href="index.html#origin">品牌故事</a><a href="index.html#origin">设计理念</a><a href="index.html#team">团队初心</a>
+        <h4 class="f-head f-head-gap">内容</h4>
+        <a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a><a href="index.html#journal">探险笔记</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 奥罗根 — 街头极限 · 城市滑板系列</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>RIDE THE CITY GRAIN</span>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
+  <div class="cart-head">
+    <span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span>
+    <button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty mono" id="cartEmpty">
+    <span class="cart-empty-mark">⌖</span>
+    YOUR BAG IS EMPTY.<br>THE STREETS ARE WAITING.
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div>
+    <button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button>
+    <p class="caption mono cart-note">SHIPPING &amp; TAXES CALCULATED AT CHECKOUT</p>
+  </div>
+</aside>
+
+<div class="backdrop" id="backdrop"></div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status"></div>
+
+<script src="js/skateboard.js"></script>
+</body>
+</html>

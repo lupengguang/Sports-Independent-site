@@ -685,9 +685,9 @@
     "FIELD JOURNAL": "#journal", "TESTING NETWORK": "#testing",
     // 中文系列与子项
     "旷野极限系列": "wilderness.html", "高海拔登山": "climbing.html", "单板滑雪": "snowboard.html", "荒野徒步": "hiking.html",
-    "街头极限系列": "#shop", "城市滑板": "#shop",
+    "街头极限系列": "skateboard.html", "城市滑板": "skateboard.html", "滑板": "skateboard.html",
     "赛场竞技系列": "#shop", "篮球": "basketball.html", "足球": "football.html", "羽毛球": "badminton.html", "击剑": "fencing.html",
-    "装备指南": "#shop", "探险笔记": "#journal",
+    "装备指南": "outfits.html", "全场景穿搭": "outfits.html", "穿搭": "outfits.html", "选型知识库": "knowledge.html", "知识库": "knowledge.html", "探险笔记": "#journal",
     "关于品牌": "#origin", "团队初心": "#team"
   };
   const openSearch = () => {

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN｜选型知识库 Gear Knowledge Base — 看懂参数，理性选装备</title>
+<meta name="description" content="OROGEN 选型知识库 — 装备术语、材质解析、尺码选择、避坑要点，从零看懂极限运动装备。硬壳软壳防水透气指数、登山鞋 Vibram 大底、羽绒蓬松度充绒量、滑板板面支架轮子硬度 ABEC、篮球鞋足球鞋钉、羽毛球侧向支撑、击剑防护等级，通用选型指南与高频 FAQ。hardshell softshell, waterproof rating, fill power, skateboard deck, ABEC bearings, TF AG FG studs.">
+<meta name="keywords" content="硬壳软壳区别, 防水指数, 透气指数, Vibram大底, 蓬松度, 充绒量, 雪镜透光率, 滑板轮子硬度, ABEC轴承, 高桥低桥, 足球鞋TF AG FG, 击剑350N 800N, 尺码选择, Gore-Tex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/wilderness.css">
+<link rel="stylesheet" href="css/climbing.css">
+<link rel="stylesheet" href="css/basketball.css">
+<link rel="stylesheet" href="css/guide.css">
+</head>
+<body id="top" class="wl-page cb-page bb-page kb-page">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">装备指南 · 选型知识库</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">READ THE SPECS — 看懂参数，理性选装备</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">SPECS</div>
+    <div class="pt-word-cn mono">看 懂 参 数</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
+<!-- ============ FIXED TOP ============ -->
+<div class="site-top" id="siteTop">
+  <div class="announce mono" role="note">
+    READ THE SPECS.&nbsp;&nbsp;—&nbsp;&nbsp;<b>看懂参数，理性选装备。</b>
+  </div>
+  <header class="header" id="header">
+    <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+      <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+      OROGEN <span class="logo-cn">奥罗根</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <div class="nav-item">
+        <a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="climbing.html">高海拔登山</a>
+          <a href="snowboard.html">单板滑雪</a>
+          <a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="skateboard.html" class="nav-main">街头极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="skateboard.html">城市滑板 · 全品类</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="basketball.html">篮球</a>
+          <a href="football.html">足球</a>
+          <a href="badminton.html">羽毛球</a>
+          <a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="nav-item is-current">
+        <a href="#top" class="nav-main">装备指南<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="outfits.html">全场景穿搭</a>
+          <a href="#top">选型知识库</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#journal" class="nav-main">探险笔记</a>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#origin" class="nav-main">关于品牌</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索（即将开放）">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+        <span class="bag-count mono" id="bagCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+    </div>
+  </header>
+</div>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-inner">
+    <nav class="menu-links" aria-label="移动导航">
+      <div class="menu-group">
+        <a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="skateboard.html" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+        <div class="menu-subs mono">
+          <a href="skateboard.html">城市滑板 · 全品类</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="#top" class="menu-link"><span class="mono">04</span>装备指南</a>
+        <div class="menu-subs mono">
+          <a href="outfits.html">全场景穿搭</a><a href="#top">选型知识库</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#journal" class="menu-link"><span class="mono">05</span>探险笔记</a>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+      </div>
+    </nav>
+    <div class="menu-foot mono">
+      <span>OROGEN® 装备指南 · 选型知识库 — READ THE SPECS</span>
+      <span>返回首页 index.html</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ 全屏 Hero ============ -->
+  <section class="wl-hero" id="kbHero">
+    <div class="wl-hero-media" data-parallax="0.32">
+      <img src="assets/kb-hero.jpg" alt="暗调蓝图风格的装备拆解线条示意图：冲锋衣分层、登山靴、滑板部件">
+    </div>
+    <div class="wl-hero-veil"></div>
+    <div class="wl-hero-frame container">
+      <p class="wl-hero-tag mono" data-scramble>GEAR GUIDE // KNOWLEDGE BASE — 装备指南 · 选型知识库</p>
+      <h1 class="wl-hero-title">
+        <span class="line"><span>READ THE</span></span>
+        <span class="line"><span>SPECS<span class="accent-dot">.</span></span></span>
+      </h1>
+      <p class="wl-hero-sub mono">Know the logic behind every layer, truck and stud.</p>
+      <p class="wl-hero-desc">选型知识库｜看懂参数，理性选装备。<b>装备术语、材质解析、尺码选择、避坑要点</b>，从零看懂极限运动装备，不盲目跟风。</p>
+      <div class="wl-hero-cta">
+        <a href="#kbBase" class="btn btn-solid-light" data-magnetic>BROWSE KNOWLEDGE <span class="arr">→</span></a>
+        <a href="outfits.html" class="btn btn-ghost-light" data-magnetic>全场景穿搭</a>
+      </div>
+    </div>
+    <div class="wl-stats mono">
+      <div class="wl-stat"><b data-count="3" data-suffix="大">0</b><span>系列品类</span></div>
+      <div class="wl-stat"><b data-count="13" data-suffix="篇">0</b><span>品类知识</span></div>
+      <div class="wl-stat"><b data-count="4" data-suffix="章">0</b><span>通用指南</span></div>
+      <div class="wl-stat"><b data-count="3" data-suffix="组">0</b><span>侧边筛选</span></div>
+    </div>
+  </section>
+
+  <!-- ============ 模块 1｜品类知识库（含模块 4 侧边筛选） ============ -->
+  <section class="section" id="kbBase">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">MODULE 01 &amp; 04 — CATEGORY KNOWLEDGE + FILTER</p>
+          <h2 class="h2">
+            <span class="line"><span>品类知识库 · 左侧快速检索</span></span>
+            <span class="line"><span>三大系列，十三篇参数入门<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">按运动类型 / 新手进阶 / 装备类别筛选 — WILDERNESS · STREET · COURT</p>
+      </div>
+
+      <div class="kb-layout" data-reveal>
+        <!-- 侧边筛选（模块 4：检索功能） -->
+        <aside class="kb-side" id="kbFilter">
+          <p class="kb-side-title mono">FILTER — 快速检索</p>
+          <div class="kb-filter-group">
+            <h5 class="mono">运动类型 SPORT</h5>
+            <div class="kb-chips">
+              <button class="kb-chip active" data-group="sport" data-value="all">全部</button>
+              <button class="kb-chip" data-group="sport" data-value="wild">旷野</button>
+              <button class="kb-chip" data-group="sport" data-value="street">街头</button>
+              <button class="kb-chip" data-group="sport" data-value="court">赛场</button>
+            </div>
+          </div>
+          <div class="kb-filter-group">
+            <h5 class="mono">阶段 LEVEL</h5>
+            <div class="kb-chips">
+              <button class="kb-chip active" data-group="level" data-value="all">全部</button>
+              <button class="kb-chip" data-group="level" data-value="rookie">新手</button>
+              <button class="kb-chip" data-group="level" data-value="pro">进阶</button>
+            </div>
+          </div>
+          <div class="kb-filter-group">
+            <h5 class="mono">装备类别 CATEGORY</h5>
+            <div class="kb-chips">
+              <button class="kb-chip active" data-group="cat" data-value="all">全部</button>
+              <button class="kb-chip" data-group="cat" data-value="apparel">服饰</button>
+              <button class="kb-chip" data-group="cat" data-value="shoes">鞋履</button>
+              <button class="kb-chip" data-group="cat" data-value="protection">护具</button>
+              <button class="kb-chip" data-group="cat" data-value="equipment">器材</button>
+            </div>
+          </div>
+        </aside>
+
+        <div>
+          <!-- 旷野极限类 -->
+          <div class="kb-series-block" data-sport-block="wild">
+            <div class="kb-series-media img-reveal">
+              <img src="assets/kb-wild.jpg" alt="暗调平铺的登山装备：冰镐、高帮登山靴、硬壳冲锋衣、头盔" loading="lazy">
+              <span class="kb-series-tag mono">WILDERNESS — 旷野极限类</span>
+            </div>
+            <div class="kb-grid">
+              <article class="kb-card" data-sport="wild" data-level="both" data-cat="apparel">
+                <span class="kb-card-no mono">KN-W01 · APPAREL</span>
+                <h4>冲锋衣：硬壳 / 软壳区别，防水透气指数怎么看</h4>
+                <p><b>硬壳</b>主打极致防水防风，高海拔雪山与暴风雪环境必备；<b>软壳</b>弹性好、透气佳，适合徒步与快速攀登。防水指数看静水压（mm），暴雨级建议 <b>10000mm 以上</b>；透气指数看透湿量（g/m²/24h），数值越高越不闷。</p>
+                <div class="kb-card-meta mono"><span>旷野</span><span>新手/进阶</span><span>服饰</span></div>
+              </article>
+              <article class="kb-card" data-sport="wild" data-level="both" data-cat="shoes">
+                <span class="kb-card-no mono">KN-W02 · SHOES</span>
+                <h4>登山鞋：高帮 / 中帮 / 低帮与 Vibram 大底</h4>
+                <p><b>高帮</b>护踝支撑强，适合重装穿越与雪山；<b>中帮</b>兼顾支撑与灵活，长线徒步主力；<b>低帮</b>轻便灵活，适合短线健行。<b>Vibram 防滑大底</b>是湿滑岩石与复杂地形的黄金标识，认准鞋底八角标。</p>
+                <div class="kb-card-meta mono"><span>旷野</span><span>新手/进阶</span><span>鞋履</span></div>
+              </article>
+              <article class="kb-card" data-sport="wild" data-level="rookie" data-cat="apparel">
+                <span class="kb-card-no mono">KN-W03 · APPAREL</span>
+                <h4>羽绒装备：蓬松度、充绒量是什么意思</h4>
+                <p><b>蓬松度（FP）</b>决定保暖效率与压缩体积——800FP 轻小可压缩，适合高海拔与轻量化；<b>充绒量（g）</b>决定总保暖量。高海拔选高 FP + 高充绒，徒步营地保暖 650FP 即可，别只看厚度花钱。</p>
+                <div class="kb-card-meta mono"><span>旷野</span><span>新手</span><span>服饰</span></div>
+              </article>
+              <article class="kb-card" data-sport="wild" data-level="pro" data-cat="equipment">
+                <span class="kb-card-no mono">KN-W04 · EQUIPMENT</span>
+                <h4>滑雪装备：雪板类型区分、雪镜镜片透光率</h4>
+                <p>雪板分<b>全能板、公园板、野雪板</b>：新手与雪道滑行选全能，道具跳台选公园，深粉大山选野雪。雪镜按<b>透光率分级</b>：晴天选 S2–S3 深色片防眩，雪天夜场选 S0–S1 增光片保证视线。</p>
+                <div class="kb-card-meta mono"><span>旷野</span><span>进阶</span><span>器材</span></div>
+              </article>
+            </div>
+          </div>
+
+          <!-- 街头极限｜滑板类 -->
+          <div class="kb-series-block" data-sport-block="street">
+            <div class="guide-sub">
+              <span class="guide-sub-no mono">SERIES 02</span>
+              <h3>街头极限 · 滑板类</h3>
+              <span class="mono">DECK / TRUCKS / WHEELS / BEARINGS / SHOES</span>
+            </div>
+            <div class="kb-series-media img-reveal">
+              <img src="assets/kb-street.jpg" alt="暗调平铺的滑板硬件：板面、支架、轮子、轴承与 T 型工具" loading="lazy">
+              <span class="kb-series-tag mono">STREET — 街头滑板类</span>
+            </div>
+            <div class="kb-grid">
+              <article class="kb-card" data-sport="street" data-level="rookie" data-cat="equipment">
+                <span class="kb-card-no mono">KN-S01 · EQUIPMENT</span>
+                <h4>板面：七层枫木、板面弹性、板型差异</h4>
+                <p><b>七层加拿大枫木</b>压制的板面弹性与韧性最佳，起跳回弹干脆。<b>双翘</b>两端翘起，适合 Ollie、尖翻等道具动作；<b>陆冲</b>靠弹簧支架小角度转向；<b>长板</b>板面长、稳定性高，适合刷街、速降与平花 dancing。</p>
+                <div class="kb-card-meta mono"><span>街头</span><span>新手</span><span>器材</span></div>
+              </article>
+              <article class="kb-card" data-sport="street" data-level="pro" data-cat="equipment">
+                <span class="kb-card-no mono">KN-S02 · EQUIPMENT</span>
+                <h4>支架（桥）：高桥 / 低桥分别适合什么玩法</h4>
+                <p><b>高桥</b>转向角度大、压弯深，适合碗池 carving 与大轮径陆冲；<b>低桥</b>重心低、翻板响应快，街式动作与台阶首选。支架宽度须与板面宽度匹配，桥钉间距影响转向手感。</p>
+                <div class="kb-card-meta mono"><span>街头</span><span>进阶</span><span>器材</span></div>
+              </article>
+              <article class="kb-card" data-sport="street" data-level="both" data-cat="equipment">
+                <span class="kb-card-no mono">KN-S03 · EQUIPMENT</span>
+                <h4>轮子：硬度 A 值——硬轮练动作，软轮刷街</h4>
+                <p><b>95A 以上硬轮</b>回弹快、反馈直接，适合平整道具区街式动作；<b>78–87A 软轮</b>减震好、过坎安静抓地强，适合城市刷街与陆冲泵道。轮径越大续航越好，新手刷街建议 60mm 左右软轮。</p>
+                <div class="kb-card-meta mono"><span>街头</span><span>新手/进阶</span><span>器材</span></div>
+              </article>
+              <article class="kb-card" data-sport="street" data-level="pro" data-cat="equipment">
+                <span class="kb-card-no mono">KN-S04 · EQUIPMENT</span>
+                <h4>轴承：ABEC 等级到底什么含义</h4>
+                <p>ABEC-5 / 7 / 9 代表<b>制造精度递增</b>，等级越高空转越顺滑，但滑板还要看轴承材质与防尘密封。街头刷街防尘比极限精度更重要；陶瓷轴承更轻更耐锈，预算充足再升级，日常钢轴 ABEC-7 足够。</p>
+                <div class="kb-card-meta mono"><span>街头</span><span>进阶</span><span>器材</span></div>
+              </article>
+              <article class="kb-card" data-sport="street" data-level="rookie" data-cat="shoes">
+                <span class="kb-card-no mono">KN-S05 · SHOES</span>
+                <h4>滑板鞋：鞋头耐磨橡胶与砂纸摩擦面料</h4>
+                <p>砂纸是普通帆布鞋一周磨穿的元凶。专业滑板鞋必须有<b>加厚橡胶鞋头</b>（翻毛皮或硫化全包胶）、<b>平底薄底大底</b>（发力与板感直接）、加厚鞋舌缓震。鞋面包覆要跟脚，做尖翻翻板更跟手。</p>
+                <div class="kb-card-meta mono"><span>街头</span><span>新手</span><span>鞋履</span></div>
+              </article>
+            </div>
+          </div>
+
+          <!-- 赛场竞技类 -->
+          <div class="kb-series-block" data-sport-block="court">
+            <div class="guide-sub">
+              <span class="guide-sub-no mono">SERIES 03</span>
+              <h3>赛场竞技类</h3>
+              <span class="mono">BASKETBALL / FOOTBALL / BADMINTON / FENCING</span>
+            </div>
+            <div class="kb-series-media img-reveal">
+              <img src="assets/kb-court.jpg" alt="暗调平铺的赛场装备：篮球鞋、足球碎钉鞋、羽毛球与击剑面罩" loading="lazy">
+              <span class="kb-series-tag mono">COURT — 赛场竞技类</span>
+            </div>
+            <div class="kb-grid">
+              <article class="kb-card" data-sport="court" data-level="both" data-cat="shoes">
+                <span class="kb-card-no mono">KN-C01 · SHOES</span>
+                <h4>篮球鞋：后卫低帮、前锋中高帮的设计逻辑</h4>
+                <p><b>后卫鞋</b>低帮轻量、重心低，服务变向启动；<b>前锋/中锋鞋</b>中高帮抗扭片 + 厚缓震，扛大体重落地。外场水泥地选<b>加厚耐磨橡胶</b>外场款，内场木地板选无痕橡胶，鞋底纹路也更细密抓地。</p>
+                <div class="kb-card-meta mono"><span>赛场</span><span>新手/进阶</span><span>鞋履</span></div>
+              </article>
+              <article class="kb-card" data-sport="court" data-level="both" data-cat="shoes">
+                <span class="kb-card-no mono">KN-C02 · SHOES</span>
+                <h4>足球鞋：碎钉 TF / AG 长钉 / FG 怎么选</h4>
+                <p><b>TF 碎钉</b>适合人造草与硬地，钉短密、膝盖压力小；<b>AG 短钉</b>适合中高端人草，抓地与启动平衡；<b>FG 长钉</b>仅适合天然湿滑草皮，硬地上穿 FG 既伤膝又易断钉。国内人草场 TF/AG 是主力。</p>
+                <div class="kb-card-meta mono"><span>赛场</span><span>新手/进阶</span><span>鞋履</span></div>
+              </article>
+              <article class="kb-card" data-sport="court" data-level="rookie" data-cat="shoes">
+                <span class="kb-card-no mono">KN-C03 · SHOES</span>
+                <h4>羽毛球鞋：侧向支撑与防扭系统</h4>
+                <p>羽毛球高频急停跨步，球鞋必须具备<b>侧向防滑纹路、防扭 TPU 片、加宽稳定大底</b>，生胶无痕底不刮塑胶场地。普通跑鞋无侧向支撑，跨步极易崴脚，室内球场还可能被禁止入场。</p>
+                <div class="kb-card-meta mono"><span>赛场</span><span>新手</span><span>鞋履</span></div>
+              </article>
+              <article class="kb-card" data-sport="court" data-level="pro" data-cat="protection">
+                <span class="kb-card-no mono">KN-C04 · PROTECTION</span>
+                <h4>击剑装备：面料防护等级与面罩安全标准</h4>
+                <p>击剑服看<b>抗刺穿力 350N（训练）/ 800N（FIE 赛事认证）</b>，护板穿在最内层不可省略；面罩须达 <b>1600N</b> 以上并带 bib 护颈。电剑比赛还需金属衣与手线，装备不达标无法过检上场。</p>
+                <div class="kb-card-meta mono"><span>赛场</span><span>进阶</span><span>护具</span></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="kb-empty" id="kbEmpty">当前筛选条件下暂无知识文章 — 试试减少筛选条件 RESET FILTERS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 模块 2｜通用选型指南 ============ -->
+  <section class="section" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)" id="kbGeneral">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">MODULE 02 — GENERAL GUIDE</p>
+          <h2 class="h2">
+            <span class="line"><span>通用选型指南</span></span>
+            <span class="line"><span>跨运动通用的四条铁律<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">SIZE / MATERIAL / SAFETY / CARE — 尺码 · 材质 · 避坑 · 保养</p>
+      </div>
+      <div class="kb-gen-grid">
+        <article class="kb-gen" data-reveal>
+          <span class="kb-gen-no mono">01</span>
+          <h4>尺码选择</h4>
+          <ul>
+            <li>服饰：量胸围、腰围、肩宽，对照商品页尺码表</li>
+            <li>鞋履：下午脚最大时量脚长，加 0.5–1cm 余量</li>
+            <li>护具：量膝围 / 肘围 / 腕围，宁紧勿松</li>
+            <li>单板鞋与足球鞋建议比日常鞋小半码试穿</li>
+          </ul>
+        </article>
+        <article class="kb-gen" data-reveal style="transition-delay:70ms">
+          <span class="kb-gen-no mono">02</span>
+          <h4>材质科普</h4>
+          <ul>
+            <li>速干面料：聚酯纤维 / 锦纶，排汗不吸水</li>
+            <li>Gore-Tex：微孔防水透气膜，暴雨级防护标杆</li>
+            <li>耐磨工装：棉 + 尼龙混纺，抗撕裂耐摩擦</li>
+            <li>EVA 轻弹缓震，PU 高密度耐久，按位置选材</li>
+          </ul>
+        </article>
+        <article class="kb-gen" data-reveal style="transition-delay:140ms">
+          <span class="kb-gen-no mono">03</span>
+          <h4>安全避坑</h4>
+          <ul>
+            <li>无认证头盔、软塌海绵护具一律不买</li>
+            <li>安全带、主锁等承力件拒绝杂牌与二手</li>
+            <li>受过冲击的头盔护具即使无损也必须更换</li>
+            <li>足球鞋不在对应场地穿，伤膝又断钉</li>
+          </ul>
+        </article>
+        <article class="kb-gen" data-reveal style="transition-delay:210ms">
+          <span class="kb-gen-no mono">04</span>
+          <h4>装备保养</h4>
+          <ul>
+            <li>冲锋衣温水中性洗剂，定期补防泼水剂</li>
+            <li>滑板避水防砂，定期紧桥、更换砂纸轴承</li>
+            <li>球鞋阴干避免暴晒，鞋垫取出通风</li>
+            <li>装备彻底晾干再收纳，防霉防异味</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 模块 3｜FAQ ============ -->
+  <section class="section" id="kbFaq">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">MODULE 03 — FAQ</p>
+          <h2 class="h2">
+            <span class="line"><span>高频问题问答</span></span>
+            <span class="line"><span>新手最关心的三个问题<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">CLICK TO EXPAND — 点击展开答案</p>
+      </div>
+      <div class="kb-faq" data-reveal>
+        <div class="kb-faq-item">
+          <button class="kb-faq-q" type="button" aria-expanded="false">
+            <span class="mono">Q1</span>
+            <h4>新手登山，要不要直接入手硬壳？</h4>
+            <i aria-hidden="true"></i>
+          </button>
+          <div class="kb-faq-a"><p><b>A：</b>看海拔与天气。短线徒步、天气稳定时优先<b>软壳</b>，透气舒适、活动自由度高；高海拔雪山攀登或遭遇暴风雪概率高的线路，<b>必须硬壳</b>，防水防风是保命指标。预算有限可先软壳入门、硬壳租用上雪山，再决定是否购置。</p></div>
+        </div>
+        <div class="kb-faq-item">
+          <button class="kb-faq-q" type="button" aria-expanded="false">
+            <span class="mono">Q2</span>
+            <h4>滑板新手直接买板面 DIY 还是整板？</h4>
+            <i aria-hidden="true"></i>
+          </button>
+          <div class="kb-faq-a"><p><b>A：</b>新手优先<b>成品整板</b>。板面、支架、轮子、轴承由厂家预先匹配，开箱即滑，省去兼容与调校成本；等你对弹性、桥的软硬、轮子手感有了明确偏好后，再单独选购板面和硬件 <b>DIY 改装</b>，避免第一块板就踩搭配坑。</p></div>
+        </div>
+        <div class="kb-faq-item">
+          <button class="kb-faq-q" type="button" aria-expanded="false">
+            <span class="mono">Q3</span>
+            <h4>篮球后卫鞋可以给前锋穿吗？</h4>
+            <i aria-hidden="true"></i>
+          </button>
+          <div class="kb-faq-a"><p><b>A：</b>不建议。后卫鞋侧重轻量化与低重心，抗扭支撑与缓震配置偏弱；前锋体重更大、对抗与起跳更频繁，长期穿后卫鞋<b>膝盖与脚踝负担过重</b>，容易积累运动损伤。按位置选鞋，也是在给关节上保险。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 收尾 ============ -->
+  <section class="wl-close" id="kbClose">
+    <div class="wl-close-media" data-parallax="0.26"><img src="assets/kb-close.jpg" alt="暗调设计师桌面：装备技术图纸、游标卡尺与面料样本，暖色台灯光"></div>
+    <div class="wl-close-veil"></div>
+    <div class="container wl-close-inner">
+      <p class="wl-close-en mono" data-scramble>UNDERSTAND THE LOGIC — CHOOSE WHAT FITS YOUR GAME</p>
+      <h2 class="wl-close-title">
+        <span class="line"><span>读懂装备背后的设计逻辑</span></span>
+        <span class="line"><span>不盲目跟风，只选适配自己的<span class="accent-dot">.</span></span></span>
+      </h2>
+      <p class="wl-close-txt" data-reveal>每一个参数都对应一种使用场景。<b>OROGEN 选型知识库</b>，帮你看懂术语与材质，选择适配自己能力与场景的装备——懂行，才不花冤枉钱。</p>
+      <div class="wl-close-cta" data-reveal>
+        <a href="#kbBase" class="btn btn-solid-light" data-magnetic>回看知识库 <span class="arr">→</span></a>
+        <a href="outfits.html" class="btn btn-ghost-light" data-magnetic>全场景穿搭</a>
+        <a href="index.html#top" class="btn btn-ghost-light" data-magnetic>← 返回首页</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="index.html#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <p class="caption mono">READ THE SPECS.<br>看懂参数，理性选装备。</p>
+    </div>
+    <nav class="footer-cols mono" aria-label="页脚导航">
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        <h4 class="f-head f-head-gap">街头极限系列</h4>
+        <a href="skateboard.html">城市滑板 · 全品类</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">赛场竞技系列</h4>
+        <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+        <h4 class="f-head f-head-gap">装备指南</h4>
+        <a href="outfits.html">全场景穿搭</a><a href="#top">选型知识库</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">关于品牌</h4>
+        <a href="index.html#origin">品牌故事</a><a href="index.html#origin">设计理念</a><a href="index.html#team">团队初心</a>
+        <h4 class="f-head f-head-gap">内容</h4>
+        <a href="index.html#journal">探险笔记</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 奥罗根 — 装备指南 · 选型知识库</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>READ THE SPECS</span>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
+  <div class="cart-head">
+    <span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span>
+    <button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty mono" id="cartEmpty">
+    <span class="cart-empty-mark">⌖</span>
+    YOUR BAG IS EMPTY.<br>READ THE SPECS FIRST.
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div>
+    <button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button>
+    <p class="caption mono cart-note">SHIPPING &amp; TAXES CALCULATED AT CHECKOUT</p>
+  </div>
+</aside>
+
+<div class="backdrop" id="backdrop"></div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status"></div>
+
+<script src="js/knowledge.js"></script>
+</body>
+</html>
