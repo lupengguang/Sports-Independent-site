@@ -89,6 +89,21 @@
 /* 指南卡片内的强调色 */
 .cb-guide p b{ color:var(--ink); font-weight:700; }
 
+/* ============ 可点击跳详情页的产品卡 ============ */
+.pcard-link{ cursor:pointer; }
+.pcard-more{
+  position:absolute; left:12px; bottom:12px;
+  font-size:9.5px; letter-spacing:.16em; color:#fff;
+  background:rgba(15,15,14,.78); border:1px solid rgba(255,90,46,.55);
+  padding:6px 12px;
+  opacity:0; transform:translateY(6px);
+  transition:opacity .4s var(--ease), transform .4s var(--ease), background .3s;
+}
+.pcard-link:hover .pcard-more{
+  opacity:1; transform:translateY(0);
+}
+.pcard-link .pcard-more:hover{ background:var(--accent); }
+
 /* ============ 响应式 ============ */
 @media (max-width:1080px){
   .bb-value-grid{ grid-template-columns:repeat(2,1fr); }

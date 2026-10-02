@@ -48,14 +48,22 @@
   const allProducts = {};
   Object.values(P).forEach(arr => arr.forEach(it => allProducts[it.c] = it));
 
+  /* 按位置选鞋 → 位置详情页跳转映射 */
+  const DETAIL_LINKS = {
+    "ORG-BG1": "bb-guard.html",
+    "ORG-BW1": "bb-wing.html",
+    "ORG-BC1": "bb-center.html"
+  };
+
   $$("[data-grid]").forEach(host => {
     const grp = host.dataset.grid;
     host.innerHTML = P[grp].map((it,i) => `
-      <article class="pcard" data-code="${it.c}" data-reveal style="transition-delay:${(i%4)*70}ms">
+      <article class="pcard${DETAIL_LINKS[it.c] ? " pcard-link" : ""}" data-code="${it.c}"${DETAIL_LINKS[it.c] ? ` data-goto="${DETAIL_LINKS[it.c]}"` : ""} data-reveal style="transition-delay:${(i%4)*70}ms">
         <figure class="pcard-media img-reveal">
           <img src="assets/${it.img}.jpg" alt="${it.n}" loading="lazy">
           <span class="pcard-code mono">${it.c}</span>
           ${it.badge ? `<span class="pcard-badge">${it.badge}</span>` : ""}
+          ${DETAIL_LINKS[it.c] ? `<span class="pcard-more mono">查看详情 VIEW →</span>` : ""}
         </figure>
         <div class="pcard-info">
           <h3 class="pcard-name">${it.n}</h3>
@@ -67,6 +75,13 @@
           </div>
         </div>
       </article>`).join("");
+  });
+
+  /* 可跳转卡片：点击卡片（非加购按钮）进入详情页 */
+  document.addEventListener("click", e => {
+    if (e.target.closest("[data-add]")) return;
+    const card = e.target.closest("[data-goto]");
+    if (card) location.href = card.dataset.goto;
   });
 
   /* =========================================================
