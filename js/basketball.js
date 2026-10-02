@@ -48,11 +48,11 @@
   const allProducts = {};
   Object.values(P).forEach(arr => arr.forEach(it => allProducts[it.c] = it));
 
-  /* 按位置选鞋 → 位置详情页跳转映射 */
+  /* 按位置选鞋 → 单品详情页（参数化）跳转映射 */
   const DETAIL_LINKS = {
-    "ORG-BG1": "bb-guard.html",
-    "ORG-BW1": "bb-wing.html",
-    "ORG-BC1": "bb-center.html"
+    "ORG-BG1": "bb-shoe.html?code=ORG-BG1",
+    "ORG-BW1": "bb-shoe.html?code=ORG-BW1",
+    "ORG-BC1": "bb-shoe.html?code=ORG-BC1"
   };
 
   $$("[data-grid]").forEach(host => {
