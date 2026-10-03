@@ -849,7 +849,6 @@ body.loaded .hero-tag, body.loaded .hero-slogan-cn, body.loaded .hero-cta{ opaci
   .footer-cols{ grid-template-columns:repeat(3,1fr); }
 }
 @media (max-width:900px){
-  #accountBtn{ display:none; }
   .logo-cn{ white-space:nowrap; }
   .cat-grid{ grid-template-columns:1fr; gap:44px; }
   .cat-media{ aspect-ratio:4/3; }

@@ -703,7 +703,7 @@
   };
   $("#searchBtn").addEventListener("click", openSearch);
   $("#searchClose").addEventListener("click", closeSearch);
-  $("#accountBtn").addEventListener("click", () => showToast("MEMBER PORTAL — COMING WITH THE DROP"));
+  $("#accountBtn").addEventListener("click", () => location.href = "login.html");
   searchInput.addEventListener("input", () => {
     const q = searchInput.value.trim().toUpperCase();
     let any = false;

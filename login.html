@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN｜会员登录 / 注册 MEMBER PORTAL — 登录，进入你的征途</title>
+<meta name="description" content="OROGEN 奥罗根会员门户 — 登录或注册会员账户，同步装备袋与心愿单，追踪订单与物流，优先获取新品发售与限量配色抽签资格，累积征途积分兑换专属配件。">
+<meta name="keywords" content="OROGEN登录, 奥罗根会员, 会员注册, 运动装备会员, 新品抽签, 征途积分">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body id="top" class="lg-page">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">会员门户</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">MEMBER PORTAL — 登录，进入你的征途</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">MEMBER</div>
+    <div class="pt-word-cn mono">会 员 门 户</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
+<main class="lg-wrap">
+
+  <!-- ============ 左侧视觉面板 ============ -->
+  <aside class="lg-side" aria-hidden="true">
+    <div class="lg-side-media" data-parallax="0.18">
+      <img src="assets/journal.jpg" alt="黎明时分登山者站在岩石上眺望雪峰" data-fb="journal.jpg">
+    </div>
+    <div class="lg-side-veil"></div>
+    <div class="lg-side-frame">
+      <p class="lg-side-tag mono" data-scramble>MEMBER PORTAL // EST. AW26</p>
+      <h1 class="lg-side-title">
+        <span class="line"><span>YOUR ASCENT</span></span>
+        <span class="line"><span>STARTS <em>HERE</em><span class="accent-dot">.</span></span></span>
+      </h1>
+      <p class="lg-side-cn">登录，进入你的征途。</p>
+      <ul class="lg-perks">
+        <li data-reveal><span class="mono">01</span><div><b>同步装备袋与心愿单</b><span>跨设备记住你的尺码与偏好</span></div></li>
+        <li data-reveal><span class="mono">02</span><div><b>订单追踪与售后</b><span>物流节点、保养记录一目了然</span></div></li>
+        <li data-reveal><span class="mono">03</span><div><b>新品优先与限量抽签</b><span>AW26 发售日历提前 48 小时入场</span></div></li>
+        <li data-reveal><span class="mono">04</span><div><b>征途积分体系</b><span>每笔消费累积，兑换会员专属配件</span></div></li>
+      </ul>
+      <div class="lg-side-coord mono">N 45.9327° / E 7.6327° — MASSIF DU MONT</div>
+    </div>
+  </aside>
+
+  <!-- ============ 右侧表单面板 ============ -->
+  <section class="lg-main">
+    <header class="lg-topbar">
+      <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <a class="lg-back mono" href="index.html">返回首页 <span class="arr">→</span></a>
+    </header>
+
+    <div class="lg-box" id="lgBox">
+      <!-- 模式切换 -->
+      <div class="lg-tabs" role="tablist" aria-label="登录或注册">
+        <button class="lg-tab active" id="tabLogin" role="tab" aria-selected="true" data-mode="login">
+          <b>登 录</b><span class="mono">SIGN IN</span>
+        </button>
+        <button class="lg-tab" id="tabRegister" role="tab" aria-selected="false" data-mode="register">
+          <b>注 册</b><span class="mono">JOIN US</span>
+        </button>
+        <i class="lg-tab-ink" id="tabInk" aria-hidden="true"></i>
+      </div>
+
+      <!-- ============ 登录表单 ============ -->
+      <form class="lg-form active" id="formLogin" novalidate>
+        <p class="lg-form-head">
+          <span class="label mono accent">WELCOME BACK — 欢迎回来</span>
+          <span class="lg-form-sub">山野不催，但每次出发都值得记录。</span>
+        </p>
+
+        <div class="lg-field" data-field="account">
+          <label class="lg-label mono" for="loginAccount">邮箱 / 手机号</label>
+          <input class="lg-input" id="loginAccount" name="account" type="text" inputmode="email" autocomplete="username" placeholder="you@example.com / 138****0000">
+          <p class="lg-err mono" aria-live="polite"></p>
+        </div>
+
+        <div class="lg-field" data-field="password">
+          <label class="lg-label mono" for="loginPwd">密码</label>
+          <div class="lg-pwd-row">
+            <input class="lg-input" id="loginPwd" name="password" type="password" autocomplete="current-password" placeholder="至少 8 位，含字母与数字">
+            <button type="button" class="lg-eye" data-eye="loginPwd" aria-label="显示或隐藏密码">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>
+            </button>
+          </div>
+          <p class="lg-err mono" aria-live="polite"></p>
+        </div>
+
+        <div class="lg-row">
+          <label class="lg-check">
+            <input type="checkbox" id="loginRemember" checked>
+            <span class="lg-check-box" aria-hidden="true"></span>
+            <span>记住我 30 天</span>
+          </label>
+          <button type="button" class="lg-link" id="forgotBtn">忘记密码？</button>
+        </div>
+
+        <button type="submit" class="lg-submit" id="loginSubmit">
+          <span class="lg-submit-txt">登 录 — SIGN IN</span>
+          <span class="lg-submit-bar" aria-hidden="true"></span>
+        </button>
+
+        <div class="lg-divider"><span class="mono">OR CONTINUE WITH — 其他方式</span></div>
+        <div class="lg-oauth">
+          <button type="button" class="lg-oauth-btn" data-oauth="微信">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8.5 3C4.9 3 2 5.5 2 8.6c0 1.8 1 3.4 2.5 4.4l-.6 2 2.2-1.1c.8.2 1.5.3 2.4.3h.4"/><path d="M22 13.6c0-2.8-2.6-5-5.8-5s-5.7 2.2-5.7 5 2.6 5 5.7 5c.7 0 1.4-.1 2-.3l1.9.9-.5-1.7c1.3-.9 2.4-2.3 2.4-3.9z"/></svg>
+            微信登录
+          </button>
+          <button type="button" class="lg-oauth-btn" data-oauth="Apple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15.5 3c-.4 1.5-1.6 2.8-3 2.8.1-1.6 1.4-2.8 3-2.8z"/><path d="M18.5 8.5c-2.3-1.3-4.4-.9-5.5-.3-.9.5-1.6.5-2.5 0C8.9 7.4 6 9.4 6 13.3c0 3.4 2.5 7.7 4.9 7.7 1 0 1.5-.6 2.7-.6s1.6.6 2.7.6c2.4 0 4.7-4 4.7-7.7 0-.3 0-.7-.1-1 .1 0 .1 0-.4-.1-1.2-.5-2-1.6-2-3 0-.3 0-.6.1-.7z"/></svg>
+            Apple 登录
+          </button>
+        </div>
+
+        <p class="lg-switch">还没有账户？<button type="button" class="lg-link accent" data-goto="register">免费注册 <span class="arr">→</span></button></p>
+      </form>
+
+      <!-- ============ 注册表单 ============ -->
+      <form class="lg-form" id="formRegister" novalidate>
+        <p class="lg-form-head">
+          <span class="label mono accent">JOIN THE ASCENT — 加入征途</span>
+          <span class="lg-form-sub">30 秒创建账户，AW26 新品发售不错过。</span>
+        </p>
+
+        <div class="lg-field" data-field="name">
+          <label class="lg-label mono" for="regName">昵称</label>
+          <input class="lg-input" id="regName" name="name" type="text" autocomplete="nickname" placeholder="山里人 / Ridge Walker">
+          <p class="lg-err mono" aria-live="polite"></p>
+        </div>
+
+        <div class="lg-field" data-field="email">
+          <label class="lg-label mono" for="regEmail">邮箱</label>
+          <input class="lg-input" id="regEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+          <p class="lg-err mono" aria-live="polite"></p>
+        </div>
+
+        <div class="lg-field" data-field="pwd">
+          <label class="lg-label mono" for="regPwd">设置密码</label>
+          <div class="lg-pwd-row">
+            <input class="lg-input" id="regPwd" name="password" type="password" autocomplete="new-password" placeholder="至少 8 位，含字母与数字">
+            <button type="button" class="lg-eye" data-eye="regPwd" aria-label="显示或隐藏密码">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>
+            </button>
+          </div>
+          <div class="lg-strength" id="pwdStrength" aria-hidden="true">
+            <i></i><i></i><i></i>
+            <span class="mono" id="pwdStrengthTxt">STRENGTH — 强度</span>
+          </div>
+          <p class="lg-err mono" aria-live="polite"></p>
+        </div>
+
+        <div class="lg-field" data-field="pwd2">
+          <label class="lg-label mono" for="regPwd2">确认密码</label>
+          <input class="lg-input" id="regPwd2" name="password2" type="password" autocomplete="new-password" placeholder="再输入一次密码">
+          <p class="lg-err mono" aria-live="polite"></p>
+        </div>
+
+        <div class="lg-field" data-field="agree">
+          <label class="lg-check">
+            <input type="checkbox" id="regAgree">
+            <span class="lg-check-box" aria-hidden="true"></span>
+            <span>我已阅读并同意 <button type="button" class="lg-link" id="termsBtn">《会员服务协议》</button> 与 <button type="button" class="lg-link" id="privacyBtn">《隐私政策》</button></span>
+          </label>
+          <p class="lg-err mono" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" class="lg-submit" id="regSubmit">
+          <span class="lg-submit-txt">创建账户 — CREATE ACCOUNT</span>
+          <span class="lg-submit-bar" aria-hidden="true"></span>
+        </button>
+
+        <p class="lg-switch">已有账户？<button type="button" class="lg-link accent" data-goto="login">直接登录 <span class="arr">→</span></button></p>
+      </form>
+
+      <p class="lg-legal mono">OROGEN® 奥罗根 — WHERE THE LAND RISES, WE FOLLOW<br>登录即代表同意我们依据隐私政策处理你的账户数据</p>
+    </div>
+  </section>
+</main>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

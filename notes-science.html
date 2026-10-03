@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OROGEN｜山野与极限硬核科普 SCIENCE — 读懂自然规则，安全奔赴旷野</title>
-<meta name="description" content="OROGEN 探险笔记·科普：高海拔雪山高原反应识别、冰裂缝与雪崩风险判断、山地天气与水源甄别、粉雪机压雪区别；滑板力学与摔倒保护；篮球位置足部受力、击剑三剑种差异、羽毛球发力与足球急停受力；失温与运动损伤安全专区。">
-<meta name="keywords" content="高山探险科普,极限运动安全知识,滑板基础科普,高原户外常识,高原反应,雪崩风险等级,失温,篮球运动损伤">
+<title>OROGEN｜探险笔记 · 科普 SCIENCE — 山野与极限，藏着这些硬核知识</title>
+<meta name="description" content="OROGEN 探险笔记·科普 — 读懂自然规则，安全奔赴旷野。高海拔雪山高原反应、冰裂缝、雪崩风险、冻伤分级，山地天气预判与野外水源甄别，粉雪机压雪区别，滑板力学与摔倒保护，篮球位置受力差异、击剑三剑种、羽毛球发力、足球急停受力，四大安全科普专区。">
+<meta name="keywords" content="高山探险科普,极限运动安全知识,滑板基础科普,高原户外常识,高原反应分级,雪崩风险等级,失温,冰裂缝识别,篮球位置受力,击剑花剑重剑佩剑">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +14,46 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/wilderness.css">
 <link rel="stylesheet" href="css/climbing.css">
-<link rel="stylesheet" href="css/guide.css">
+<link rel="stylesheet" href="css/basketball.css">
 <link rel="stylesheet" href="css/notes.css">
 </head>
-<body id="top" class="wl-page cb-page kb-page nt-page">
+<body id="top" class="wl-page cb-page bb-page nt-page">
 
-<!-- ============ CUSTOM CURSOR / PROGRESS ============ -->
-<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-label mono" id="cursorLabel"></span></div>
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">探险笔记 · 科普</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">KNOW THE RULES — 读懂自然规则，安全奔赴旷野</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">NOTES</div>
+    <div class="pt-word-cn mono">探 险 笔 记</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
 
 <!-- ============ FIXED TOP ============ -->
 <div class="site-top" id="siteTop">
-  <div class="announce mono" role="note">KNOW THE RULES.&nbsp;&nbsp;—&nbsp;&nbsp;<b>读懂自然规则，安全奔赴旷野。</b></div>
+  <div class="announce mono" role="note">
+    KNOW THE RULES.&nbsp;&nbsp;—&nbsp;&nbsp;<b>读懂自然规则，安全奔赴旷野。</b>
+  </div>
   <header class="header" id="header">
     <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
       <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
@@ -34,19 +62,33 @@
     <nav class="nav" aria-label="主导航">
       <div class="nav-item">
         <a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
-        <div class="nav-drop"><a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a></div>
+        <div class="nav-drop">
+          <a href="climbing.html">高海拔登山</a>
+          <a href="snowboard.html">单板滑雪</a>
+          <a href="hiking.html">荒野徒步</a>
+        </div>
       </div>
       <div class="nav-item">
         <a href="skateboard.html" class="nav-main">街头极限系列<i class="nav-caret" aria-hidden="true"></i></a>
-        <div class="nav-drop"><a href="skateboard.html">城市滑板 · 全品类</a></div>
+        <div class="nav-drop">
+          <a href="skateboard.html">城市滑板 · 全品类</a>
+        </div>
       </div>
       <div class="nav-item">
         <a href="index.html#shop" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
-        <div class="nav-drop"><a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a></div>
+        <div class="nav-drop">
+          <a href="basketball.html">篮球</a>
+          <a href="football.html">足球</a>
+          <a href="badminton.html">羽毛球</a>
+          <a href="fencing.html">击剑</a>
+        </div>
       </div>
       <div class="nav-item">
         <a href="outfits.html" class="nav-main">装备指南<i class="nav-caret" aria-hidden="true"></i></a>
-        <div class="nav-drop"><a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a></div>
+        <div class="nav-drop">
+          <a href="outfits.html">全场景穿搭</a>
+          <a href="knowledge.html">选型知识库</a>
+        </div>
       </div>
       <div class="nav-item is-current">
         <a href="notes-science.html" class="nav-main">探险笔记<i class="nav-caret" aria-hidden="true"></i></a>
@@ -57,9 +99,16 @@
       </div>
     </nav>
     <div class="header-actions">
-      <button class="icon-btn" id="searchBtn" aria-label="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg></button>
-      <button class="icon-btn" id="accountBtn" aria-label="我的账户"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg></button>
-      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg><span class="bag-count mono" id="bagCount">0</span></button>
+      <button class="icon-btn" id="searchBtn" aria-label="搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+        <span class="bag-count mono" id="bagCount">0</span>
+      </button>
       <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
     </div>
   </header>
@@ -69,206 +118,322 @@
 <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
   <div class="menu-inner">
     <nav class="menu-links" aria-label="移动导航">
-      <div class="menu-group"><a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a><div class="menu-subs mono"><a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a></div></div>
-      <div class="menu-group"><a href="skateboard.html" class="menu-link"><span class="mono">02</span>街头极限系列</a><div class="menu-subs mono"><a href="skateboard.html">城市滑板 · 全品类</a></div></div>
-      <div class="menu-group"><a href="index.html#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a><div class="menu-subs mono"><a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a></div></div>
-      <div class="menu-group"><a href="outfits.html" class="menu-link"><span class="mono">04</span>装备指南</a><div class="menu-subs mono"><a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a></div></div>
-      <div class="menu-group"><a href="notes-science.html" class="menu-link"><span class="mono">05</span>探险笔记</a><div class="menu-subs mono"><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a></div></div>
-      <div class="menu-group"><a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a></div>
+      <div class="menu-group">
+        <a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="skateboard.html" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+        <div class="menu-subs mono"><a href="skateboard.html">城市滑板 · 全品类</a></div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="outfits.html" class="menu-link"><span class="mono">04</span>装备指南</a>
+        <div class="menu-subs mono">
+          <a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="notes-science.html" class="menu-link"><span class="mono">05</span>探险笔记</a>
+        <div class="menu-subs mono"><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a></div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+      </div>
     </nav>
-    <div class="menu-foot mono"><span>OROGEN® 探险笔记 · 科普 — KNOW THE RULES</span><span>返回首页 index.html</span></div>
+    <div class="menu-foot mono">
+      <span>OROGEN® 探险笔记 · 科普 — KNOW THE RULES</span>
+      <span>返回首页 index.html</span>
+    </div>
   </div>
 </div>
 
 <main>
-  <!-- ============ Hero ============ -->
-  <section class="nt-hero">
-    <div class="nt-hero-media" data-parallax="0.25"><img src="assets/nt-science-hero.jpg" alt="高海拔雪山岩壁与城市滑板夜景拼接氛围大图，暗调电影质感"></div>
-    <div class="nt-hero-veil"></div>
-    <div class="container nt-hero-inner">
-      <p class="nt-hero-tag mono" data-scramble>JOURNAL 01 // FIELD SCIENCE — 探险笔记 · 科普</p>
-      <h1 class="nt-hero-title">山野与极限<br>藏着这些<span class="accent">硬核知识</span></h1>
-      <p class="nt-hero-sub mono">READ NATURE BEFORE YOU PUSH IT — 读懂自然规则，安全奔赴旷野</p>
-      <p class="nt-hero-desc">从<b>高原反应分级</b>到<b>雪崩风险判断</b>，从滑板摔倒的人体力学到篮球变向的膝盖受力——OROGEN 科普板块只讲能救命、能防伤的真知识。装备与技术都建立在认知之上。</p>
-      <div class="nt-hero-cta">
-        <a href="#ntSafety" class="btn btn-solid-light" data-magnetic>安全科普专区 <span class="arr">→</span></a>
-        <a href="notes-gear.html" class="btn btn-ghost-light" data-magnetic>装备干货</a>
+  <!-- ============ 全屏 Hero ============ -->
+  <section class="wl-hero">
+    <div class="wl-hero-media" data-parallax="0.32">
+      <img src="assets/ns-hero.jpg" alt="高海拔雪山岩壁与城市滑板夜景拼接氛围大图，暗调电影感，冷色雪山与霓虹街头呼应" data-fb="ns-hero.jpg">
+    </div>
+    <div class="wl-hero-veil"></div>
+    <div class="wl-hero-frame container">
+      <p class="wl-hero-tag mono" data-scramble>FIELD NOTES // SCIENCE — 探险笔记 · 科普</p>
+      <h1 class="wl-hero-title">
+        <span class="line"><span>KNOW THE</span></span>
+        <span class="line"><span>RULES<span class="accent-dot">.</span></span></span>
+      </h1>
+      <p class="wl-hero-sub mono">Read the rules of nature before you go.</p>
+      <p class="wl-hero-desc">山野与极限，藏着这些硬核知识。<b>读懂自然规则，安全奔赴旷野</b>——从高原反应分级、雪崩风险判断，到滑板力学与赛场受力，先有认知，再谈出发。</p>
+      <div class="wl-hero-cta">
+        <a href="#nsEnv" class="btn btn-solid-light" data-magnetic>极限环境科普 <span class="arr">→</span></a>
+        <a href="#nsSafety" class="btn btn-ghost-light" data-magnetic>安全科普专区</a>
       </div>
     </div>
   </section>
 
-  <!-- ============ 子页切换 ============ -->
-  <div class="nt-tabs">
+  <!-- ============ 子频道 Tabs ============ -->
+  <nav class="nt-tabs" aria-label="探险笔记子频道">
     <div class="container nt-tabs-inner">
-      <a class="nt-tab is-active" href="notes-science.html"><span class="no mono">01</span> 科普 SCIENCE</a>
-      <a class="nt-tab" href="notes-culture.html"><span class="no mono">02</span> 户外文化 CULTURE</a>
-      <a class="nt-tab" href="notes-gear.html"><span class="no mono">03</span> 装备干货 GEAR GUIDE</a>
+      <a class="nt-tab active" href="notes-science.html"><b>科普</b><span class="mono">SCIENCE — 硬核知识</span></a>
+      <a class="nt-tab" href="notes-culture.html"><b>户外文化</b><span class="mono">CULTURE — 探险精神</span></a>
+      <a class="nt-tab" href="notes-gear.html"><b>装备干货</b><span class="mono">GEAR TALK — 选型指南</span></a>
     </div>
-  </div>
+  </nav>
 
-  <!-- ============ 模块 1：极限环境科普 ============ -->
-  <section class="nt-sec">
+  <!-- ============ 正文 + 侧边装备推荐 ============ -->
+  <section class="nt-section" id="nsBase">
     <div class="container">
-      <div class="nt-sec-head" data-reveal>
-        <span class="nt-sec-label mono">MODULE 01 — EXTREME ENVIRONMENT · 旷野极限主线</span>
-        <h2 class="nt-sec-title">极限环境科普：出发前必须读懂的自然规则<span style="color:var(--accent)">.</span></h2>
-        <p class="nt-sec-note mono">ALPINE / WILDERNESS / SNOW PARK</p>
-      </div>
-
-      <!-- 高海拔雪山 -->
-      <div class="nt-block">
-        <div class="nt-block-media img-reveal">
-          <figure><img src="assets/nt-sci-wild.jpg" alt="冰川雪坡与冰裂缝特写，登山者结组行进，暗调高海拔环境" loading="lazy"><figcaption class="mono">HIGH ALPINE — 高海拔雪山</figcaption></figure>
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">FIELD NOTES — SCIENCE</p>
+          <h2 class="h2">
+            <span class="line"><span>山野与极限</span></span>
+            <span class="line"><span>藏着这些硬核知识<span class="accent-dot">.</span></span></span>
+          </h2>
         </div>
-        <div class="nt-block-body" data-reveal>
-          <span class="nt-en mono">A · HIGH ALTITUDE · 高海拔雪山</span>
-          <h3>冰川、高反与雪崩：雪山三件头等大事</h3>
-          <div class="nt-points">
-            <article class="nt-point"><span class="pn mono">KN-ALP-01</span><h5>高原反应分级识别</h5><p>轻度：头痛、失眠、食欲下降，静养适应即可；中度：持续头痛伴呕吐、明显气短，需停止上升；出现<b>步态不稳、夜间端坐呼吸</b>提示高原肺水肿/脑水肿前兆，必须立即下撤就医。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-ALP-02</span><h5>冰裂缝特征识别</h5><p>冰川流动受地形拉扯产生裂缝，<b>雪桥覆盖处最危险</b>。识别暗带、塌陷线与凹陷雪面；通过冰川区必须结组、保持间距、佩戴头盔与安全带，沿既有脚印与向导路线行进。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-ALP-03</span><h5>雪崩风险等级判断</h5><p>参考当地雪崩预报 1–5 级：3 级即"明显危险"需谨慎选择路线与坡向；识别近期雪崩痕迹、鼓包雪层与"whoomf"空心声。<b>午后升温期不翻 30–45° 陡坡</b>，携带信标、探针、雪铲并会用。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-ALP-04</span><h5>冰川行进与冻伤应急</h5><p>结组行进、碎步稳踏、裂缝边缘俯卧分散体重。冻伤分度：皮肤红斑刺痛为一度可复温；<b>皮肤变硬苍白、出现水疱</b>为二度以上，禁止揉搓与火烤，用 37–40℃ 温水恒温复温后尽快下撤。</p></article>
-          </div>
-        </div>
-      </div>
-
-      <!-- 山地荒野 -->
-      <div class="nt-block">
-        <div class="nt-block-media img-reveal">
-          <figure><img src="assets/nt-sci-backcountry.jpg" alt="雾气弥漫的原始森林徒步小径与山地天气变化，暗调荒野" loading="lazy"><figcaption class="mono">WILDERNESS — 山地荒野</figcaption></figure>
-        </div>
-        <div class="nt-block-body" data-reveal>
-          <span class="nt-en mono">B · BACKCOUNTRY · 山地荒野</span>
-          <h3>天气、水源与风险生物：荒野生存基本面</h3>
-          <div class="nt-points">
-            <article class="nt-point"><span class="pn mono">KN-WLD-01</span><h5>山地天气快速预判</h5><p>早晨起云、午后积雨云高耸如菜花是雷阵雨前兆；风向突变、气压下降、远山清晰度异常提升均提示坏天气逼近。山地气候按小时变化，<b>午后早撤、不翻无遮挡垭口</b>是铁律。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-WLD-02</span><h5>野外水源甄别</h5><p>首选流动上游、远离动物尸体与营地排水的水源；清澈不等于安全，<b>所有自然水必须过滤 + 净化片/煮沸</b>。静水、异色异味、周边动物粪便密集的水源直接放弃。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-WLD-03</span><h5>地形风向与落石风险</h5><p>垭口与峡谷有"狭管效应"风速倍增；岩壁下、碎石坡脚、干涸沟谷分别对应落石、滑坡与山洪风险。扎营避开这些区域，<b>雨季河谷露营要预留高处逃生路线</b>。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-WLD-04</span><h5>动植物风险识别</h5><p>记住线路沿线有毒植物（漆树、乌头等），不采食不认识的野果菌类；遭遇大型兽类<b>不跑不直视、缓慢后退</b>，携带食物密封收纳防熊袋/挂熊挂，蛇类活动季走石板路用登山杖打草惊蛇。</p></article>
-          </div>
-        </div>
-      </div>
-
-      <!-- 雪场科普 -->
-      <div class="nt-block">
-        <div class="nt-block-media img-reveal">
-          <figure><img src="assets/nt-sci-snow.jpg" alt="雪道机压雪与粉雪区域对比，单板雪友刻滑，阴天雪场氛围" loading="lazy"><figcaption class="mono">SNOW PARK — 雪场科普</figcaption></figure>
-        </div>
-        <div class="nt-block-body" data-reveal>
-          <span class="nt-en mono">C · SNOW CONDITIONS · 雪场科普</span>
-          <h3>看懂雪况：雪质决定装备与滑法</h3>
-          <div class="nt-points">
-            <article class="nt-point"><span class="pn mono">KN-SNO-01</span><h5>粉雪 / 机压雪区别</h5><p><b>机压雪</b>雪道压实、反馈硬、抓边清晰，适合练基础刃感；<b>粉雪</b>浮力大、板会下沉，需重心后置、选更宽更长的野雪板，滑法从"刻刃"变成"冲浪式"卸力。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-SNO-02</span><h5>雪温对装备的影响</h5><p>暖雪黏板、摩擦力大，蜡选暖温蜡（软蜡）；干冷雪粉滑快但易冰化，选冷温硬蜡。低温下固定器绑带与鞋面材料变硬，<b>穿鞋与调节松紧要在室内预热后完成</b>。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-SNO-03</span><h5>雪崩信号基础认知</h5><p>雪场广播与旗示：绿/黄/橙/黑旗对应开放、警示、关闭与高危；野雪区域听到"控制爆破"炮声说明当日做过雪崩释放。<b>边界网与 ropes 之外不要越界</b>——关闭道外意味着风险未被处理。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-SNO-04</span><h5>冰壳与雪包的摔法</h5><p>冰壳面硬如水泥，摔倒时团身、用背部与护臀大面积卸力，<b>禁止用手腕撑地</b>；雪包（mogul）区失控要主动侧倒而不是后坐，避免尾椎直接撞击硬棱。</p></article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 模块 2：城市极限科普 ============ -->
-  <section class="nt-sec nt-sec-alt">
-    <div class="container">
-      <div class="nt-sec-head" data-reveal>
-        <span class="nt-sec-label mono">MODULE 02 — URBAN EXTREME · 街头滑板支线</span>
-        <h2 class="nt-sec-title">城市极限科普：看懂力学，摔得更聪明<span style="color:var(--accent)">.</span></h2>
-        <p class="nt-sec-note mono">SKATE PHYSICS / URBAN TERRAIN RISK</p>
-      </div>
-      <div class="nt-block">
-        <div class="nt-block-media img-reveal">
-          <figure><img src="assets/nt-sci-street.jpg" alt="夜晚城市广场滑板场景，滑手在栏杆道具前，霓虹与混凝土，暗调" loading="lazy"><figcaption class="mono">STREET SKATEBOARDING — 城市滑板</figcaption></figure>
-        </div>
-        <div class="nt-block-body" data-reveal>
-          <span class="nt-en mono">D · SKATE SCIENCE · 滑板力学与地形风险</span>
-          <h3>板型、地面与摔法：科学降低受伤概率</h3>
-          <div class="nt-points">
-            <article class="nt-point"><span class="pn mono">KN-SKT-01</span><h5>板型结构如何影响动作</h5><p>板尾翘起角度决定点地起跳的角度，<b>脚窝深浅影响锁脚感</b>：深脚窝翻板跟脚但累脚，浅脚窝刷街舒适。双翘适合街式动作，陆冲靠前桥弹簧转向，长板靠长度与轴距稳定巡航。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-SKT-02</span><h5>地面对板面/轮子的损耗</h5><p>大理石与光滑瓷砖最省轮但最滑；粗沥青与水泥砖啃轮、磨砂纸最快；<b>瓷砖雨后与金属盖板是打滑重灾区</b>。硬轮在糙地震脚，软轮在湿地侧滑风险高，进场地前先滑行试地面。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-SKT-03</span><h5>摔倒的人体力学原理</h5><p>手腕撑地最易造成腕部与肘部骨折——正确顺序是<b>团身、屈臂、用肩背大面积滚动卸力</b>，让冲击力沿身体切线分散。前摔用护掌滑出，后摔低头收下巴用护臀着地，绝不直臂撑地。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-SKT-04</span><h5>街式道具与合规场地</h5><p>湿滑栏杆、锈蚀边缘、开裂台阶都是道具隐患；先检查结构再尝试动作。<b>城市公共空间≠合法滑板场</b>，优先选择挂牌的滑板公园与泵道，避开人流高峰、机动车道与有明确禁令标识的区域。</p></article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 模块 3：赛场竞技科普 ============ -->
-  <section class="nt-sec">
-    <div class="container">
-      <div class="nt-sec-head" data-reveal>
-        <span class="nt-sec-label mono">MODULE 03 — COURT SCIENCE · 赛场竞技科普</span>
-        <h2 class="nt-sec-title">赛场竞技科普：懂受力，才懂怎么选装备<span style="color:var(--accent)">.</span></h2>
-        <p class="nt-sec-note mono">BASKETBALL / FENCING / RACKET &amp; PITCH</p>
-      </div>
-      <div class="nt-block">
-        <div class="nt-block-media img-reveal">
-          <figure><img src="assets/nt-sci-court.jpg" alt="篮球、击剑、羽毛球、足球四项运动器材与场地暗调拼合" loading="lazy"><figcaption class="mono">COURT SPORTS — 篮球 / 击剑 / 羽毛球 / 足球</figcaption></figure>
-        </div>
-        <div class="nt-block-body" data-reveal>
-          <span class="nt-en mono">E · COMPETITION SCIENCE · 四项赛场运动</span>
-          <h3>位置负荷与发力逻辑，直接决定装备选择</h3>
-          <div class="nt-points">
-            <article class="nt-point"><span class="pn mono">KN-COURT-01</span><h5>篮球：位置负荷与足部受力</h5><p><b>后卫</b>高频变向急停，前掌与内外侧受力集中，需低重心 + 强抓地；<b>锋线</b>起跳落地多，需全掌缓震与侧向支撑；<b>中锋</b>体重与冲撞最大，后跟与足弓承压，需高帮强抗扭。<a href="bb-guard.html" style="color:var(--accent)">→ 按位置选鞋</a></p></article>
-            <article class="nt-point"><span class="pn mono">KN-COURT-02</span><h5>击剑：三剑种与防护原理</h5><p><b>花剑</b>刺击有效、讲究优先权；<b>重剑</b>全身有效、无优先权，更重节奏；<b>佩剑</b>可劈砍、速度最快。护具靠高强度织物分散刺击压强，350N 训练 / 800N 赛事认证，面罩 1600N 抗冲击。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-COURT-03</span><h5>羽毛球：击球发力原理</h5><p>杀球力量来自<b>蹬地转髋、肩肘腕的鞭打链</b>，而不是手臂单抡；手腕内旋在击球瞬间闪动发力。步法高频急停跨步，膝踝侧向负荷极大，这也是球鞋必须有侧向支撑与生胶底的原因。</p></article>
-            <article class="nt-point"><span class="pn mono">KN-COURT-04</span><h5>足球：变向急停的下肢逻辑</h5><p>变向时支撑腿承受数倍体重的剪切力，<b>膝盖与脚踝是薄弱链</b>。大底钉型匹配场地能分散压强：场地越硬钉越短（FG→AG→TF），穿错大底既打滑又给膝盖额外扭力，长期积累成慢性损伤。</p></article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 模块 4：安全科普专区（正文 + 侧边装备推荐） ============ -->
-  <section class="nt-sec nt-sec-dark nt-safety" id="ntSafety">
-    <div class="container">
-      <div class="nt-sec-head" data-reveal>
-        <span class="nt-sec-label mono">MODULE 04 — SAFETY HUB · 全站重点</span>
-        <h2 class="nt-sec-title">安全科普专区：这些文章可能救你一次<span style="color:var(--accent2)">.</span></h2>
-        <p class="nt-sec-note mono">READ BEFORE EVERY TRIP — 每篇文末挂载对应装备</p>
+        <p class="caption mono">WILDERNESS · STREET · COURT — 旷野极限 / 街头极限 / 赛场竞技 三条知识线</p>
       </div>
 
       <div class="nt-layout">
-        <div class="nt-articles">
-          <a class="nt-article" href="javascript:void(0)">
-            <span class="a-no mono">SAFE-01</span>
-            <div><h5>《高原徒步：不要忽视的隐性高原反应》</h5><p>高反不一定头痛剧烈——异常兴奋、夜间憋醒、静息心率持续升高都是信号。讲清上升节奏、补水保暖与下撤红线。</p><span class="a-go mono">READ ARTICLE →</span></div>
-          </a>
-          <a class="nt-article" href="javascript:void(0)">
-            <span class="a-no mono">SAFE-02</span>
-            <div><h5>《低温失温：比冻伤更致命的山野杀手》</h5><p>0–10℃ 的风雨天气才是失温高发区。识别"反常脱衣"等晚期信号，掌握隔离、换干衣、热量补充与温和复温的正确顺序。</p><span class="a-go mono">READ ARTICLE →</span></div>
-          </a>
-          <a class="nt-article" href="javascript:void(0)">
-            <span class="a-no mono">SAFE-03</span>
-            <div><h5>《滑板摔倒保护：正确卸力，避免骨折》</h5><p>从撑地本能到团身滚翻的肌肉记忆训练：护具不是认输，是让你敢练下一个动作的底牌。附护具搭配与场地检查清单。</p><span class="a-go mono">READ ARTICLE →</span></div>
-          </a>
-          <a class="nt-article" href="javascript:void(0)">
-            <span class="a-no mono">SAFE-04</span>
-            <div><h5>《篮球运动：急停变向如何保护膝盖》</h5><p>前叉韧带与半月板不是"伤了再说"。讲透落地缓冲、变向角度、鞋与场地匹配，以及赛前神经激活与赛后恢复的可执行流程。</p><span class="a-go mono">READ ARTICLE →</span></div>
-          </a>
+        <div>
+          <!-- 模块 1｜极限环境科普 -->
+          <div id="nsEnv">
+            <span class="nt-module-no">MODULE 01 — EXTREME ENVIRONMENT</span>
+            <h3 style="font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:900">极限环境科普<span style="color:var(--accent)"> · </span>旷野极限主线</h3>
+            <p class="nt-lead">高海拔、冰川、荒野与雪场，环境不会给第二次机会。识别风险，是所有户外能力的第一课。</p>
+
+            <div class="nt-env-grid">
+              <article class="nt-env" data-reveal>
+                <div class="nt-env-media img-reveal">
+                  <img src="assets/ns-alpine.jpg" alt="高海拔冰川与深冰裂缝，远处雪峰云层翻涌，登山者渺小剪影" loading="lazy" data-fb="ns-alpine.jpg">
+                  <span class="nt-env-tag mono">ALPINE — 高海拔雪山</span>
+                </div>
+                <div class="nt-env-body">
+                  <h3>高海拔雪山</h3>
+                  <span class="en">HIGH ALTITUDE · GLACIER</span>
+                  <ul class="nt-list">
+                    <li><b>高原反应分级识别</b>：轻度头痛失眠 → 中度呕吐共济失调 → 重度肺水肿脑水肿，逐级处置</li>
+                    <li><b>冰裂缝特征识别</b>：雪桥凹陷、暗缝阴影、蓝冰断层，结组行进前先判读冰川</li>
+                    <li><b>雪崩风险等级判断</b>：读懂 1–5 级风险公告与地形坡度、坡向、雪层锚点</li>
+                    <li><b>冰川行进基础常识</b>：结组、路绳、冰爪冰镐自我制动的适用边界</li>
+                    <li><b>低温冻伤分级与应急判断</b>：红斑 → 水疱 → 深层冻硬，复温禁忌与送医信号</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="nt-env" data-reveal style="transition-delay:70ms">
+                <div class="nt-env-media img-reveal">
+                  <img src="assets/ns-wild.jpg" alt="风暴云下的山野峡谷，崎岖山脊小路与远处雾林，天气瞬息万变" loading="lazy" data-fb="ns-wild.jpg">
+                  <span class="nt-env-tag mono">WILD — 山地荒野</span>
+                </div>
+                <div class="nt-env-body">
+                  <h3>山地荒野</h3>
+                  <span class="en">MOUNTAIN WILDERNESS</span>
+                  <ul class="nt-list">
+                    <li><b>山地天气快速预判</b>：积云发展、风向突转、气压下降与午后雷暴规律</li>
+                    <li><b>野外水源甄别</b>：流动、过滤、煮沸的优先级，死水与动物足迹旁的水不直饮</li>
+                    <li><b>地形风向与落石风险</b>：垭口狭管效应、碎石坡滚石轨迹与通过时机</li>
+                    <li><b>动植物风险识别</b>：有毒植物不采食、兽道与巢穴避让、遇大型野兽的避险原则</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="nt-env" data-reveal style="transition-delay:140ms">
+                <div class="nt-env-media img-reveal">
+                  <img src="assets/ns-snow.jpg" alt="空旷雪道上粉雪与机压雪面条雪的纹理对比，阴天柔和光线" loading="lazy" data-fb="ns-snow.jpg">
+                  <span class="nt-env-tag mono">SNOW — 雪场科普</span>
+                </div>
+                <div class="nt-env-body">
+                  <h3>雪场科普</h3>
+                  <span class="en">RESORT SNOW SCIENCE</span>
+                  <ul class="nt-list">
+                    <li><b>粉雪 / 机压雪区别</b>：浮力、速度反馈与立刃难度完全不同，板型选择随之改变</li>
+                    <li><b>雪温对装备的影响</b>：暖雪粘板需打蜡排水，冷雪冰面要提高刃口抓地</li>
+                    <li><b>雪崩信号基础认知</b>：雪场道外与野雪区的旗标、封绳与播报口径</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- 模块 2｜城市极限科普 -->
+          <div id="nsStreet" style="margin-top:88px">
+            <span class="nt-module-no">MODULE 02 — STREET PHYSICS</span>
+            <div class="nt-split" data-reveal>
+              <div class="nt-split-media img-reveal">
+                <img src="assets/ns-street.jpg" alt="黄昏城市混凝土滑板广场，滑手在道具区练习摔倒卸力，城市灯光虚化" loading="lazy" data-fb="ns-street.jpg">
+              </div>
+              <div class="nt-split-body">
+                <span class="nt-module-no" style="margin-bottom:6px">城市极限科普 · 街头滑板支线</span>
+                <h3>滑板力学与城市地形风险</h3>
+                <p><b>滑板力学基础：</b>板型结构决定动作上限——双翘的翘度服务 Ollie 起跳与翻板，脚窝深浅影响站位锁定；不同地面材质（光滑大理石、粗糙水泥、瓷砖缝）对<b>板面砂纸与轮子</b>的损耗速率差异巨大；掌握<b>摔倒的人体力学</b>——顺势滚翻卸力、不用手硬撑、屈肘收颌，能把骨折与扭伤概率大幅降低。</p>
+                <p><b>城市地形风险：</b>台阶棱边、扶手杆打蜡状况、地砖松动与积水青苔是街式道具高发隐患；优先选择<b>合规滑板场地</b>，在城市街道滑行须避让行人、遵守属地管理规定，不把街头变成赌局。</p>
+                <div class="nt-split-foot">
+                  <a class="text-link mono" href="skateboard.html">前往城市滑板装备 <span class="arr">→</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 模块 3｜赛场竞技科普 -->
+          <div id="nsCourt" style="margin-top:88px">
+            <span class="nt-module-no">MODULE 03 — COURT SCIENCE</span>
+            <h3 style="font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:900">赛场竞技科普<span style="color:var(--accent)"> · </span>篮球 / 击剑 / 羽毛球 / 足球</h3>
+            <figure class="nt-banner img-reveal">
+              <img src="assets/ns-court.jpg" alt="暗调赛场拼贴：篮筐、击剑面罩、羽毛球与足球在聚光灯下，橙色轮廓光" loading="lazy" data-fb="ns-court.jpg">
+              <span class="nt-env-tag mono">COURT — 赛场竞技</span>
+            </figure>
+            <div class="nt-court-grid">
+              <article class="nt-court-card" data-reveal>
+                <span class="ico">BB</span>
+                <h4>篮球 · 位置受力差异</h4>
+                <p>不同位置球员<b>运动负荷</b>截然不同：后卫高频变向急停，前掌与踝外侧受力最大；锋线起跳落地交替，膝与足弓承压；中锋篮下连续冲撞，足跟与踝周需要强锁定——直接联动<b>按位置选鞋</b>。</p>
+                <a href="bb-guard.html">位置选鞋科普 <span class="arr">→</span></a>
+              </article>
+              <article class="nt-court-card" data-reveal style="transition-delay:70ms">
+                <span class="ico">FE</span>
+                <h4>击剑 · 三剑种差异</h4>
+                <p><b>佩剑</b>劈刺结合、节奏最快；<b>花剑</b>刺击有效、主动权规则复杂；<b>重剑</b>全身有效、更吃时机。防护原理建立在<b>抗刺穿面料 + 金属面罩 + 护胸</b>的分层卸力体系上。</p>
+                <a href="fencing.html">击剑装备原理 <span class="arr">→</span></a>
+              </article>
+              <article class="nt-court-card" data-reveal style="transition-delay:140ms">
+                <span class="ico">BM</span>
+                <h4>羽毛球 · 击球发力原理</h4>
+                <p>杀球力量不来自手臂蛮抡，而是<b>蹬地转髋 → 核心传导 → 肩肘手腕内旋闪动</b>的链式发力；频繁弓箭步急停，让球鞋侧向支撑与生胶抓地成为刚需。</p>
+                <a href="badminton.html">羽毛球装备 <span class="arr">→</span></a>
+              </article>
+              <article class="nt-court-card" data-reveal style="transition-delay:210ms">
+                <span class="ico">FB</span>
+                <h4>足球 · 急停下肢受力</h4>
+                <p>变向急停瞬间，<b>膝关节剪切力与踝关节扭转</b>同时达到峰值。大底钉型必须匹配场地：人草用 AG/TF 卸力，硬地穿 FG 会让膝盖替鞋钉"还债"。</p>
+                <a href="football.html">足球大底科普 <span class="arr">→</span></a>
+              </article>
+            </div>
+          </div>
+
+          <!-- 模块 4｜安全科普专区（全站重点） -->
+          <div id="nsSafety" style="margin-top:88px">
+            <span class="nt-module-no">MODULE 04 — SAFETY FIRST · 全站重点</span>
+            <h3 style="font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:900">安全科普专区</h3>
+            <div class="nt-safety-banner" data-reveal>
+              <span class="stamp">SAFETY ZONE</span>
+              <p><b>安全是所有极限运动的前提，不是附属选项。</b>OROGEN 不鼓励盲目冒险——以下四篇文章覆盖从山野到街头、赛场的高频致命风险，建议出发前完整阅读。</p>
+            </div>
+
+            <div class="nt-art-grid">
+              <a class="nt-art" href="#nsSafety" data-toast="《高原徒步：不要忽视的隐性高原反应》全文即将上架，敬请期待" data-reveal>
+                <div class="nt-art-media img-reveal">
+                  <img src="assets/ns-art-altitude.jpg" alt="高海拔徒步路上一名徒步者扶头休息，空气稀薄的远山环境" loading="lazy" data-fb="ns-art-altitude.jpg">
+                  <span class="nt-art-cat mono">山野风险</span>
+                </div>
+                <div class="nt-art-body">
+                  <h4>高原徒步：不要忽视的隐性高原反应</h4>
+                  <p>没有头痛不等于没有高反。失眠、食欲下降、夜间憋气，都是身体在报警。</p>
+                  <span class="nt-art-go">READ MORE <span class="arr">→</span></span>
+                </div>
+              </a>
+              <a class="nt-art" href="#nsSafety" data-toast="《低温失温：比冻伤更致命的山野杀手》全文即将上架，敬请期待" data-reveal style="transition-delay:70ms">
+                <div class="nt-art-media img-reveal">
+                  <img src="assets/ns-art-hypothermia.jpg" alt="冷雨山地救援场景，湿岩石上的急救保温毯与热水壶，风暴云压境" loading="lazy" data-fb="ns-art-hypothermia.jpg">
+                  <span class="nt-art-cat mono">失温防治</span>
+                </div>
+                <div class="nt-art-body">
+                  <h4>低温失温：比冻伤更致命的山野杀手</h4>
+                  <p>0°C 以上的风雨同样致命。读懂失温三阶段，学会隔湿、补能与复温顺序。</p>
+                  <span class="nt-art-go">READ MORE <span class="arr">→</span></span>
+                </div>
+              </a>
+              <a class="nt-art" href="#nsSafety" data-toast="《滑板摔倒保护：正确卸力，避免骨折》全文即将上架，敬请期待" data-reveal style="transition-delay:140ms">
+                <div class="nt-art-media img-reveal">
+                  <img src="assets/ns-art-fall.jpg" alt="滑板者在光滑混凝土板场练习顺势滚翻摔倒，佩戴护膝与头盔" loading="lazy" data-fb="ns-art-fall.jpg">
+                  <span class="nt-art-cat mono">街头防护</span>
+                </div>
+                <div class="nt-art-body">
+                  <h4>滑板摔倒保护：正确卸力，避免骨折</h4>
+                  <p>用手硬撑是腕肘骨折的主因。学会滚翻与护具配合，把冲击交给大地。</p>
+                  <span class="nt-art-go">READ MORE <span class="arr">→</span></span>
+                </div>
+              </a>
+              <a class="nt-art" href="#nsSafety" data-toast="《篮球运动：急停变向如何保护膝盖》全文即将上架，敬请期待" data-reveal style="transition-delay:210ms">
+                <div class="nt-art-media img-reveal">
+                  <img src="assets/ns-art-knee.jpg" alt="室内球场球员低重心交叉步急停，画面强调膝盖与球鞋，汗水与聚光灯" loading="lazy" data-fb="ns-art-knee.jpg">
+                  <span class="nt-art-cat mono">赛场损伤</span>
+                </div>
+                <div class="nt-art-body">
+                  <h4>篮球运动：急停变向如何保护膝盖</h4>
+                  <p>膝外翻 + 疲劳是十字韧带杀手。从落地姿态、护具到选鞋的完整防护链。</p>
+                  <span class="nt-art-go">READ MORE <span class="arr">→</span></span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <!-- 侧边栏：相关装备推荐 -->
-        <aside class="nt-side">
-          <p class="nt-side-title mono">RELATED GEAR — 相关装备推荐</p>
-          <a class="nt-rec" href="snowboard.html">
-            <div class="nt-rec-img img-reveal"><img src="assets/sb-shell-jkt.jpg" alt="高山防水硬壳雪服上衣" loading="lazy"></div>
-            <div class="nt-rec-body"><span class="r-tag mono">雪崩 / 失温科普 →</span><h5>旷野野雪防水雪服上衣</h5><span class="r-link mono">VIEW GEAR →</span></div>
+        <!-- 模块 5｜侧边栏：相关装备推荐 -->
+        <aside class="nt-side" data-reveal>
+          <p class="nt-side-head mono">RELATED GEAR — 相关装备推荐</p>
+          <a class="nt-gear-card" href="climbing.html">
+            <img src="assets/cat-shells.jpg" alt="高海拔防水硬壳冲锋衣产品图">
+            <div>
+              <span class="gc-name">高山硬壳外套 · 风雪环境第一层保命屏障</span>
+              <span class="gc-link mono">雪崩 / 失温科普 → 高海拔登山</span>
+            </div>
           </a>
-          <a class="nt-rec" href="climbing.html">
-            <div class="nt-rec-img img-reveal"><img src="assets/wl-shell.jpg" alt="高海拔登山硬壳冲锋衣" loading="lazy"></div>
-            <div class="nt-rec-body"><span class="r-tag mono">高原 / 冰川科普 →</span><h5>高海拔登山防水硬壳外套</h5><span class="r-link mono">VIEW GEAR →</span></div>
+          <a class="nt-gear-card" href="bb-guard.html">
+            <img src="assets/bb-shoe-guard.jpg" alt="ORG-BG1 云驰后卫低帮篮球鞋产品图">
+            <div>
+              <span class="gc-name">后卫低帮篮球鞋 · 变向抓地与踝周反馈</span>
+              <span class="gc-link mono">篮球受力科普 → 按位置选鞋</span>
+            </div>
           </a>
-          <a class="nt-rec" href="bb-guard.html">
-            <div class="nt-rec-img img-reveal"><img src="assets/bb-shoe-guard.jpg" alt="后卫低帮篮球鞋" loading="lazy"></div>
-            <div class="nt-rec-body"><span class="r-tag mono">篮球受力科普 →</span><h5>云驰后卫低帮篮球鞋 ORG-BG1</h5><span class="r-link mono">VIEW GEAR →</span></div>
+          <a class="nt-gear-card" href="skateboard.html">
+            <img src="assets/sk-set-rookie.jpg" alt="滑板新手护具三件套产品图">
+            <div>
+              <span class="gc-name">新手护具三件套 · 头盔 / 护膝 / 护腕</span>
+              <span class="gc-link mono">滑板摔倒科普 → 街头装备</span>
+            </div>
           </a>
-          <a class="nt-rec" href="skateboard.html">
-            <div class="nt-rec-img img-reveal"><img src="assets/sk-set-rookie.jpg" alt="滑板新手护具三件套" loading="lazy"></div>
-            <div class="nt-rec-body"><span class="r-tag mono">滑板摔倒保护 →</span><h5>新手护具三件套（头盔/护膝/护腕）</h5><span class="r-link mono">VIEW GEAR →</span></div>
+          <a class="nt-gear-card" href="snowboard.html">
+            <img src="assets/sb-mid-puff.jpg" alt="轻薄高弹保暖棉服产品图">
+            <div>
+              <span class="gc-name">保暖棉服中层 · 失温环境锁温关键件</span>
+              <span class="gc-link mono">冻伤 / 雪温科普 → 单板滑雪</span>
+            </div>
           </a>
+          <a class="nt-gear-card" href="hiking.html">
+            <img src="assets/hk-boot.jpg" alt="高帮防水重装徒步靴产品图">
+            <div>
+              <span class="gc-name">重装徒步靴 · 碎石坡与湿滑岩面抓地</span>
+              <span class="gc-link mono">山地地形科普 → 荒野徒步</span>
+            </div>
+          </a>
+          <p class="nt-side-note">每篇科普文末均挂载对应装备卡片——知识负责判断，装备负责兜底。</p>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 收尾 ============ -->
+  <section class="wl-close">
+    <div class="wl-close-media" data-parallax="0.26"><img src="assets/ns-close.jpg" alt="暗调木桌上平铺的户外安全装备：头盔、绳索、头灯、急救包、冰镐，暖色单光" data-fb="ns-close.jpg"></div>
+    <div class="wl-close-veil"></div>
+    <div class="container wl-close-inner">
+      <p class="wl-close-en mono" data-scramble>KNOW NATURE — RETURN SAFELY</p>
+      <h2 class="wl-close-title">
+        <span class="line"><span>读懂自然规则</span></span>
+        <span class="line"><span>才能安全奔赴旷野<span class="accent-dot">.</span></span></span>
+      </h2>
+      <p class="wl-close-txt" data-reveal>认知是最轻的那件装备。下一篇，我们聊聊<b>探险者的精神世界</b>；或者直接进入装备干货，把知识落到选型上。</p>
+      <div class="wl-close-cta" data-reveal>
+        <a href="notes-culture.html" class="btn btn-solid-light" data-magnetic>户外文化 <span class="arr">→</span></a>
+        <a href="notes-gear.html" class="btn btn-ghost-light" data-magnetic>装备干货</a>
+        <a href="index.html#top" class="btn btn-ghost-light" data-magnetic>← 返回首页</a>
       </div>
     </div>
   </section>
@@ -278,29 +443,42 @@
 <footer class="footer">
   <div class="container footer-top">
     <div class="footer-brand">
-      <a class="logo" href="index.html#top"><svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>OROGEN <span class="logo-cn">奥罗根</span></a>
+      <a class="logo" href="index.html#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
       <p class="caption mono">KNOW THE RULES.<br>读懂自然规则，安全奔赴旷野。</p>
     </div>
     <nav class="footer-cols mono" aria-label="页脚导航">
-      <div class="f-col"><h4 class="f-head">旷野极限系列</h4><a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a><h4 class="f-head f-head-gap">街头极限系列</h4><a href="skateboard.html">城市滑板 · 全品类</a></div>
-      <div class="f-col"><h4 class="f-head">赛场竞技系列</h4><a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a><h4 class="f-head f-head-gap">装备指南</h4><a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a></div>
-      <div class="f-col"><h4 class="f-head">探险笔记</h4><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a><h4 class="f-head f-head-gap">关于品牌</h4><a href="index.html#origin">品牌故事</a></div>
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        <h4 class="f-head f-head-gap">街头极限系列</h4>
+        <a href="skateboard.html">城市滑板 · 全品类</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">赛场竞技系列</h4>
+        <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">探险笔记</h4>
+        <a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a>
+        <h4 class="f-head f-head-gap">装备指南</h4>
+        <a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a>
+      </div>
     </nav>
   </div>
   <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
-  <div class="container footer-bottom mono"><span>© <span id="year">2026</span> OROGEN 奥罗根 — 探险笔记 · 科普</span><span>隐私政策 — 服务条款 — Cookie 设置</span><span>KNOW THE RULES</span></div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 奥罗根 — 探险笔记 · 科普</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>KNOW THE RULES</span>
+  </div>
 </footer>
 
-<!-- ============ CART / BACKDROP / TOAST ============ -->
-<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
-  <div class="cart-head"><span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span><button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button></div>
-  <div class="cart-items" id="cartItems"></div>
-  <div class="cart-empty mono" id="cartEmpty"><span class="cart-empty-mark">⌖</span>YOUR BAG IS EMPTY.</div>
-  <div class="cart-foot"><div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div><button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button></div>
-</aside>
-<div class="backdrop" id="backdrop"></div>
+<!-- ============ TOAST ============ -->
 <div class="toast mono" id="toast" role="status"></div>
 
-<script src="js/main.js"></script>
+<script src="js/notes.js"></script>
 </body>
 </html>

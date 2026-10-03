@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OROGEN｜装备干货选型指南 GEAR GUIDE — 拒绝参数焦虑，只讲实用干货</title>
-<meta name="description" content="OROGEN 探险笔记·装备干货：三层穿衣法则、登山背包与登山靴挑选、单板板长板型与雪服防水透气参数、滑板板面轮子轴承护具搭配、篮球按位置选鞋、足球FG/AG/TF大底、羽毛球拍线磅数、击剑装备选型；装备保养维护与避坑专区，一键匹配装备。">
-<meta name="keywords" content="户外装备选购干货,登山装备指南,滑板装备怎么选,篮球鞋位置选型,三层穿衣法,雪服防水透气指数,足球鞋FG AG TF,羽毛球拍线磅数">
+<title>OROGEN｜探险笔记 · 装备干货 GEAR TALK — 选对装备，让每一次奔赴更安心</title>
+<meta name="description" content="OROGEN 探险笔记·装备干货 — 拒绝参数焦虑，只讲实用干货。登山三层穿衣法则、背包容量、登山靴鞋楦防水膜硬度、单板板长板型与雪鞋硬度、雪服防水透气参数、徒步背负系统睡袋温标、滑板板面轮子轴承护具、篮球按位置选鞋、足球FG AG TF大底、羽毛球拍线磅数、击剑服面罩选型，装备保养与避坑指南。">
+<meta name="keywords" content="户外装备选购干货,登山装备指南,滑板装备怎么选,篮球鞋位置选型,三层穿衣法,足球鞋FG AG TF,雪服防水透气参数,睡袋温标,装备保养">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,36 +14,96 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/wilderness.css">
 <link rel="stylesheet" href="css/climbing.css">
-<link rel="stylesheet" href="css/guide.css">
+<link rel="stylesheet" href="css/basketball.css">
 <link rel="stylesheet" href="css/notes.css">
 </head>
-<body id="top" class="wl-page cb-page kb-page nt-page">
+<body id="top" class="wl-page cb-page bb-page nt-page">
 
-<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-label mono" id="cursorLabel"></span></div>
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">探险笔记 · 装备干货</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">GEAR UP RIGHT — 拒绝参数焦虑，只讲实用干货</div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">NOTES</div>
+    <div class="pt-word-cn mono">探 险 笔 记</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
 <div class="site-top" id="siteTop">
-  <div class="announce mono" role="note">NO PARAMETER ANXIETY.&nbsp;&nbsp;—&nbsp;&nbsp;<b>拒绝参数焦虑，只讲实用干货。</b></div>
+  <div class="announce mono" role="note">
+    GEAR UP RIGHT.&nbsp;&nbsp;—&nbsp;&nbsp;<b>拒绝参数焦虑，只讲实用干货。</b>
+  </div>
   <header class="header" id="header">
     <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
       <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
       OROGEN <span class="logo-cn">奥罗根</span>
     </a>
     <nav class="nav" aria-label="主导航">
-      <div class="nav-item"><a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a><div class="nav-drop"><a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a></div></div>
-      <div class="nav-item"><a href="skateboard.html" class="nav-main">街头极限系列<i class="nav-caret" aria-hidden="true"></i></a><div class="nav-drop"><a href="skateboard.html">城市滑板 · 全品类</a></div></div>
-      <div class="nav-item"><a href="index.html#shop" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a><div class="nav-drop"><a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a></div></div>
-      <div class="nav-item"><a href="outfits.html" class="nav-main">装备指南<i class="nav-caret" aria-hidden="true"></i></a><div class="nav-drop"><a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a></div></div>
+      <div class="nav-item">
+        <a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="climbing.html">高海拔登山</a>
+          <a href="snowboard.html">单板滑雪</a>
+          <a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="skateboard.html" class="nav-main">街头极限系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="skateboard.html">城市滑板 · 全品类</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="index.html#shop" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="basketball.html">篮球</a>
+          <a href="football.html">足球</a>
+          <a href="badminton.html">羽毛球</a>
+          <a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="outfits.html" class="nav-main">装备指南<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop">
+          <a href="outfits.html">全场景穿搭</a>
+          <a href="knowledge.html">选型知识库</a>
+        </div>
+      </div>
       <div class="nav-item is-current">
-        <a href="notes-gear.html" class="nav-main">探险笔记<i class="nav-caret" aria-hidden="true"></i></a>
+        <a href="notes-science.html" class="nav-main">探险笔记<i class="nav-caret" aria-hidden="true"></i></a>
         <div class="nav-drop"><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a></div>
       </div>
-      <div class="nav-item"><a href="index.html#origin" class="nav-main">关于品牌</a></div>
+      <div class="nav-item">
+        <a href="index.html#origin" class="nav-main">关于品牌</a>
+      </div>
     </nav>
     <div class="header-actions">
-      <button class="icon-btn" id="searchBtn" aria-label="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg></button>
-      <button class="icon-btn" id="accountBtn" aria-label="我的账户"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg></button>
-      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg><span class="bag-count mono" id="bagCount">0</span></button>
+      <button class="icon-btn" id="searchBtn" aria-label="搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+        <span class="bag-count mono" id="bagCount">0</span>
+      </button>
       <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
     </div>
   </header>
@@ -52,248 +112,411 @@
 <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
   <div class="menu-inner">
     <nav class="menu-links" aria-label="移动导航">
-      <div class="menu-group"><a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a><div class="menu-subs mono"><a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a></div></div>
-      <div class="menu-group"><a href="skateboard.html" class="menu-link"><span class="mono">02</span>街头极限系列</a><div class="menu-subs mono"><a href="skateboard.html">城市滑板 · 全品类</a></div></div>
-      <div class="menu-group"><a href="index.html#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a><div class="menu-subs mono"><a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a></div></div>
-      <div class="menu-group"><a href="outfits.html" class="menu-link"><span class="mono">04</span>装备指南</a><div class="menu-subs mono"><a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a></div></div>
-      <div class="menu-group"><a href="notes-gear.html" class="menu-link"><span class="mono">05</span>探险笔记</a><div class="menu-subs mono"><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a></div></div>
-      <div class="menu-group"><a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a></div>
+      <div class="menu-group">
+        <a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a>
+        <div class="menu-subs mono">
+          <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="skateboard.html" class="menu-link"><span class="mono">02</span>街头极限系列</a>
+        <div class="menu-subs mono"><a href="skateboard.html">城市滑板 · 全品类</a></div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a>
+        <div class="menu-subs mono">
+          <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="outfits.html" class="menu-link"><span class="mono">04</span>装备指南</a>
+        <div class="menu-subs mono">
+          <a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a>
+        </div>
+      </div>
+      <div class="menu-group">
+        <a href="notes-science.html" class="menu-link"><span class="mono">05</span>探险笔记</a>
+        <div class="menu-subs mono"><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a></div>
+      </div>
+      <div class="menu-group">
+        <a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a>
+      </div>
     </nav>
-    <div class="menu-foot mono"><span>OROGEN® 探险笔记 · 装备干货 — NO PARAMETER ANXIETY</span><span>返回首页 index.html</span></div>
+    <div class="menu-foot mono">
+      <span>OROGEN® 探险笔记 · 装备干货 — GEAR UP RIGHT</span>
+      <span>返回首页 index.html</span>
+    </div>
   </div>
 </div>
 
 <main>
   <!-- ============ Hero ============ -->
-  <section class="nt-hero">
-    <div class="nt-hero-media" data-parallax="0.25"><img src="assets/nt-gear-hero.jpg" alt="旷野背景上的极简装备平铺静物摄影：分层衣物、登山靴、雪板与球鞋"></div>
-    <div class="nt-hero-veil"></div>
-    <div class="container nt-hero-inner">
-      <p class="nt-hero-tag mono" data-scramble>JOURNAL 03 // GEAR GUIDE — 探险笔记 · 装备干货</p>
-      <h1 class="nt-hero-title">选对装备<br>让每一次奔赴<span class="accent">更安心</span></h1>
-      <p class="nt-hero-sub mono">REAL GUIDES, NOT PARAMETER PILES — 拒绝参数焦虑，只讲实用干货</p>
-      <p class="nt-hero-desc">硬核选型指南，<b>每一条都对应具体场景与商品</b>：从三层穿衣到篮球位置选鞋，从滑板整板到足球大底——看懂逻辑，直接买对。</p>
-      <div class="nt-hero-cta">
-        <a href="#ntMatch" class="btn btn-solid-light" data-magnetic>一键匹配装备 <span class="arr">→</span></a>
-        <a href="knowledge.html" class="btn btn-ghost-light" data-magnetic>选型知识库</a>
+  <section class="wl-hero">
+    <div class="wl-hero-media" data-parallax="0.32">
+      <img src="assets/ng-hero.jpg" alt="暗调极简平铺装备静物摄影：硬壳、登山靴、背包、滑板、篮球鞋，旷野背景隐约可见" data-fb="ng-hero.jpg">
+    </div>
+    <div class="wl-hero-veil"></div>
+    <div class="wl-hero-frame container">
+      <p class="wl-hero-tag mono" data-scramble>FIELD NOTES // GEAR TALK — 探险笔记 · 装备干货</p>
+      <h1 class="wl-hero-title">
+        <span class="line"><span>GEAR UP</span></span>
+        <span class="line accent"><span>RIGHT.</span></span>
+      </h1>
+      <p class="wl-hero-sub mono">No spec anxiety. Only field logic.</p>
+      <p class="wl-hero-desc"><b>选对装备，让每一次奔赴更安心。</b>拒绝参数焦虑，只讲实用干货——硬核选型指南，看完直接跳转对应产品页下单。</p>
+      <div class="wl-hero-cta">
+        <a href="#ngWild" class="btn btn-solid-light" data-magnetic>旷野装备干货 <span class="arr">→</span></a>
+        <a href="#ngMatch" class="btn btn-ghost-light" data-magnetic>一键匹配装备</a>
       </div>
     </div>
   </section>
 
-  <div class="nt-tabs">
+  <!-- ============ Tabs ============ -->
+  <nav class="nt-tabs" aria-label="探险笔记子频道">
     <div class="container nt-tabs-inner">
-      <a class="nt-tab" href="notes-science.html"><span class="no mono">01</span> 科普 SCIENCE</a>
-      <a class="nt-tab" href="notes-culture.html"><span class="no mono">02</span> 户外文化 CULTURE</a>
-      <a class="nt-tab is-active" href="notes-gear.html"><span class="no mono">03</span> 装备干货 GEAR GUIDE</a>
+      <a class="nt-tab" href="notes-science.html"><b>科普</b><span class="mono">SCIENCE — 硬核知识</span></a>
+      <a class="nt-tab" href="notes-culture.html"><b>户外文化</b><span class="mono">CULTURE — 探险精神</span></a>
+      <a class="nt-tab active" href="notes-gear.html"><b>装备干货</b><span class="mono">GEAR TALK — 选型指南</span></a>
     </div>
-  </div>
+  </nav>
 
-  <!-- ============ 模块 1：旷野极限装备干货 ============ -->
-  <section class="nt-sec">
+  <!-- ============ 模块 1｜旷野极限装备干货 ============ -->
+  <section class="nt-section" id="ngWild">
     <div class="container">
-      <div class="nt-sec-head" data-reveal>
-        <span class="nt-sec-label mono">MODULE 01 — WILDERNESS GEAR · 旷野极限装备干货</span>
-        <h2 class="nt-sec-title">登山 / 滑雪 / 徒步：三件最容易买错的事<span style="color:var(--accent)">.</span></h2>
-        <p class="nt-sec-note mono">LAYERING / PACK &amp; BOOTS / SNOW GEAR</p>
-      </div>
-      <div class="nt-block">
-        <div class="nt-block-media img-reveal">
-          <figure><img src="assets/nt-gear-wild.jpg" alt="登山分层穿搭与背包登山靴装备平铺，木质桌面，暖调静物" loading="lazy"><figcaption class="mono">WILDERNESS KIT — 登山 / 滑雪 / 徒步</figcaption></figure>
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">MODULE 01 — WILDERNESS GEAR</p>
+          <h2 class="h2">
+            <span class="line"><span>旷野极限装备干货</span></span>
+            <span class="line"><span>登山 / 滑雪 / 徒步<span class="accent-dot">.</span></span></span>
+          </h2>
         </div>
-        <div class="nt-gear-block" data-reveal>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-W-01 · 登山穿搭</span>
-            <h4>三层穿衣系统完整逻辑</h4>
-            <p><b>排汗层</b>贴身选美利奴羊毛或聚酯纤维，拒绝纯棉；<b>保暖层</b>抓绒/棉服负责静止保暖；<b>防护硬壳</b>只在风雪雨时穿。三层按需增减，靠"拉链通风"而不是硬扛。</p>
-            <a class="gc-link mono" href="climbing.html">选购高山装备 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-W-02 · 登山背包</span>
-            <h4>背包容量怎么选</h4>
-            <p>单日徒步 <b>25–35L</b>；过夜 40–55L；多日重装 / 雪山 <b>60–80L</b>。比容量更重要的是背负系统——腰带要能把 70% 重量传导到胯骨，试装后看腰带是否贴合不顶胯。</p>
-            <a class="gc-link mono" href="hiking.html">徒步背包清单 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-W-03 · 登山靴</span>
-            <h4>鞋楦 / 防水膜 / 硬度怎么看</h4>
-            <p><b>鞋楦</b>决定宽窄，下午试穿留一指余量；<b>防水膜</b>认准 Gore-Tex；<b>硬度</b>B1–B3 逐级对应普通徒步到冰爪雪山。重装走碎石选中高帮 + Vibram 大底。</p>
-            <a class="gc-link mono" href="climbing.html">登山靴与冰爪 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-W-04 · 滑雪板</span>
-            <h4>单板板长、板型选择</h4>
-            <p>新手板长到<b>下巴到鼻尖</b>，进阶大山选身高附近；<b>Camber</b>弹性能跳，<b>Rocker</b>容错浮力好，混合板型最通用。先定滑法再看板型，别让涂装替你做决定。</p>
-            <a class="gc-link mono" href="snowboard.html">单板滑雪系列 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-W-05 · 雪鞋雪服</span>
-            <h4>雪鞋硬度与雪服参数</h4>
-            <p>雪鞋硬度 <b>1–3 新手、4–7 进阶、8–10 公园刻滑</b>，过硬的鞋给新手只会更累。雪服看静水压（≥10000mm）与透湿量（≥8000g/m²/24h），缝线压胶同样关键。</p>
-            <a class="gc-link mono" href="snowboard.html">雪鞋雪服选购 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-W-06 · 徒步系统</span>
-            <h4>背负 / 帐篷 / 睡袋温标</h4>
-            <p>重装包先调腰带再调肩带；睡袋温标看<b>极限温标 ≠ 舒适温标</b>，按夜间最低温再留 5℃ 余量；帐篷按季节数选，三季帐兼顾重量与抗风，地布延长寿命。</p>
-            <a class="gc-link mono" href="hiking.html">徒步露营装备 →</a>
-          </article>
-        </div>
+        <p class="caption mono">LAYERS · PACKS · BOOTS · BOARDS · SLEEP SYSTEM</p>
       </div>
-    </div>
-  </section>
 
-  <!-- ============ 模块 2：街头滑板装备干货 ============ -->
-  <section class="nt-sec nt-sec-alt">
-    <div class="container">
-      <div class="nt-sec-head" data-reveal>
-        <span class="nt-sec-label mono">MODULE 02 — STREET GEAR · 街头滑板装备干货</span>
-        <h2 class="nt-sec-title">滑板新手：第一套装备别踩这些坑<span style="color:var(--accent)">.</span></h2>
-        <p class="nt-sec-note mono">DECK / WHEELS / BEARINGS / PROTECTION</p>
-      </div>
-      <div class="nt-block">
-        <div class="nt-block-media img-reveal">
-          <figure><img src="assets/nt-gear-street.jpg" alt="滑板板面支架轮子轴承与护具静物平铺，混凝土背景" loading="lazy"><figcaption class="mono">SKATE KIT — 板面 / 硬件 / 护具</figcaption></figure>
+      <figure class="nt-banner img-reveal">
+        <img src="assets/ng-wild.jpg" alt="暗调平铺旷野装备体系：速干内层、保暖中层、硬壳、登山包、登山靴、冰镐、止滑带" loading="lazy" data-fb="ng-wild.jpg">
+        <span class="nt-env-tag mono">WILDERNESS GEAR SYSTEM</span>
+      </figure>
+
+      <div class="nt-gear-cols">
+        <div class="nt-gcol" data-reveal>
+          <span class="gcode">PART A — CLIMBING</span>
+          <h3>登山装备</h3>
+          <span class="gen">MOUNTAINEERING</span>
+          <ul class="nt-list">
+            <li><b>三层穿衣法则：</b>排汗层（速干不选棉）→ 保暖层（抓绒/棉服/羽绒）→ 防护硬壳（防水防风），按行进强度增减</li>
+            <li><b>背包容量：</b>单日 25–35L，多日露营 50–65L，高海拔远征 70–85L 外挂更关键</li>
+            <li><b>登山靴三看：</b>鞋楦宽窄要合脚、防水膜认准可靠标识、鞋底硬度 B/C/D 随路线技术等级提高</li>
+            <li><b>冰爪与头盔：</b>冰爪捆扎/卡式对应靴型，头盔必须通过登山认证，受过撞击即更换</li>
+          </ul>
         </div>
-        <div class="nt-gear-block" data-reveal>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-S-01 · 板面</span>
-            <h4>材质与尺寸选择</h4>
-            <p>首选<b>七层加拿大枫木</b>双翘整板；街式男生常见 8.0–8.25 英寸，女生/脚小选 7.75–8.0。刷街巡航可选陆冲，平花舞板选长板，玩法决定板型而非颜值。</p>
-            <a class="gc-link mono" href="skateboard.html">全部板面 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-S-02 · 硬件</span>
-            <h4>轮子硬度与轴承</h4>
-            <p>街式动作选 <b>99A–104A 硬轮</b> 52–54mm；刷街选 78–87A 软轮 60mm 左右。轴承日常 ABEC-7 钢轴足够，<b>防尘盖比精度等级更重要</b>，T 型工具随车带。</p>
-            <a class="gc-link mono" href="skateboard.html">支架 / 轮子 / 轴承 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-S-03 · 护具搭配</span>
-            <h4>不同场景的护具方案</h4>
-            <p>新手街式：<b>头盔 + 护膝 + 护腕</b>起步三件套；碗池/泵道加护肘；陆冲高速加滑块手套。护具要试戴到"紧而不麻"，摔过一次的头盔直接退役。</p>
-            <a class="gc-link mono" href="skateboard.html">护具专区 →</a>
-          </article>
+        <div class="nt-gcol" data-reveal style="transition-delay:70ms">
+          <span class="gcode">PART B — SNOWBOARD</span>
+          <h3>滑雪装备</h3>
+          <span class="gen">SNOWBOARD</span>
+          <ul class="nt-list">
+            <li><b>板长板型：</b>板长到下巴–鼻梁之间按体重选，新手选全能Camber/Rocker混合板，野雪选长而宽的定向板</li>
+            <li><b>雪鞋硬度：</b>软（1–4）容错好学，中等（5–7）进阶自由式，硬（8–10）刻滑与高速稳定</li>
+            <li><b>雪服参数：</b>防水静水压 10000mm 起、透湿 10000g/m²/24h 起，高海拔野雪建议 20000+ 双指标</li>
+          </ul>
+        </div>
+        <div class="nt-gcol" data-reveal style="transition-delay:140ms">
+          <span class="gcode">PART C — HIKING</span>
+          <h3>徒步装备</h3>
+          <span class="gen">TREKKING</span>
+          <ul class="nt-list">
+            <li><b>背包背负系统：</b>腰带承担 60–70% 重量到胯骨，背板长度匹配躯干长，肩带只负责稳定不负责承重</li>
+            <li><b>睡袋温标：</b>看极限温标之外的"舒适温标"，按营地最低温再留 5°C 余量，湿冷环境优先化纤棉</li>
+            <li><b>帐篷：</b>看抗风等级与防水帐底，高海拔用四季帐，公园徒步三季帐即可，重量按预算分配</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 模块 3：赛场竞技装备干货 ============ -->
-  <section class="nt-sec">
+  <!-- ============ 模块 2｜街头滑板装备干货 ============ -->
+  <section class="nt-section" id="ngSkate" style="border-top:1px solid var(--line)">
     <div class="container">
-      <div class="nt-sec-head" data-reveal>
-        <span class="nt-sec-label mono">MODULE 03 — COURT GEAR · 赛场竞技装备干货</span>
-        <h2 class="nt-sec-title">四项赛场运动：一句话讲清选型关键<span style="color:var(--accent)">.</span></h2>
-        <p class="nt-sec-note mono">BASKETBALL / FENCING / FOOTBALL / BADMINTON</p>
-      </div>
-      <div class="nt-block">
-        <div class="nt-block-media img-reveal">
-          <figure><img src="assets/nt-gear-court.jpg" alt="篮球鞋足球鞋羽毛球拍与击剑装备的暗调平铺摄影" loading="lazy"><figcaption class="mono">COURT KIT — 四项目器材</figcaption></figure>
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">MODULE 02 — STREET SKATE GEAR</p>
+          <h2 class="h2">
+            <span class="line"><span>街头滑板装备干货</span></span>
+            <span class="line"><span>板面 / 轮子 / 轴承 / 护具<span class="accent-dot">.</span></span></span>
+          </h2>
         </div>
-        <div class="nt-gear-block" data-reveal>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-C-01 · 篮球</span>
-            <h4>按位置选鞋完整干货</h4>
-            <p><b>后卫</b>低帮抓地轻量、启动第一；<b>锋线</b>中帮均衡、缓震+侧向支撑两头要；<b>中锋</b>高帮抗冲击、足弓加厚。球衣选透气网眼、版型预留护具空间。</p>
-            <a class="gc-link mono" href="bb-guard.html">后卫选鞋 →</a><a class="gc-link mono" href="bb-wing.html" style="margin-left:12px">锋线 →</a><a class="gc-link mono" href="bb-center.html" style="margin-left:12px">中锋 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-C-02 · 击剑</span>
-            <h4>剑服 / 面罩 / 剑条选型</h4>
-            <p>训练服 350N、参赛 800N；面罩认准 <b>1600N</b> 与 bib 护颈。新手花剑整剑起步，剑条按剑种区分，电剑另配手线与金属衣，护板穿最内层不能省。</p>
-            <a class="gc-link mono" href="fencing.html">击剑装备 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-C-03 · 足球</span>
-            <h4>FG / AG / TF 大底区分</h4>
-            <p><b>FG</b> 仅天然草，钉长抓深；<b>AG</b> 中高人草，启动与膝盖压力平衡；<b>TF</b> 碎钉通吃人草/硬地，国内野球主力。硬地穿 FG 伤膝断钉，场地定大底。</p>
-            <a class="gc-link mono" href="football.html">足球战靴 →</a>
-          </article>
-          <article class="nt-gear-card">
-            <span class="gc-no mono">GEAR-C-04 · 羽毛球</span>
-            <h4>拍线磅数与球拍重量</h4>
-            <p>新手男 <b>22–24 磅</b>、女 20–22 磅，磅数越高控制好但越伤手腕；重量选 <b>4U（80–84g）</b>全能，力量型再上 3U。进攻拍头重、控球拍头轻，双打压平抽选速度型。</p>
-            <a class="gc-link mono" href="badminton.html">羽毛球拍线 →</a>
-          </article>
-        </div>
+        <p class="caption mono">DECK · WHEELS · BEARINGS · PROTECTION</p>
       </div>
-    </div>
-  </section>
 
-  <!-- ============ 模块 4 + 5：保养专栏 / 避坑专区 ============ -->
-  <section class="nt-sec nt-sec-alt">
-    <div class="container">
-      <div class="nt-twin">
-        <div data-reveal>
-          <div class="nt-sec-head" style="margin-bottom:20px">
-            <span class="nt-sec-label mono">MODULE 04 — MAINTENANCE · 装备维护保养专栏</span>
-            <h2 class="nt-sec-title" style="font-size:clamp(20px,2.4vw,28px)">保养做到位，寿命多一倍<span style="color:var(--accent)">.</span></h2>
-          </div>
-          <div class="nt-list-card">
-            <h3><span class="d"></span>四类高频装备保养</h3>
-            <ul>
-              <li><b>高山硬壳外套：</b>温水中性洗剂机洗轻柔档，定期补 DWR 防泼水剂，烘干激活涂层，避免柔顺剂。</li>
-              <li><b>滑雪服防水修复：</b>清洗后喷涂/水洗型防泼水剂，中温熨烫或烘干恢复荷叶效应，压胶条开胶及时送修。</li>
-              <li><b>滑板板面：</b>避水防砂，受潮会失去弹性；定期紧桥钉、翻面砂纸、轴承上油，轮子偏磨及时换位。</li>
-              <li><b>篮球鞋养护：</b>打完抽鞋垫通风、阴干忌暴晒；外场鞋定期清理纹路石粒，气垫鼓包立即停穿。</li>
-            </ul>
-          </div>
+      <div class="nt-split rev" data-reveal>
+        <div class="nt-split-media img-reveal">
+          <img src="assets/ng-skate.jpg" alt="暗调混凝土上平铺滑板硬件：板面、支架、轮子、轴承、砂纸、T型工具与护具" loading="lazy" data-fb="ng-skate.jpg">
         </div>
-        <div data-reveal style="transition-delay:80ms">
-          <div class="nt-sec-head" style="margin-bottom:20px">
-            <span class="nt-sec-label mono">MODULE 05 — PITFALLS · 避坑专区</span>
-            <h2 class="nt-sec-title" style="font-size:clamp(20px,2.4vw,28px)">钱要花在场景上，不是参数上<span style="color:#b32d1e">.</span></h2>
-          </div>
-          <div class="nt-list-card is-warn">
-            <h3><span class="d"></span>选购四大误区</h3>
-            <ul>
-              <li><b>盲目追最高参数：</b>8000mm 防水足够的雨披场景买 28000mm，多花的钱不会让你更舒适——按最常遇到的天气选。</li>
-              <li><b>网红装备≠适合你：</b>大神同款可能是为高水平/特定体型设计的，新手用顶级碳板鞋反而控制不住。</li>
-              <li><b>只看颜值下单：</b>纯白色滑板鞋打外场、涂层花里胡哨的板面泡水鼓包，外观是装备最不重要的参数。</li>
-              <li><b>护具上省预算：</b>头盔、护板、承力主锁拒绝杂牌二手，受过冲击的护具哪怕没裂也必须更换。</li>
-            </ul>
+        <div class="nt-split-body">
+          <span class="nt-module-no" style="margin-bottom:6px">新手看完不踩坑</span>
+          <h3>一套滑板，先看这五件事</h3>
+          <p><b>板面材质与尺寸：</b>七层加拿大枫木是主流，脚宽对应板宽——脚 40 码以下选 7.75–8.0，40–43 码选 8.0–8.25，大脚选 8.25+；新手直接买成品整板最省心。</p>
+          <p><b>轮子与轴承：</b>街式动作选 99A–104A 硬轮、51–54mm；刷街选 78–87A 软轮、56–60mm。轴承 ABEC-7 钢轴足够日常，重点看防尘密封。</p>
+          <p><b>护具全套：</b>头盔 + 护膝 + 护肘 + 护腕四件起步，碗池与速降建议加护臀、穿护甲。</p>
+          <p><b>场景搭配：</b>街式选低桥硬轮小板、翻毛皮鞋；碗池泵道选中高桥大软轮与陆冲，抓地优先。</p>
+          <div class="nt-split-foot">
+            <a class="text-link mono" href="skateboard.html">前往滑板全品类 <span class="arr">→</span></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 模块 6：快速选型工具入口 ============ -->
-  <section class="nt-sec" id="ntMatch">
+  <!-- ============ 模块 3｜赛场竞技装备干货 ============ -->
+  <section class="nt-section" id="ngCourt" style="border-top:1px solid var(--line)">
     <div class="container">
-      <div class="nt-sec-head" data-reveal>
-        <span class="nt-sec-label mono">MODULE 06 — QUICK MATCH · 快速选型工具</span>
-        <h2 class="nt-sec-title">不想看长文？直接进你的分类页<span style="color:var(--accent)">.</span></h2>
-        <p class="nt-sec-note mono">ONE-CLICK MATCH — 一键匹配你的装备</p>
-      </div>
-      <div class="nt-match" data-reveal>
-        <div class="nt-match-l">
-          <h3>告诉我们你玩什么，<br>剩下的交给装备矩阵。</h3>
-          <p>每个分类页都内置按玩法 / 位置 / 水平分区的产品矩阵与选购指南，点进去就是为你筛好的装备。</p>
-          <div class="nt-match-chips mono">
-            <a href="climbing.html">高海拔登山 →</a>
-            <a href="snowboard.html">单板滑雪 →</a>
-            <a href="hiking.html">荒野徒步 →</a>
-            <a href="skateboard.html">城市滑板 →</a>
-            <a href="bb-guard.html">篮球·后卫 →</a>
-            <a href="football.html">足球 →</a>
-            <a href="badminton.html">羽毛球 →</a>
-            <a href="fencing.html">击剑 →</a>
-          </div>
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">MODULE 03 — COURT GEAR</p>
+          <h2 class="h2">
+            <span class="line"><span>赛场竞技装备干货</span></span>
+            <span class="line"><span>篮球 / 足球 / 羽毛球 / 击剑<span class="accent-dot">.</span></span></span>
+          </h2>
         </div>
-        <div class="nt-match-r"><img src="assets/nt-gear-match.jpg" alt="暗调装备墙：分类整齐的极限运动装备陈列，暖色轮廓光" loading="lazy"></div>
+        <p class="caption mono">POSITION SHOES · STUDS · STRING TENSION · FENCING LEVELS</p>
+      </div>
+      <figure class="nt-banner img-reveal">
+        <img src="assets/ng-court.jpg" alt="暗调平铺赛场装备：低中高帮篮球鞋、足球FG AG TF大底、羽毛球拍线、击剑服与面罩" loading="lazy" data-fb="ng-court.jpg">
+        <span class="nt-env-tag mono">COURT GEAR SYSTEM</span>
+      </figure>
+      <div class="nt-court-grid">
+        <article class="nt-court-card" data-reveal>
+          <span class="ico">BB</span>
+          <h4>篮球 · 按位置选鞋</h4>
+          <p><b>后卫</b>低帮、抓地、轻量化，服务变向第一步；<b>锋线</b>中帮均衡，侧向支撑 + 弹跳缓震；<b>中锋</b>高帮抗冲击、足弓加固。球衣面料看速干网眼，版型按打法选修身/宽松。</p>
+          <a href="bb-guard.html">位置选鞋完整干货 <span class="arr">→</span></a>
+        </article>
+        <article class="nt-court-card" data-reveal style="transition-delay:70ms">
+          <span class="ico">FE</span>
+          <h4>击剑 · 三件套选型</h4>
+          <p>击剑服训练选 <b>350N</b>、FIE 赛事选 <b>800N</b>；面罩 1600N 以上带护颈 bib；剑条按剑种与电/普通剑匹配，新手先整剑后换条。</p>
+          <a href="fencing.html">击剑装备清单 <span class="arr">→</span></a>
+        </article>
+        <article class="nt-court-card" data-reveal style="transition-delay:140ms">
+          <span class="ico">FB</span>
+          <h4>足球 · 大底怎么选</h4>
+          <p><b>FG</b> 天然湿滑草皮；<b>AG</b> 中高端人造草；<b>TF</b> 碎钉，人草与硬地通用、对膝盖最友好；<b>IC</b> 平底仅五人制室内。国内人草场 TF/AG 是主力。</p>
+          <a href="football.html">足球战靴系列 <span class="arr">→</span></a>
+        </article>
+        <article class="nt-court-card" data-reveal style="transition-delay:210ms">
+          <span class="ico">BM</span>
+          <h4>羽毛球 · 拍与线</h4>
+          <p>新手选 <b>4U–5U</b>（80–84g/75–79g）平衡偏稳拍头；拍线磅数新手 22–24 磅、进阶 25–28 磅，磅数越高越吃发力与手臂力量。</p>
+          <a href="badminton.html">羽毛球拍系列 <span class="arr">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 模块 4｜装备维护保养专栏（深色） ============ -->
+  <section class="nt-section nt-dark" id="ngCare">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">MODULE 04 — CARE &amp; MAINTENANCE</p>
+          <h2 class="h2">
+            <span class="line"><span>装备维护保养专栏</span></span>
+            <span class="line"><span>保养到位，多陪你三季<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">CARE — 清洁 / 修复 / 干燥 / 收纳</p>
+      </div>
+      <figure class="nt-banner img-reveal" data-reveal style="border-color:rgba(242,239,233,.18)">
+        <img src="assets/ng-care.jpg" alt="暗调工作台上用软刷清洁防水硬壳冲锋衣，旁边放着防泼水剂与抹布" loading="lazy" data-fb="ng-care.jpg">
+        <span class="nt-env-tag mono">GEAR CARE LAB</span>
+      </figure>
+      <div class="nt-care-grid">
+        <article class="nt-care" data-reveal>
+          <span class="no">01</span>
+          <h4>高山硬壳清洗保养</h4>
+          <p>温水 + 中性/功能面料专用洗剂，不拧搅、不暴晒；洗后低温烘干激活防泼水层，普通柔顺剂会堵死透气微孔，严禁使用。</p>
+        </article>
+        <article class="nt-care" data-reveal style="transition-delay:70ms">
+          <span class="no">02</span>
+          <h4>滑雪服防水修复</h4>
+          <p>表面不再"挂珠"时，清洗后喷涂/浸洗 DWR 防泼水剂，再低温熨烫或烘干激活；拉链处重点补涂，压胶条开胶及时送修。</p>
+        </article>
+        <article class="nt-care" data-reveal style="transition-delay:140ms">
+          <span class="no">03</span>
+          <h4>滑板板面保养</h4>
+          <p>板面<b>绝对避水</b>，受潮会失去弹性；定期检查桥钉松紧、轴承补油、砂纸积砂用硬刷清理，轮面磨偏及时换位或更换。</p>
+        </article>
+        <article class="nt-care" data-reveal style="transition-delay:210ms">
+          <span class="no">04</span>
+          <h4>篮球鞋延长寿命</h4>
+          <p>室内外鞋分开穿，外场鞋少打木地板、内场鞋不下水泥；赛后鞋垫取出阴干，别暴晒别机洗，中底缓震有寿命周期，变硬就换。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 模块 5｜避坑专区 ============ -->
+  <section class="nt-section" id="ngPit">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">MODULE 05 — COMMON PITFALLS</p>
+          <h2 class="h2">
+            <span class="line"><span>避坑专区</span></span>
+            <span class="line"><span>这些钱，真的不必花<span class="accent-dot">.</span></span></span>
+          </h2>
+        </div>
+        <p class="caption mono">DON'T — 户外装备选购常见误区</p>
+      </div>
+      <figure class="nt-banner img-reveal">
+        <img src="assets/ng-pitfall.jpg" alt="暗调地面上一堆错配、带吊牌的户外装备堆积，反消费主义概念" loading="lazy" data-fb="ng-pitfall.jpg">
+        <span class="nt-env-tag mono">AVOID THESE</span>
+      </figure>
+      <div class="nt-pit-grid">
+        <article class="nt-pit" data-reveal>
+          <span class="cross">✕</span>
+          <h4>误区一：盲目追求最高参数</h4>
+          <p>40000mm 静水压硬壳穿去城市徒步，又闷又硬；顶级碳板球鞋在塑胶地一个月磨平——<b>参数过剩 = 花钱买罪受</b>。先确定场景，再匹配指标。</p>
+          <span class="fix">正解：按「最常去的场景」选型，留出一档余量即可。</span>
+        </article>
+        <article class="nt-pit" data-reveal style="transition-delay:70ms">
+          <span class="cross">✕</span>
+          <h4>误区二：网红装备一定适合你</h4>
+          <p>别人的神鞋可能不匹配你的<b>脚型、体重与打法</b>；博主的轻量化清单建立在他们的体能之上。从众下单前，先问自己的身体条件。</p>
+          <span class="fix">正解：参考思路，不照抄清单；尺码与足型优先于品牌热度。</span>
+        </article>
+        <article class="nt-pit" data-reveal style="transition-delay:140ms">
+          <span class="cross">✕</span>
+          <h4>误区三：极限装备只看颜值</h4>
+          <p>配色再好看，头盔没有认证、安全带是杂牌、护具软塌海绵，遇到冲击就是<b>零保护</b>。承力与防护件上的省钱，是最贵的省钱。</p>
+          <span class="fix">正解：防护件先看认证等级与结构，颜值放在最后一票。</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 模块 6｜快速选型工具入口（深色） ============ -->
+  <section class="nt-section nt-dark" id="ngMatch">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="label mono accent">MODULE 06 — GEAR MATCHER · 快速选型工具</p>
+          <h2 class="h2">
+            <span class="line"><span>一键匹配你的装备</span></span>
+          </h2>
+        </div>
+        <p class="caption mono">CHOOSE YOUR FIELD — 选择你的运动场景，直达对应产品页</p>
+      </div>
+      <p class="nt-lead" data-reveal>不想看长文？按场景直接进——每个品类页都已按项目逻辑分好层级。</p>
+      <div class="nt-match-grid">
+        <a class="nt-match" href="wilderness.html" data-reveal>
+          <span class="mk-tag mono">FIELD 01</span>
+          <b>旷野极限</b>
+          <span>登山 / 单板 / 徒步全品类，三层穿搭系统齐备。</span>
+          <span class="go">MATCH GEAR <span class="arr">→</span></span>
+        </a>
+        <a class="nt-match" href="skateboard.html" data-reveal style="transition-delay:70ms">
+          <span class="mk-tag mono">FIELD 02</span>
+          <b>城市滑板</b>
+          <span>街式 / 陆冲 / 长板 + 板面硬件 + 全套护具。</span>
+          <span class="go">MATCH GEAR <span class="arr">→</span></span>
+        </a>
+        <a class="nt-match" href="bb-guard.html" data-reveal style="transition-delay:140ms">
+          <span class="mk-tag mono">FIELD 03</span>
+          <b>篮球按位置选鞋</b>
+          <span>后卫 / 锋线 / 中锋三条线，九款战靴直接看。</span>
+          <span class="go">MATCH GEAR <span class="arr">→</span></span>
+        </a>
+        <a class="nt-match" href="football.html" data-reveal>
+          <span class="mk-tag mono">FIELD 04</span>
+          <b>足球选大底</b>
+          <span>FG / AG / TF / IC 按场地对号入座。</span>
+          <span class="go">MATCH GEAR <span class="arr">→</span></span>
+        </a>
+        <a class="nt-match" href="badminton.html" data-reveal style="transition-delay:70ms">
+          <span class="mk-tag mono">FIELD 05</span>
+          <b>羽毛球拍与鞋</b>
+          <span>进攻 / 全能 / 控球三类拍，侧向支撑球鞋。</span>
+          <span class="go">MATCH GEAR <span class="arr">→</span></span>
+        </a>
+        <a class="nt-match" href="fencing.html" data-reveal style="transition-delay:140ms">
+          <span class="mk-tag mono">FIELD 06</span>
+          <b>击剑装备</b>
+          <span>花剑 / 重剑 / 佩剑，护具与剑具一站式。</span>
+          <span class="go">MATCH GEAR <span class="arr">→</span></span>
+        </a>
       </div>
 
       <!-- 文章清单 -->
-      <div class="nt-sec-head" style="margin-top:clamp(44px,7vh,80px)" data-reveal>
-        <span class="nt-sec-label mono">FIELD GUIDES — 直接上架文章</span>
-        <h2 class="nt-sec-title" style="font-size:clamp(20px,2.6vw,30px)">四篇高赞干货<span style="color:var(--accent)">.</span></h2>
+      <div style="margin-top:88px">
+        <span class="nt-module-no">FIELD ARTICLES — 直接上架的四篇干货</span>
+        <h3 style="font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:900;color:var(--cream)">看完就能下单的四篇<span style="color:var(--accent)">.</span></h3>
+        <div class="nt-art-grid">
+          <a class="nt-art" href="#ngMatch" data-toast="《三层穿衣法｜高海拔登山穿搭完整逻辑》全文即将上架" data-reveal>
+            <div class="nt-art-media img-reveal">
+              <img src="assets/ng-a-layers.jpg" alt="暗调地面上三排服装：速干内层、保暖棉服、硬壳冲锋衣，登山靴在侧" loading="lazy" data-fb="ng-a-layers.jpg">
+              <span class="nt-art-cat mono">登山穿搭</span>
+            </div>
+            <div class="nt-art-body">
+              <h4>三层穿衣法｜高海拔登山穿搭完整逻辑</h4>
+              <p>排汗、保暖、防护各管一件事，行进/营地怎么增减一次讲清。</p>
+              <span class="nt-art-go">READ MORE <span class="arr">→</span></span>
+            </div>
+          </a>
+          <a class="nt-art" href="bb-guard.html" data-reveal style="transition-delay:70ms">
+            <div class="nt-art-media img-reveal">
+              <img src="assets/ng-a-bball.jpg" alt="暗调球馆地面上并排摆放低中高帮三双篮球鞋，位置选鞋指南" loading="lazy" data-fb="ng-a-bball.jpg">
+              <span class="nt-art-cat mono">篮球选鞋</span>
+            </div>
+            <div class="nt-art-body">
+              <h4>篮球位置选鞋：后卫 / 锋线 / 中锋核心差异</h4>
+              <p>低帮抓地、中帮均衡、高帮抗冲击——对号入座直达三条产品线。</p>
+              <span class="nt-art-go">READ MORE <span class="arr">→</span></span>
+            </div>
+          </a>
+          <a class="nt-art" href="#ngMatch" data-toast="《滑板新手全套装备选购清单，拒绝踩坑》全文即将上架" data-reveal style="transition-delay:140ms">
+            <div class="nt-art-media img-reveal">
+              <img src="assets/ng-a-skate.jpg" alt="暗调混凝土上平铺新手滑板全套装备：头盔护膝护肘护腕、整板、滑板鞋" loading="lazy" data-fb="ng-a-skate.jpg">
+              <span class="nt-art-cat mono">滑板入门</span>
+            </div>
+            <div class="nt-art-body">
+              <h4>滑板新手全套装备选购清单，拒绝踩坑</h4>
+              <p>整板尺寸、护具四件套、滑板鞋怎么挑，照着买不浪费。</p>
+              <span class="nt-art-go">READ MORE <span class="arr">→</span></span>
+            </div>
+          </a>
+          <a class="nt-art" href="#ngMatch" data-toast="《雪服参数科普：防水、透气到底代表什么》全文即将上架" data-reveal style="transition-delay:210ms">
+            <div class="nt-art-media img-reveal">
+              <img src="assets/ng-a-shell.jpg" alt="雪服防水面料微距特写，水珠在表面凝结成珠，防水膜截面样本" loading="lazy" data-fb="ng-a-shell.jpg">
+              <span class="nt-art-cat mono">雪服参数</span>
+            </div>
+            <div class="nt-art-body">
+              <h4>雪服参数科普：防水、透气到底代表什么</h4>
+              <p>静水压 mm 与透湿量 g/m² 两个数字，看懂再花雪服的钱。</p>
+              <span class="nt-art-go">READ MORE <span class="arr">→</span></span>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="nt-articles">
-        <a class="nt-article" href="javascript:void(0)"><span class="a-no mono">GUIDE-01</span><div><h5>《三层穿衣法｜高海拔登山穿搭完整逻辑》</h5><p>排汗层、保暖层、防护层各自解决什么问题，什么温度怎么增减，附完整打包清单。</p><span class="a-go mono">READ GUIDE →</span></div></a>
-        <a class="nt-article" href="bb-guard.html"><span class="a-no mono">GUIDE-02</span><div><h5>《篮球位置选鞋：后卫 / 锋线 / 中锋核心差异》</h5><p>从足部受力讲清三种鞋的设计逻辑，附每档预算对应型号，直接对号入座。</p><span class="a-go mono">READ GUIDE →</span></div></a>
-        <a class="nt-article" href="javascript:void(0)"><span class="a-no mono">GUIDE-03</span><div><h5>《滑板新手全套装备选购清单，拒绝踩坑》</h5><p>板面尺寸、硬轮软轮、护具三件套，把"整板还是 DIY"一次讲明白。</p><span class="a-go mono">READ GUIDE →</span></div></a>
-        <a class="nt-article" href="javascript:void(0)"><span class="a-no mono">GUIDE-04</span><div><h5>《雪服参数科普：防水、透气到底代表什么》</h5><p>静水压、透湿量、压胶、DWR 四个指标怎么看，多少数值才够你用。</p><span class="a-go mono">READ GUIDE →</span></div></a>
+    </div>
+  </section>
+
+  <!-- ============ 收尾 ============ -->
+  <section class="wl-close">
+    <div class="wl-close-media" data-parallax="0.26"><img src="assets/ng-close.jpg" alt="暗调设计师桌面上整齐摆放的技术装备、测量工具与面料样本，温暖台灯光" data-fb="ng-close.jpg"></div>
+    <div class="wl-close-veil"></div>
+    <div class="container wl-close-inner">
+      <p class="wl-close-en mono" data-scramble>KNOW THE GEAR — CHOOSE WHAT FITS YOUR FIELD</p>
+      <h2 class="wl-close-title">
+        <span class="line"><span>选对装备</span></span>
+        <span class="line"><span>让每一次奔赴更安心<span class="accent-dot">.</span></span></span>
+      </h2>
+      <p class="wl-close-txt" data-reveal>参数服务于场景，装备服务于人。<b>OROGEN 装备干货</b>拒绝焦虑式种草，只把每个数字翻译成你用得上的判断。</p>
+      <div class="wl-close-cta" data-reveal>
+        <a href="knowledge.html" class="btn btn-solid-light" data-magnetic>选型知识库 <span class="arr">→</span></a>
+        <a href="notes-science.html" class="btn btn-ghost-light" data-magnetic>科普</a>
+        <a href="index.html#top" class="btn btn-ghost-light" data-magnetic>← 返回首页</a>
       </div>
     </div>
   </section>
@@ -302,28 +525,41 @@
 <footer class="footer">
   <div class="container footer-top">
     <div class="footer-brand">
-      <a class="logo" href="index.html#top"><svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>OROGEN <span class="logo-cn">奥罗根</span></a>
-      <p class="caption mono">NO PARAMETER ANXIETY.<br>拒绝参数焦虑，只讲实用干货。</p>
+      <a class="logo" href="index.html#top">
+        <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+        OROGEN <span class="logo-cn">奥罗根</span>
+      </a>
+      <p class="caption mono">GEAR UP RIGHT.<br>拒绝参数焦虑，只讲实用干货。</p>
     </div>
     <nav class="footer-cols mono" aria-label="页脚导航">
-      <div class="f-col"><h4 class="f-head">旷野极限系列</h4><a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a><h4 class="f-head f-head-gap">街头极限系列</h4><a href="skateboard.html">城市滑板 · 全品类</a></div>
-      <div class="f-col"><h4 class="f-head">赛场竞技系列</h4><a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a><h4 class="f-head f-head-gap">装备指南</h4><a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a></div>
-      <div class="f-col"><h4 class="f-head">探险笔记</h4><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a><h4 class="f-head f-head-gap">关于品牌</h4><a href="index.html#origin">品牌故事</a></div>
+      <div class="f-col">
+        <h4 class="f-head">旷野极限系列</h4>
+        <a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a>
+        <h4 class="f-head f-head-gap">街头极限系列</h4>
+        <a href="skateboard.html">城市滑板 · 全品类</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">赛场竞技系列</h4>
+        <a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a>
+      </div>
+      <div class="f-col">
+        <h4 class="f-head">探险笔记</h4>
+        <a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a>
+        <h4 class="f-head f-head-gap">装备指南</h4>
+        <a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a>
+      </div>
     </nav>
   </div>
   <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
-  <div class="container footer-bottom mono"><span>© <span id="year">2026</span> OROGEN 奥罗根 — 探险笔记 · 装备干货</span><span>隐私政策 — 服务条款 — Cookie 设置</span><span>REAL GUIDES</span></div>
+  <div class="container footer-bottom mono">
+    <span>© <span id="year">2026</span> OROGEN 奥罗根 — 探险笔记 · 装备干货</span>
+    <span>隐私政策 — 服务条款 — Cookie 设置</span>
+    <span>GEAR UP RIGHT</span>
+  </div>
 </footer>
 
-<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
-  <div class="cart-head"><span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span><button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button></div>
-  <div class="cart-items" id="cartItems"></div>
-  <div class="cart-empty mono" id="cartEmpty"><span class="cart-empty-mark">⌖</span>YOUR BAG IS EMPTY.</div>
-  <div class="cart-foot"><div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div><button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button></div>
-</aside>
-<div class="backdrop" id="backdrop"></div>
 <div class="toast mono" id="toast" role="status"></div>
 
-<script src="js/main.js"></script>
+<script src="js/notes.js"></script>
 </body>
 </html>

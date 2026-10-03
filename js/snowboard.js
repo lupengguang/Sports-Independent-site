@@ -172,6 +172,7 @@
     document.body.style.overflow="";
   }
   $("#bagBtn").addEventListener("click", openCart);
+  $("#accountBtn").addEventListener("click", () => location.href = "login.html");
   $("#cartClose").addEventListener("click", closeCart);
   backdrop.addEventListener("click", closeCart);
   $("#cartCheckout").addEventListener("click", ()=>showToast("结算系统即将开放，滑雪装备正在准备"));
