@@ -209,12 +209,6 @@
     }, reduced ? 100 : 1200);
   }
 
-  function backTo(){
-    const ref = document.referrer;
-    const sameSite = ref && new URL(ref).origin === location.origin && !/login\.html/.test(ref);
-    goHome(sameSite ? ref : "index.html#top");
-  }
-
   /* ---- 登录 ---- */
   formLogin.addEventListener("submit", e => {
     e.preventDefault();
@@ -236,8 +230,8 @@
           ts: Date.now()
         }));
       } catch(_){}
-      showToast("欢迎回来 — 登录成功，正在返回");
-      setTimeout(backTo, reduced ? 300 : 1400);
+      showToast("欢迎回来 — 登录成功，正在进入个人中心");
+      setTimeout(() => goHome("account.html"), reduced ? 300 : 1400);
     });
   });
 
@@ -267,8 +261,8 @@
           ts: Date.now()
         }));
       } catch(_){}
-      showToast("账户已创建 — 欢迎来到 OROGEN，正在返回");
-      setTimeout(backTo, reduced ? 300 : 1400);
+      showToast("账户已创建 — 欢迎来到 OROGEN，正在进入个人中心");
+      setTimeout(() => goHome("account.html"), reduced ? 300 : 1400);
     });
   });
 
@@ -279,9 +273,9 @@
   $$("[data-oauth]").forEach(b => b.addEventListener("click", () =>
     showToast(`${b.dataset.oauth} 登录即将开放 — 先用邮箱注册吧`)));
 
-  /* ---- 已登录则直接提示 ---- */
+  /* ---- 已登录则直接进入个人中心 ---- */
   try {
     const u = JSON.parse(sessionStorage.getItem("orogen_user") || "null");
-    if (u && u.name) showToast(`你已登录：${u.name} — 可继续浏览或退出`);
+    if (u && u.name) location.replace("account.html");
   } catch(_){}
 })();

@@ -703,7 +703,7 @@
   };
   $("#searchBtn").addEventListener("click", openSearch);
   $("#searchClose").addEventListener("click", closeSearch);
-  $("#accountBtn").addEventListener("click", () => location.href = "login.html");
+  $("#accountBtn").addEventListener("click", () => location.href = sessionStorage.getItem("orogen_user") ? "account.html" : "login.html");
   searchInput.addEventListener("input", () => {
     const q = searchInput.value.trim().toUpperCase();
     let any = false;

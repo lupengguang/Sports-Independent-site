@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN｜个人中心 MY EXPEDITION — 订单、装备方案、探险手记与征途积分</title>
+<meta name="description" content="OROGEN 奥罗根个人中心 — 管理我的订单、收藏装备、专属装备方案、探险手记投稿、优惠券与探险积分、收货地址、消息通知与账户设置，定制属于你的征途。">
+<meta name="keywords" content="OROGEN个人中心, 我的订单, 装备方案, 探险手记, 优惠券, 探险积分, 收货地址, 账户设置">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/account.css">
+</head>
+<body id="top" class="ac-page">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-center">
+    <div class="pre-logo">OROGEN<sup>®</sup> <span class="pre-cn">个人中心</span></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <div class="pre-count mono" id="preCount">000</div>
+  <div class="pre-meta mono">MY EXPEDITION — 你的征途，尽在掌握</div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-ring"></span>
+  <span class="cursor-label mono" id="cursorLabel"></span>
+</div>
+
+<!-- ============ PAGE TRANSITION OVERLAY ============ -->
+<div class="pagetrans" id="pageTrans" aria-hidden="true">
+  <div class="pt-panel pt-a"></div>
+  <div class="pt-panel pt-b"></div>
+  <div class="pt-center">
+    <div class="pt-word">EXPEDITION</div>
+    <div class="pt-word-cn mono">个 人 中 心</div>
+    <div class="pt-bar"><i id="ptBar"></i></div>
+  </div>
+</div>
+
+<!-- ============ 顶栏 ============ -->
+<header class="ac-topbar">
+  <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+    <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+    OROGEN <span class="logo-cn">奥罗根</span>
+  </a>
+  <nav class="ac-topnav mono" aria-label="快捷导航">
+    <a href="wilderness.html">旷野极限</a>
+    <a href="skateboard.html">街头滑板</a>
+    <a href="basketball.html">赛场竞技</a>
+    <a href="notes-science.html">探险笔记</a>
+  </nav>
+  <a class="ac-back mono" href="index.html">返回首页 <span class="arr">→</span></a>
+</header>
+
+<main>
+  <!-- ============ 首屏头部模块 ============ -->
+  <section class="ac-hero">
+    <div class="ac-hero-bg" aria-hidden="true">
+      <img src="assets/hero.jpg" alt="" data-fb="hero.jpg">
+    </div>
+    <div class="ac-hero-inner container">
+      <div class="ac-user">
+        <button class="ac-avatar" id="avatarBtn" aria-label="上传头像" data-cursor="上传头像">
+          <img id="avatarImg" src="assets/ac-avatar.jpg" alt="用户头像" data-fb="ac-avatar.jpg">
+          <span class="ac-avatar-mask mono">更换<br>头像</span>
+        </button>
+        <input type="file" id="avatarInput" accept="image/*" hidden>
+        <div class="ac-user-info">
+          <p class="ac-hero-tag mono" data-scramble>MY EXPEDITION // 个人中心</p>
+          <h1 class="ac-name" id="userName">RIDGE WALKER</h1>
+          <p class="ac-bio" id="userBio">高海拔登山 / 街式滑板 / 篮球后卫 — 周末在山里，周中在街头。</p>
+          <div class="ac-tags" id="userTags">
+            <span class="ac-tag is-auto" data-tag="旷野探险家">旷野探险家</span>
+            <span class="ac-tag is-auto" data-tag="竞技选手">竞技选手</span>
+            <button class="ac-tag ac-tag-add" id="tagAddBtn" aria-label="添加标签">+ 添加标签</button>
+          </div>
+        </div>
+      </div>
+      <div class="ac-hero-actions">
+        <button class="ac-btn-primary" id="editProfileBtn">编辑资料</button>
+        <button class="ac-btn-text" id="logoutBtn">退出登录</button>
+      </div>
+      <div class="ac-hero-meta mono">
+        <span>会员编号 ORO-2026-0847</span>
+        <span>征途积分 <b class="accent" id="heroPoints">2,680</b></span>
+        <span>加入于 2026.01</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 主体：侧边导航 + 内容区 ============ -->
+  <div class="ac-body container">
+
+    <button class="ac-menu-toggle mono" id="menuToggle" aria-expanded="false" aria-controls="acSide">
+      <span class="ac-menu-burger" aria-hidden="true"><i></i><i></i></span>
+      模块菜单 — <b id="menuCurrent">我的订单</b>
+    </button>
+
+    <aside class="ac-side" id="acSide">
+      <p class="ac-side-title mono">MEMBER MENU — 09</p>
+      <nav class="ac-nav" aria-label="个人中心模块">
+        <button class="ac-nav-item active" data-mod="orders"><span class="mono">01</span>我的订单<i class="ac-nav-badge" id="badgeOrders">2</i></button>
+        <button class="ac-nav-item" data-mod="favs"><span class="mono">02</span>我的收藏<i class="ac-nav-badge" id="badgeFavs">6</i></button>
+        <button class="ac-nav-item" data-mod="plans"><span class="mono">03</span>我的装备方案<i class="ac-nav-badge">3</i></button>
+        <button class="ac-nav-item" data-mod="stories"><span class="mono">04</span>探险手记<i class="ac-nav-badge">4</i></button>
+        <button class="ac-nav-item" data-mod="points"><span class="mono">05</span>优惠券 / 积分<i class="ac-nav-badge">5</i></button>
+        <button class="ac-nav-item" data-mod="address"><span class="mono">06</span>收货地址<i class="ac-nav-badge">3</i></button>
+        <button class="ac-nav-item" data-mod="msgs"><span class="mono">07</span>消息通知<i class="ac-nav-badge is-hot" id="badgeMsgs">3</i></button>
+        <button class="ac-nav-item" data-mod="settings"><span class="mono">08</span>账户设置</button>
+        <button class="ac-nav-item" data-mod="help"><span class="mono">09</span>帮助中心</button>
+      </nav>
+      <div class="ac-side-foot mono">WHERE THE LAND RISES,<br>WE FOLLOW.</div>
+    </aside>
+
+    <div class="ac-main">
+
+      <!-- ============ 模块 1｜我的订单 ============ -->
+      <section class="ac-mod active" id="mod-orders" data-title="我的订单">
+        <header class="ac-mod-head">
+          <p class="label mono accent">MODULE 01 — ORDERS</p>
+          <h2 class="ac-h2">我的订单</h2>
+        </header>
+        <div class="ac-chips mono" data-filter="orders">
+          <button class="ac-chip active" data-status="all">全部</button>
+          <button class="ac-chip" data-status="pay">待付款</button>
+          <button class="ac-chip" data-status="ship">待发货</button>
+          <button class="ac-chip" data-status="transit">运输中</button>
+          <button class="ac-chip" data-status="done">已完成</button>
+          <button class="ac-chip" data-status="after">售后</button>
+        </div>
+        <div class="ac-orders" id="orderList">
+
+          <article class="ac-order" data-status="pay" data-reveal>
+            <header class="ac-order-head mono">
+              <span>订单号 ORO2603-1182</span>
+              <span>下单时间 2026-03-28 21:14</span>
+            </header>
+            <div class="ac-order-body">
+              <div class="ac-order-imgs">
+                <img src="assets/layer-04.jpg" alt="终端软壳裤" data-fb="layer-04.jpg">
+                <img src="assets/layer-03.jpg" alt="网格抓绒" data-fb="layer-03.jpg">
+              </div>
+              <div class="ac-order-info">
+                <h3>TERMINAL PANT 终端软壳裤 <span class="mono">+ 1 件</span></h3>
+                <p class="mono">尺码 M / 曜石黑 / SKU ORO-L4-M-BLK</p>
+                <p class="mono">$265 × 1　GRID FLEECE LS $185 × 1</p>
+              </div>
+              <div class="ac-order-side">
+                <p class="ac-order-total">合计 <b>$450</b></p>
+                <p class="ac-order-status st-pay">待付款</p>
+                <div class="ac-order-ops">
+                  <button class="ac-btn-mini is-primary" data-toast="已跳转收银台 — 支付通道即将开放">立即付款</button>
+                  <button class="ac-btn-mini" data-toast="订单已取消（演示）">取消订单</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="ac-order" data-status="ship" data-reveal>
+            <header class="ac-order-head mono">
+              <span>订单号 ORO2603-1107</span>
+              <span>下单时间 2026-03-25 09:40</span>
+            </header>
+            <div class="ac-order-body">
+              <div class="ac-order-imgs">
+                <img src="assets/layer-02.jpg" alt="原子棉服" data-fb="layer-02.jpg">
+              </div>
+              <div class="ac-order-info">
+                <h3>ATOM HOODY 原子连帽棉服</h3>
+                <p class="mono">尺码 L / 炭灰 / SKU ORO-AH-L-CHR</p>
+                <p class="mono">$325 × 1</p>
+              </div>
+              <div class="ac-order-side">
+                <p class="ac-order-total">合计 <b>$325</b></p>
+                <p class="ac-order-status st-ship">待发货</p>
+                <div class="ac-order-ops">
+                  <button class="ac-btn-mini" data-toast="取消申请已提交，仓库未拣货前可全额退款">取消订单</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="ac-order" data-status="transit" data-reveal>
+            <header class="ac-order-head mono">
+              <span>订单号 ORO2603-0963</span>
+              <span>下单时间 2026-03-20 16:02</span>
+            </header>
+            <div class="ac-order-body">
+              <div class="ac-order-imgs">
+                <img src="assets/layer-01.jpg" alt="高山硬壳" data-fb="layer-01.jpg">
+              </div>
+              <div class="ac-order-info">
+                <h3>ALPINE SHELL 03 高山硬壳</h3>
+                <p class="mono">尺码 M / 风暴黑 / SKU ORO-S3-M-STorm</p>
+                <p class="mono">$445 × 1</p>
+              </div>
+              <div class="ac-order-side">
+                <p class="ac-order-total">合计 <b>$445</b></p>
+                <p class="ac-order-status st-transit">运输中</p>
+                <div class="ac-order-ops">
+                  <button class="ac-btn-mini is-primary" data-toast="物流：已到达上海转运中心，预计 10-05 送达">查看物流</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="ac-order" data-status="done" data-reveal>
+            <header class="ac-order-head mono">
+              <span>订单号 ORO2602-0718</span>
+              <span>下单时间 2026-02-14 11:26</span>
+            </header>
+            <div class="ac-order-body">
+              <div class="ac-order-imgs">
+                <img src="assets/cat-trail.jpg" alt="越野跑系列" data-fb="cat-trail.jpg">
+              </div>
+              <div class="ac-order-info">
+                <h3>RIDGE RUNNER 越野跑套装</h3>
+                <p class="mono">尺码 M / 岩灰 / SKU ORO-RR-M-GRY</p>
+                <p class="mono">$310 × 1</p>
+              </div>
+              <div class="ac-order-side">
+                <p class="ac-order-total">合计 <b>$310</b></p>
+                <p class="ac-order-status st-done">已完成</p>
+                <div class="ac-order-ops">
+                  <button class="ac-btn-mini" data-toast="已加入购物袋（演示）">再次购买</button>
+                  <button class="ac-btn-mini is-primary" data-toast="图文评价编辑器即将开放，支持上传实拍图并同步到商品详情页">写评价</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="ac-order" data-status="after" data-reveal>
+            <header class="ac-order-head mono">
+              <span>售后单 AS-2602-0091 · 原单 ORO2602-0620</span>
+              <span>申请时间 2026-02-20 14:50</span>
+            </header>
+            <div class="ac-order-body">
+              <div class="ac-order-imgs">
+                <img src="assets/layer-03.jpg" alt="网格抓绒" data-fb="layer-03.jpg">
+              </div>
+              <div class="ac-order-info">
+                <h3>GRID FLEECE LS 网格抓绒 — 换码 M→L</h3>
+                <p class="mono">原因：尺码偏小 / 换货</p>
+                <p class="mono">$185 × 1</p>
+              </div>
+              <div class="ac-order-side">
+                <p class="ac-order-total">售后单</p>
+                <p class="ac-order-status st-after">换货处理中</p>
+                <div class="ac-order-ops">
+                  <button class="ac-btn-mini" data-toast="售后进度：新码已发出，旧件待寄回，运费由品牌承担">查看售后进度</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="ac-empty mono" id="orderEmpty" hidden>这个状态下暂无订单 — 去山里逛逛？</p>
+        <p class="ac-mod-note mono">评价说明：确认收货后可发布图文评价，上传实拍图，优质评价可选择展示在商品详情页。</p>
+      </section>
+
+      <!-- ============ 模块 2｜我的收藏 ============ -->
+      <section class="ac-mod" id="mod-favs" data-title="我的收藏">
+        <header class="ac-mod-head">
+          <p class="label mono accent">MODULE 02 — WISHLIST</p>
+          <h2 class="ac-h2">收藏装备</h2>
+        </header>
+        <div class="ac-chips mono" data-filter="favs">
+          <button class="ac-chip active" data-cat="all">全部</button>
+          <button class="ac-chip" data-cat="climb">登山装备</button>
+          <button class="ac-chip" data-cat="skate">滑板</button>
+          <button class="ac-chip" data-cat="ball">篮球装备</button>
+        </div>
+        <div class="ac-fav-grid" id="favGrid">
+
+          <article class="ac-fav" data-cat="climb" data-reveal>
+            <figure class="ac-fav-media"><img src="assets/layer-01.jpg" alt="高山硬壳" data-fb="layer-01.jpg"></figure>
+            <div class="ac-fav-info">
+              <span class="ac-tag mono">旷野极限</span>
+              <h3>ALPINE SHELL 03</h3>
+              <p class="mono">$445</p>
+            </div>
+            <div class="ac-fav-ops">
+              <button class="ac-btn-mini is-primary" data-toast="已加入购物袋">加入购物车</button>
+              <button class="ac-btn-mini" data-unfav>取消收藏</button>
+            </div>
+          </article>
+
+          <article class="ac-fav" data-cat="climb" data-reveal>
+            <figure class="ac-fav-media"><img src="assets/layer-02.jpg" alt="原子棉服" data-fb="layer-02.jpg"></figure>
+            <div class="ac-fav-info">
+              <span class="ac-tag mono">旷野极限</span>
+              <h3>ATOM HOODY</h3>
+              <p class="mono">$325</p>
+            </div>
+            <div class="ac-fav-ops">
+              <button class="ac-btn-mini is-primary" data-toast="已加入购物袋">加入购物车</button>
+              <button class="ac-btn-mini" data-unfav>取消收藏</button>
+            </div>
+          </article>
+
+          <article class="ac-fav" data-cat="skate" data-reveal>
+            <figure class="ac-fav-media"><img src="assets/ac-fav-skate.jpg" alt="街式滑板鞋" data-fb="ac-fav-skate.jpg"></figure>
+            <div class="ac-fav-info">
+              <span class="ac-tag mono">街头滑板</span>
+              <h3>STREET DECK PRO 板鞋</h3>
+              <p class="mono">$129</p>
+            </div>
+            <div class="ac-fav-ops">
+              <button class="ac-btn-mini is-primary" data-toast="已加入购物袋">加入购物车</button>
+              <button class="ac-btn-mini" data-unfav>取消收藏</button>
+            </div>
+          </article>
+
+          <article class="ac-fav" data-cat="ball" data-reveal>
+            <figure class="ac-fav-media"><img src="assets/ac-fav-bball.jpg" alt="后卫篮球鞋" data-fb="ac-fav-bball.jpg"></figure>
+            <div class="ac-fav-info">
+              <span class="ac-tag mono">竞技赛场</span>
+              <h3>ORG-BG1 后卫线战靴</h3>
+              <p class="mono">$189</p>
+            </div>
+            <div class="ac-fav-ops">
+              <button class="ac-btn-mini is-primary" data-toast="已加入购物袋">加入购物车</button>
+              <button class="ac-btn-mini" data-unfav>取消收藏</button>
+            </div>
+          </article>
+
+          <article class="ac-fav" data-cat="climb" data-reveal>
+            <figure class="ac-fav-media"><img src="assets/layer-04.jpg" alt="终端软壳裤" data-fb="layer-04.jpg"></figure>
+            <div class="ac-fav-info">
+              <span class="ac-tag mono">旷野极限</span>
+              <h3>TERMINAL PANT</h3>
+              <p class="mono">$265</p>
+            </div>
+            <div class="ac-fav-ops">
+              <button class="ac-btn-mini is-primary" data-toast="已加入购物袋">加入购物车</button>
+              <button class="ac-btn-mini" data-unfav>取消收藏</button>
+            </div>
+          </article>
+
+          <article class="ac-fav" data-cat="ball" data-reveal>
+            <figure class="ac-fav-media"><img src="assets/ac-fav-ball2.jpg" alt="护膝装备" data-fb="ac-fav-ball2.jpg"></figure>
+            <div class="ac-fav-info">
+              <span class="ac-tag mono">竞技赛场</span>
+              <h3>IMPACT GUARD 护膝</h3>
+              <p class="mono">$59</p>
+            </div>
+            <div class="ac-fav-ops">
+              <button class="ac-btn-mini is-primary" data-toast="已加入购物袋">加入购物车</button>
+              <button class="ac-btn-mini" data-unfav>取消收藏</button>
+            </div>
+          </article>
+
+        </div>
+        <div class="ac-empty-block" id="favEmpty" hidden>
+          <p class="ac-empty-big">还没有收藏装备</p>
+          <p class="ac-empty-sub">去旷野探索心仪装备</p>
+          <a class="ac-btn-primary" href="wilderness.html">前往商品首页 <span class="arr">→</span></a>
+        </div>
+      </section>
+
+      <!-- ============ 模块 3｜我的装备方案 ============ -->
+      <section class="ac-mod" id="mod-plans" data-title="我的装备方案">
+        <header class="ac-mod-head">
+          <p class="label mono accent">MODULE 03 — MY KITS</p>
+          <h2 class="ac-h2">我的专属装备方案</h2>
+          <p class="ac-mod-sub">保存你定制的旷野、街头、赛场装备搭配方案 — 与装备干货、商品详情页「保存方案」实时联动。</p>
+        </header>
+        <div class="ac-plan-grid">
+
+          <article class="ac-plan" data-reveal>
+            <figure class="ac-plan-media"><img src="assets/cat-shells.jpg" alt="高海拔登山套装" data-fb="cat-shells.jpg"></figure>
+            <div class="ac-plan-info">
+              <span class="ac-tag mono">旷野极限｜登山</span>
+              <h3 class="ac-plan-name">高海拔登山一日穿越套装</h3>
+              <p class="mono">硬壳 + 棉服 + 软壳裤 · 合计 $1,035</p>
+            </div>
+            <div class="ac-plan-ops">
+              <button class="ac-btn-mini is-primary" data-toast="方案详情：分层系统已按 4000m 级海拔配置">查看方案</button>
+              <button class="ac-btn-mini" data-toast="整套 3 件已加入购物袋">一键加入购物车</button>
+              <button class="ac-btn-mini" data-rename>重命名</button>
+              <button class="ac-btn-mini is-danger" data-del-plan>删除</button>
+            </div>
+          </article>
+
+          <article class="ac-plan" data-reveal>
+            <figure class="ac-plan-media"><img src="assets/ac-plan-skate.jpg" alt="街头滑板套装" data-fb="ac-plan-skate.jpg"></figure>
+            <div class="ac-plan-info">
+              <span class="ac-tag mono">街头极限｜滑板</span>
+              <h3 class="ac-plan-name">城市滑板全天候刷街套装</h3>
+              <p class="mono">板鞋 + 护具 + 工装裤 · 合计 $287</p>
+            </div>
+            <div class="ac-plan-ops">
+              <button class="ac-btn-mini is-primary" data-toast="方案详情：针对水泥地形缓震配置">查看方案</button>
+              <button class="ac-btn-mini" data-toast="整套 3 件已加入购物袋">一键加入购物车</button>
+              <button class="ac-btn-mini" data-rename>重命名</button>
+              <button class="ac-btn-mini is-danger" data-del-plan>删除</button>
+            </div>
+          </article>
+
+          <article class="ac-plan" data-reveal>
+            <figure class="ac-plan-media"><img src="assets/ac-plan-ball.jpg" alt="篮球后卫套装" data-fb="ac-plan-ball.jpg"></figure>
+            <div class="ac-plan-info">
+              <span class="ac-tag mono">赛场竞技｜篮球</span>
+              <h3 class="ac-plan-name">后卫线快速启动赛场套装</h3>
+              <p class="mono">低帮战靴 + 护膝 + 速干球衣 · 合计 $312</p>
+            </div>
+            <div class="ac-plan-ops">
+              <button class="ac-btn-mini is-primary" data-toast="方案详情：后卫变向支撑配置">查看方案</button>
+              <button class="ac-btn-mini" data-toast="整套 3 件已加入购物袋">一键加入购物车</button>
+              <button class="ac-btn-mini" data-rename>重命名</button>
+              <button class="ac-btn-mini is-danger" data-del-plan>删除</button>
+            </div>
+          </article>
+
+          <a class="ac-plan-new" href="knowledge.html" data-reveal>
+            <span class="ac-plan-plus" aria-hidden="true">+</span>
+            <b>新建装备方案</b>
+            <span class="mono">跳转选型工具，定制下一套征途装备</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ 模块 4｜探险手记 ============ -->
+      <section class="ac-mod" id="mod-stories" data-title="探险手记">
+        <header class="ac-mod-head">
+          <p class="label mono accent">MODULE 04 — MY STORIES</p>
+          <h2 class="ac-h2">我的探险手记</h2>
+          <p class="ac-mod-sub">投稿通过审核后，将精选发布到「探险笔记」栏目，与所有探险者见面。</p>
+        </header>
+        <div class="ac-chips mono" data-filter="stories">
+          <button class="ac-chip active" data-st="all">全部</button>
+          <button class="ac-chip" data-st="draft">草稿</button>
+          <button class="ac-chip" data-st="review">已提交</button>
+          <button class="ac-chip" data-st="pub">已发布</button>
+          <button class="ac-chip" data-st="reject">被驳回</button>
+        </div>
+        <div class="ac-story-list" id="storyList">
+
+          <article class="ac-story" data-st="pub" data-reveal>
+            <figure class="ac-story-media"><img src="assets/journal.jpg" alt="雪峰手记" data-fb="journal.jpg"></figure>
+            <div class="ac-story-info">
+              <h3>在四姑娘山的风里，学会和不确定性相处</h3>
+              <p class="mono">发布于 2026-03-12 · 探险笔记 · 户外文化</p>
+            </div>
+            <div class="ac-story-side">
+              <span class="ac-story-status st-pub">已发布</span>
+              <div class="ac-story-ops">
+                <a class="ac-btn-mini" href="notes-culture.html">查看</a>
+                <button class="ac-btn-mini" data-toast="已撤回为草稿，可重新编辑">撤回</button>
+                <button class="ac-btn-mini is-danger" data-del-story>删除</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="ac-story" data-st="review" data-reveal>
+            <figure class="ac-story-media"><img src="assets/ac-story-1.jpg" alt="城市夜滑" data-fb="ac-story-1.jpg"></figure>
+            <div class="ac-story-info">
+              <h3>凌晨两点的滨江板场，属于城市的另一种星空</h3>
+              <p class="mono">提交于 2026-03-30 · 等待审核（预计 1-3 个工作日）</p>
+            </div>
+            <div class="ac-story-side">
+              <span class="ac-story-status st-review">审核中</span>
+              <div class="ac-story-ops">
+                <button class="ac-btn-mini" data-toast="已撤回为草稿，可重新编辑">撤回</button>
+                <button class="ac-btn-mini is-danger" data-del-story>删除</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="ac-story" data-st="draft" data-reveal>
+            <figure class="ac-story-media"><img src="assets/workshop.jpg" alt="装备间" data-fb="workshop.jpg"></figure>
+            <div class="ac-story-info">
+              <h3>我的第一套分层系统：从被冻僵到自如</h3>
+              <p class="mono">最后编辑 2026-04-01 23:47 · 草稿未提交</p>
+            </div>
+            <div class="ac-story-side">
+              <span class="ac-story-status st-draft">草稿</span>
+              <div class="ac-story-ops">
+                <button class="ac-btn-mini is-primary" data-toast="草稿编辑器即将开放">编辑草稿</button>
+                <button class="ac-btn-mini is-danger" data-del-story>删除</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="ac-story" data-st="reject" data-reveal>
+            <figure class="ac-story-media"><img src="assets/cat-trail.jpg" alt="越野跑" data-fb="cat-trail.jpg"></figure>
+            <div class="ac-story-info">
+              <h3>一次失败的单日速穿记录（附复盘）</h3>
+              <p class="mono">提交于 2026-03-08 · 驳回原因：图片画质不足，建议补充实拍</p>
+            </div>
+            <div class="ac-story-side">
+              <span class="ac-story-status st-reject">被驳回</span>
+              <div class="ac-story-ops">
+                <button class="ac-btn-mini is-primary" data-toast="已进入草稿，可修改后重新提交">重新编辑</button>
+                <button class="ac-btn-mini is-danger" data-del-story>删除</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="ac-empty mono" id="storyEmpty" hidden>该状态下暂无手记</p>
+        <a class="ac-btn-primary ac-newstory" href="notes-culture.html#newstory">+ 新建手记 — 上传照片，写下你的探险故事</a>
+      </section>
+
+      <!-- ============ 模块 5｜优惠券 / 探险积分 ============ -->
+      <section class="ac-mod" id="mod-points" data-title="优惠券 / 积分">
+        <header class="ac-mod-head">
+          <p class="label mono accent">MODULE 05 — POINTS & COUPONS</p>
+          <h2 class="ac-h2">优惠券 / 探险积分</h2>
+        </header>
+
+        <div class="ac-points-hero" data-reveal>
+          <div class="ac-points-num"><b id="pointsNum">2,680</b><span class="mono">当前探险积分</span></div>
+          <p class="ac-points-desc">购买商品、发布探险手记、商品评价均可获得探险积分；积分可兑换限定周边、抵扣订单金额（100 积分 = $1）。</p>
+        </div>
+
+        <h3 class="ac-h3 mono">积分明细 — POINTS LOG</h3>
+        <ul class="ac-points-log" data-reveal>
+          <li><span class="mono">+120</span><div><b>订单 ORO2603-0963 完成</b><span class="mono">2026-03-22</span></div></li>
+          <li><span class="mono">+300</span><div><b>探险手记《四姑娘山》发布</b><span class="mono">2026-03-12</span></div></li>
+          <li><span class="mono is-out">-500</span><div><b>兑换 OROGEN 限量钛杯</b><span class="mono">2026-03-01</span></div></li>
+          <li><span class="mono">+80</span><div><b>商品评价（图文）奖励</b><span class="mono">2026-02-16</span></div></li>
+        </ul>
+
+        <h3 class="ac-h3 mono">优惠券 — COUPONS</h3>
+        <div class="ac-coupon-grid">
+          <article class="ac-coupon" data-reveal>
+            <div class="ac-coupon-val"><b>$30</b><span class="mono">满 $299 可用</span></div>
+            <div class="ac-coupon-info">
+              <span class="ac-tag mono">装备专享券</span>
+              <p>硬壳 / 棉服品类可用</p>
+              <p class="mono">有效期至 2026-10-31</p>
+            </div>
+            <button class="ac-btn-mini is-primary" data-toast="已跳转可用商品列表（演示）">去使用</button>
+          </article>
+          <article class="ac-coupon" data-reveal>
+            <div class="ac-coupon-val"><b>$15</b><span class="mono">无门槛</span></div>
+            <div class="ac-coupon-info">
+              <span class="ac-tag mono">全品类券</span>
+              <p>全场商品通用</p>
+              <p class="mono">有效期至 2026-11-11</p>
+            </div>
+            <button class="ac-btn-mini is-primary" data-toast="已加入结算优惠（演示）">去使用</button>
+          </article>
+          <article class="ac-coupon" data-reveal>
+            <div class="ac-coupon-val"><b>$50</b><span class="mono">满 $599 可用</span></div>
+            <div class="ac-coupon-info">
+              <span class="ac-tag mono">装备专享券</span>
+              <p>滑雪 / 登山大件装备</p>
+              <p class="mono">有效期至 2026-12-01</p>
+            </div>
+            <button class="ac-btn-mini is-primary" data-toast="已跳转可用商品列表（演示）">去使用</button>
+          </article>
+        </div>
+
+        <h3 class="ac-h3 mono is-dim">已过期 — EXPIRED</h3>
+        <div class="ac-coupon-grid is-expired">
+          <article class="ac-coupon" data-reveal>
+            <div class="ac-coupon-val"><b>$20</b><span class="mono">满 $199 可用</span></div>
+            <div class="ac-coupon-info">
+              <span class="ac-tag mono">全品类券</span>
+              <p>已于 2026-09-01 过期</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ 模块 6｜收货地址管理 ============ -->
+      <section class="ac-mod" id="mod-address" data-title="收货地址">
+        <header class="ac-mod-head">
+          <p class="label mono accent">MODULE 06 — ADDRESSES</p>
+          <h2 class="ac-h2">收货地址管理</h2>
+          <p class="ac-mod-sub">支持多地址存储，下单时快速选择。</p>
+        </header>
+        <div class="ac-addr-list" id="addrList">
+
+          <article class="ac-addr is-default" data-reveal>
+            <span class="ac-addr-default mono">默认</span>
+            <h3>林远山 <span class="mono">138****6620</span></h3>
+            <p>中国 · 上海市 徐汇区 漕河泾开发区 · 田林路 192 号 4 栋 502</p>
+            <p class="mono">邮编 200233</p>
+            <div class="ac-addr-ops">
+              <button class="ac-btn-mini" data-toast="地址编辑表单即将开放">编辑</button>
+              <button class="ac-btn-mini is-danger" data-del-addr>删除</button>
+            </div>
+          </article>
+
+          <article class="ac-addr" data-reveal>
+            <h3>林远山 <span class="mono">138****6620</span></h3>
+            <p>中国 · 四川省 成都市 武侯区 · 倪家桥路 9 号 1 单元 1102</p>
+            <p class="mono">邮编 610041</p>
+            <div class="ac-addr-ops">
+              <button class="ac-btn-mini is-primary" data-set-default>设为默认</button>
+              <button class="ac-btn-mini" data-toast="地址编辑表单即将开放">编辑</button>
+              <button class="ac-btn-mini is-danger" data-del-addr>删除</button>
+            </div>
+          </article>
+
+          <article class="ac-addr" data-reveal>
+            <h3>阿 May <span class="mono">139****0471</span></h3>
+            <p>中国 · 广东省 深圳市 南山区 · 科技园南区 R2-B 栋</p>
+            <p class="mono">邮编 518057</p>
+            <div class="ac-addr-ops">
+              <button class="ac-btn-mini is-primary" data-set-default>设为默认</button>
+              <button class="ac-btn-mini" data-toast="地址编辑表单即将开放">编辑</button>
+              <button class="ac-btn-mini is-danger" data-del-addr>删除</button>
+            </div>
+          </article>
+        </div>
+
+        <button class="ac-btn-primary" id="addrNewBtn">+ 新增地址</button>
+        <form class="ac-addr-form" id="addrForm" hidden novalidate>
+          <div class="ac-form-grid">
+            <label>姓名<input class="ac-input" id="addrName" type="text" placeholder="收件人姓名"></label>
+            <label>手机号<input class="ac-input" id="addrPhone" type="tel" placeholder="11 位手机号"></label>
+            <label>国家 / 地区<input class="ac-input" id="addrCountry" type="text" placeholder="中国"></label>
+            <label>邮编<input class="ac-input" id="addrZip" type="text" placeholder="6 位邮编"></label>
+            <label class="is-full">详细地址<input class="ac-input" id="addrDetail" type="text" placeholder="省 / 市 / 区 / 街道门牌"></label>
+          </div>
+          <p class="lg-err mono" id="addrErr"></p>
+          <div class="ac-form-ops">
+            <button type="submit" class="ac-btn-primary">保存地址</button>
+            <button type="button" class="ac-btn-text" id="addrCancel">取消</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- ============ 模块 7｜消息通知 ============ -->
+      <section class="ac-mod" id="mod-msgs" data-title="消息通知">
+        <header class="ac-mod-head">
+          <p class="label mono accent">MODULE 07 — NOTIFICATIONS</p>
+          <h2 class="ac-h2">消息通知</h2>
+        </header>
+        <div class="ac-chips mono" data-filter="msgs">
+          <button class="ac-chip active" data-msg="all">全部</button>
+          <button class="ac-chip" data-msg="sys">系统通知</button>
+          <button class="ac-chip" data-msg="order">订单提醒</button>
+          <button class="ac-chip" data-msg="note">探险笔记专栏更新</button>
+          <button class="ac-chip" data-msg="act">活动公告</button>
+        </div>
+        <ul class="ac-msg-list" id="msgList">
+          <li class="ac-msg unread" data-msg="order" data-reveal>
+            <i class="ac-msg-dot" aria-hidden="true"></i>
+            <div class="ac-msg-info">
+              <h3>订单 ORO2603-0963 已到达上海转运中心</h3>
+              <p>预计 10-05 送达，请保持电话畅通。</p>
+              <span class="mono">2026-10-02 08:30</span>
+            </div>
+            <div class="ac-msg-ops">
+              <button class="ac-btn-mini" data-read>标记已读</button>
+              <button class="ac-btn-mini is-primary" data-mod-jump="orders">查看订单</button>
+            </div>
+          </li>
+          <li class="ac-msg unread" data-msg="note" data-reveal>
+            <i class="ac-msg-dot" aria-hidden="true"></i>
+            <div class="ac-msg-info">
+              <h3>探险笔记「户外文化」专栏更新</h3>
+              <p>新文章《城市滑板：水泥地上的自由诗》已上线。</p>
+              <span class="mono">2026-10-01 19:12</span>
+            </div>
+            <div class="ac-msg-ops">
+              <button class="ac-btn-mini" data-read>标记已读</button>
+              <a class="ac-btn-mini is-primary" href="notes-culture.html">去阅读</a>
+            </div>
+          </li>
+          <li class="ac-msg unread" data-msg="act" data-reveal>
+            <i class="ac-msg-dot" aria-hidden="true"></i>
+            <div class="ac-msg-info">
+              <h3>AW26 首发会员优先购开启</h3>
+              <p>会员可提前 48 小时入场，限量配色抽签同步开放。</p>
+              <span class="mono">2026-09-30 10:00</span>
+            </div>
+            <div class="ac-msg-ops">
+              <button class="ac-btn-mini" data-read>标记已读</button>
+              <button class="ac-btn-mini is-primary" data-toast="活动页即将上线">查看活动</button>
+            </div>
+          </li>
+          <li class="ac-msg" data-msg="sys" data-reveal>
+            <i class="ac-msg-dot" aria-hidden="true"></i>
+            <div class="ac-msg-info">
+              <h3>账户安全提示：已绑定手机号</h3>
+              <p>如非本人操作，请立即修改密码。</p>
+              <span class="mono">2026-09-20 15:44</span>
+            </div>
+            <div class="ac-msg-ops">
+              <button class="ac-btn-mini" data-mod-jump="settings">前往设置</button>
+            </div>
+          </li>
+        </ul>
+        <p class="ac-empty mono" id="msgEmpty" hidden>该分类下暂无消息</p>
+      </section>
+
+      <!-- ============ 模块 8｜账户设置 ============ -->
+      <section class="ac-mod" id="mod-settings" data-title="账户设置">
+        <header class="ac-mod-head">
+          <p class="label mono accent">MODULE 08 — SETTINGS</p>
+          <h2 class="ac-h2">账户设置</h2>
+        </header>
+
+        <div class="ac-set-block" data-reveal>
+          <h3 class="ac-h3 mono">修改登录密码</h3>
+          <form class="ac-set-form" id="pwdForm" novalidate>
+            <label>当前密码<input class="ac-input" id="pwdOld" type="password" autocomplete="current-password"></label>
+            <label>新密码<input class="ac-input" id="pwdNew" type="password" autocomplete="new-password" placeholder="至少 8 位，含字母与数字"></label>
+            <label>确认新密码<input class="ac-input" id="pwdNew2" type="password" autocomplete="new-password"></label>
+            <p class="lg-err mono" id="pwdErr"></p>
+            <button type="submit" class="ac-btn-primary">更新密码</button>
+          </form>
+        </div>
+
+        <div class="ac-set-block" data-reveal>
+          <h3 class="ac-h3 mono">绑定邮箱 / 手机</h3>
+          <ul class="ac-bind-list">
+            <li><div><b>邮箱</b><span class="mono">ri***@example.com</span></div><button class="ac-btn-mini" data-toast="换绑验证邮件已发送（演示）">更换</button></li>
+            <li><div><b>手机</b><span class="mono">138****6620</span></div><button class="ac-btn-mini" data-toast="换绑短信验证已发送（演示）">更换</button></li>
+          </ul>
+        </div>
+
+        <div class="ac-set-block" data-reveal>
+          <h3 class="ac-h3 mono">偏好设置 — 感兴趣的运动分类</h3>
+          <p class="ac-mod-sub">用于个性化推荐商品与探险笔记内容。</p>
+          <div class="ac-pref-chips" id="prefChips">
+            <button class="ac-chip active" data-pref>高海拔登山</button>
+            <button class="ac-chip" data-pref>单板滑雪</button>
+            <button class="ac-chip" data-pref>荒野徒步</button>
+            <button class="ac-chip active" data-pref>城市滑板</button>
+            <button class="ac-chip active" data-pref>篮球</button>
+            <button class="ac-chip" data-pref>足球</button>
+            <button class="ac-chip" data-pref>羽毛球</button>
+            <button class="ac-chip" data-pref>击剑</button>
+          </div>
+        </div>
+
+        <div class="ac-set-block" data-reveal>
+          <h3 class="ac-h3 mono">隐私设置</h3>
+          <label class="ac-switch-row">
+            <span>允许我的探险手记在发布时公开展示署名</span>
+            <span class="ac-switch"><input type="checkbox" id="privacyToggle" checked><i aria-hidden="true"></i></span>
+          </label>
+        </div>
+      </section>
+
+      <!-- ============ 模块 9｜帮助中心 ============ -->
+      <section class="ac-mod" id="mod-help" data-title="帮助中心">
+        <header class="ac-mod-head">
+          <p class="label mono accent">MODULE 09 — HELP CENTER</p>
+          <h2 class="ac-h2">帮助中心</h2>
+        </header>
+        <div class="ac-help-grid">
+          <button class="ac-help-card" data-reveal data-toast="订单 FAQ 即将上线 — 发货时效 / 改地址 / 拆单说明">
+            <span class="mono">FAQ / 01</span><b>订单常见问题</b><span>发货时效、修改地址、拆单与合单</span>
+          </button>
+          <button class="ac-help-card" data-reveal data-toast="退换货规则：签收 7 天内支持无理由退换，定制款除外">
+            <span class="mono">FAQ / 02</span><b>装备退换货规则</b><span>7 天无理由、换码流程、运费承担</span>
+          </button>
+          <a class="ac-help-card" data-reveal href="knowledge.html">
+            <span class="mono">FAQ / 03</span><b>尺码查询</b><span>各品类尺码对照与测量指南</span>
+          </a>
+          <button class="ac-help-card" data-reveal data-toast="客服工作时段 09:00-21:00 — crew@orogen.com">
+            <span class="mono">FAQ / 04</span><b>联系客服</b><span>在线客服 / 邮件 / 电话</span>
+          </button>
+          <a class="ac-help-card" data-reveal href="notes-gear.html">
+            <span class="mono">FAQ / 05</span><b>装备咨询入口</b><span>装备干货专栏，选型避坑指南</span>
+          </a>
+          <a class="ac-help-card" data-reveal href="notes-science.html">
+            <span class="mono">FAQ / 06</span><b>探险笔记</b><span>科普 / 户外文化 / 装备干货</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer class="ac-foot mono">
+    <span>OROGEN® 奥罗根 — MY EXPEDITION</span>
+    <span>大地隆起之处，即是征途</span>
+  </footer>
+</main>
+
+<!-- ============ 编辑资料弹层 ============ -->
+<div class="ac-modal" id="profileModal" aria-hidden="true" role="dialog" aria-label="编辑资料">
+  <div class="ac-modal-box">
+    <header class="ac-modal-head">
+      <p class="label mono accent">EDIT PROFILE</p>
+      <h3>编辑资料</h3>
+      <button class="ac-modal-close" id="profileClose" aria-label="关闭">✕</button>
+    </header>
+    <form id="profileForm" novalidate>
+      <label class="ac-modal-label">昵称<input class="ac-input" id="pfName" type="text" maxlength="20"></label>
+      <label class="ac-modal-label">个人简介<textarea class="ac-input" id="pfBio" rows="3" maxlength="80" placeholder="擅长运动：如高海拔登山 / 街式滑板 / 篮球后卫"></textarea></label>
+      <div class="ac-modal-label">标识标签<span class="mono">（自动标签由浏览 & 购买生成，可手动增删）</span>
+        <div class="ac-pref-chips" id="pfTags">
+          <button type="button" class="ac-chip" data-ptag="旷野探险家">旷野探险家</button>
+          <button type="button" class="ac-chip" data-ptag="街头滑手">街头滑手</button>
+          <button type="button" class="ac-chip" data-ptag="竞技选手">竞技选手</button>
+        </div>
+      </div>
+      <div class="ac-form-ops">
+        <button type="submit" class="ac-btn-primary">保存资料</button>
+        <button type="button" class="ac-btn-text" id="profileCancel">取消</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/account.js"></script>
+</body>
+</html>

@@ -181,7 +181,7 @@
     document.body.style.overflow="";
   }
   $("#bagBtn").addEventListener("click", openCart);
-  $("#accountBtn").addEventListener("click", () => location.href = "login.html");
+  $("#accountBtn").addEventListener("click", () => location.href = sessionStorage.getItem("orogen_user") ? "account.html" : "login.html");
   $("#cartClose").addEventListener("click", closeCart);
   backdrop.addEventListener("click", closeCart);
   $("#cartCheckout").addEventListener("click", ()=>showToast("结算系统即将开放，登山装备正在准备"));

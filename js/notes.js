@@ -137,7 +137,7 @@
   /* ========== 头部按钮 & 内容页交互 ========== */
   $("#year").textContent=new Date().getFullYear();
   $("#searchBtn").addEventListener("click",()=>showToast("全站搜索即将开放，可先浏览探险笔记三篇"));
-  $("#accountBtn").addEventListener("click",()=>location.href="login.html");
+  $("#accountBtn").addEventListener("click",()=>location.href=sessionStorage.getItem("orogen_user")?"account.html":"login.html");
   $("#bagBtn").addEventListener("click",()=>showToast("装备袋在装备分类页可用，笔记页先安心阅读"));
   $$("[data-toast]").forEach(btn=>btn.addEventListener("click",()=>showToast(btn.dataset.toast)));
 })();
