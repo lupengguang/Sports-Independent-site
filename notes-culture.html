@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OROGEN｜户外文化与探险人文故事 CULTURE — 旷野不止路途，是一种生活态度</title>
+<meta name="description" content="OROGEN 探险笔记·户外文化：高海拔登山者的雪山攀登纪实、荒野长线穿越的取舍与敬畏、高山野雪文化、街头滑板精神溯源、篮球团队与击剑绅士文化；品牌「有准备的探险」理念与探险者手记社群投稿。">
+<meta name="keywords" content="户外探险文化,极限运动人文故事,街头滑板文化,登山探险精神,野雪文化,探险者手记">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8431C' stroke-width='2.5'/%3E%3Cpath d='M16 0v9M16 23v9M0 16h9M23 16h9' stroke='%23E8431C' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/wilderness.css">
+<link rel="stylesheet" href="css/climbing.css">
+<link rel="stylesheet" href="css/guide.css">
+<link rel="stylesheet" href="css/notes.css">
+</head>
+<body id="top" class="wl-page cb-page kb-page nt-page">
+
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-label mono" id="cursorLabel"></span></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<div class="site-top" id="siteTop">
+  <div class="announce mono" role="note">PREPARED ADVENTURE.&nbsp;&nbsp;—&nbsp;&nbsp;<b>不鼓励盲目冒险，推崇有准备的探险。</b></div>
+  <header class="header" id="header">
+    <a class="logo" href="index.html#top" aria-label="OROGEN 奥罗根 首页">
+      <svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>
+      OROGEN <span class="logo-cn">奥罗根</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <div class="nav-item"><a href="wilderness.html" class="nav-main">旷野极限系列<i class="nav-caret" aria-hidden="true"></i></a><div class="nav-drop"><a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a></div></div>
+      <div class="nav-item"><a href="skateboard.html" class="nav-main">街头极限系列<i class="nav-caret" aria-hidden="true"></i></a><div class="nav-drop"><a href="skateboard.html">城市滑板 · 全品类</a></div></div>
+      <div class="nav-item"><a href="index.html#shop" class="nav-main">赛场竞技系列<i class="nav-caret" aria-hidden="true"></i></a><div class="nav-drop"><a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a></div></div>
+      <div class="nav-item"><a href="outfits.html" class="nav-main">装备指南<i class="nav-caret" aria-hidden="true"></i></a><div class="nav-drop"><a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a></div></div>
+      <div class="nav-item is-current">
+        <a href="notes-culture.html" class="nav-main">探险笔记<i class="nav-caret" aria-hidden="true"></i></a>
+        <div class="nav-drop"><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a></div>
+      </div>
+      <div class="nav-item"><a href="index.html#origin" class="nav-main">关于品牌</a></div>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg></button>
+      <button class="icon-btn" id="accountBtn" aria-label="我的账户"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg></button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="打开装备袋"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H8a1.8 1.8 0 0 1-1.8-1.6L5 8z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg><span class="bag-count mono" id="bagCount">0</span></button>
+      <button class="burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+    </div>
+  </header>
+</div>
+
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-inner">
+    <nav class="menu-links" aria-label="移动导航">
+      <div class="menu-group"><a href="wilderness.html" class="menu-link"><span class="mono">01</span>旷野极限系列</a><div class="menu-subs mono"><a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a></div></div>
+      <div class="menu-group"><a href="skateboard.html" class="menu-link"><span class="mono">02</span>街头极限系列</a><div class="menu-subs mono"><a href="skateboard.html">城市滑板 · 全品类</a></div></div>
+      <div class="menu-group"><a href="index.html#shop" class="menu-link"><span class="mono">03</span>赛场竞技系列</a><div class="menu-subs mono"><a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a></div></div>
+      <div class="menu-group"><a href="outfits.html" class="menu-link"><span class="mono">04</span>装备指南</a><div class="menu-subs mono"><a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a></div></div>
+      <div class="menu-group"><a href="notes-culture.html" class="menu-link"><span class="mono">05</span>探险笔记</a><div class="menu-subs mono"><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a></div></div>
+      <div class="menu-group"><a href="index.html#origin" class="menu-link"><span class="mono">06</span>关于品牌</a></div>
+    </nav>
+    <div class="menu-foot mono"><span>OROGEN® 探险笔记 · 户外文化 — PREPARED ADVENTURE</span><span>返回首页 index.html</span></div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ Hero ============ -->
+  <section class="nt-hero">
+    <div class="nt-hero-media" data-parallax="0.25"><img src="assets/nt-culture-hero.jpg" alt="探险家逆光行走在荒野山脊，低饱和电影质感，人与广袤天地"></div>
+    <div class="nt-hero-veil"></div>
+    <div class="container nt-hero-inner">
+      <p class="nt-hero-tag mono" data-scramble>JOURNAL 02 // FIELD CULTURE — 探险笔记 · 户外文化</p>
+      <h1 class="nt-hero-title">旷野不止路途<br>是一种<span class="accent">生活态度</span></h1>
+      <p class="nt-hero-sub mono">THE SPIRIT OF EXPLORERS — 探险者的精神，刻在每一次出发</p>
+      <p class="nt-hero-desc">雪山攀登者的敬畏、荒野穿越者的取舍、街头滑手与城市的对话、赛场之上的绅士风度——<b>文化是所有极限运动的底色</b>。我们记录人，而不是装备。</p>
+      <div class="nt-hero-cta">
+        <a href="#ntStories" class="btn btn-solid-light" data-magnetic>人文故事 <span class="arr">→</span></a>
+        <a href="#ntCommunity" class="btn btn-ghost-light" data-magnetic>投稿手记</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="nt-tabs">
+    <div class="container nt-tabs-inner">
+      <a class="nt-tab" href="notes-science.html"><span class="no mono">01</span> 科普 SCIENCE</a>
+      <a class="nt-tab is-active" href="notes-culture.html"><span class="no mono">02</span> 户外文化 CULTURE</a>
+      <a class="nt-tab" href="notes-gear.html"><span class="no mono">03</span> 装备干货 GEAR GUIDE</a>
+    </div>
+  </div>
+
+  <!-- ============ 模块 1：探险人文故事（核心） ============ -->
+  <section class="nt-sec nt-sec-dark" id="ntStories">
+    <div class="container">
+      <div class="nt-sec-head" data-reveal>
+        <span class="nt-sec-label mono">MODULE 01 — HUMAN STORIES · 探险人文故事【核心板块】</span>
+        <h2 class="nt-sec-title">他们去旷野，不是为了征服<span style="color:var(--accent2)">.</span></h2>
+        <p class="nt-sec-note mono">ALPINE / WILDERNESS / POWDER — 三条故事线</p>
+      </div>
+      <div class="nt-story-grid">
+        <a class="nt-story" href="javascript:void(0)" data-reveal>
+          <img src="assets/nt-cul-alpine.jpg" alt="登山者在高海拔雪坡结组攀登，云海之上，暗调纪实" loading="lazy">
+          <div class="nt-story-body">
+            <span class="s-en mono">ALPINE STORY · 高海拔登山故事</span>
+            <h4>我们不是征服雪山，只是短暂造访</h4>
+            <p>登山者的雪山攀登纪实：从第一眼雪山到冲顶下撤，记录普通人登山探险中心态的变化——真正的高峰经验，是学会敬畏自然，而不是证明自己。</p>
+          </div>
+        </a>
+        <a class="nt-story" href="javascript:void(0)" data-reveal style="transition-delay:80ms">
+          <img src="assets/nt-cul-wild.jpg" alt="徒步者独行在长线荒野小径，黄昏侧光，帐篷与远山" loading="lazy">
+          <div class="nt-story-body">
+            <span class="s-en mono">WILDERNESS JOURNAL · 荒野探险家纪实</span>
+            <h4>长线穿越里的取舍、坚持与敬畏</h4>
+            <p>荒野徒步与多日穿越的真实记录：第几天开始怀疑出发？为什么要在天气变坏前主动下撤？旷野教会人的，常常是"放弃"比"坚持"更需要判断力。</p>
+          </div>
+        </a>
+        <a class="nt-story" href="javascript:void(0)" data-reveal style="transition-delay:160ms">
+          <img src="assets/nt-cul-snow.jpg" alt="野雪滑手在高山深雪中刻下滑痕，远处群山，低饱和电影感" loading="lazy">
+          <div class="nt-story-body">
+            <span class="s-en mono">POWDER CULTURE · 滑雪文化</span>
+            <h4>尊重雪山，才是滑雪的第一课</h4>
+            <p>高山野雪文化：滑手与雪山的相处哲学——读雪、等雪、敬雪崩。野雪不是更刺激的雪道，而是进入一座需要保持谦逊的山。</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 模块 2：城市极限文化 ============ -->
+  <section class="nt-sec nt-sec-alt">
+    <div class="container">
+      <div class="nt-sec-head" data-reveal>
+        <span class="nt-sec-label mono">MODULE 02 — STREET CULTURE · 城市极限文化（滑板）</span>
+        <h2 class="nt-sec-title">街头滑板：人与城市空间的对话<span style="color:var(--accent)">.</span></h2>
+        <p class="nt-sec-note mono">SKATEBOARDING IS NOT A TRICK — IT'S A DIALOGUE WITH THE CITY</p>
+      </div>
+      <div class="nt-block">
+        <div class="nt-block-media img-reveal">
+          <figure><img src="assets/nt-cul-street.jpg" alt="城市街头滑手在混凝土广场滑行，涂鸦墙与暖黄路灯，纪实风格" loading="lazy"><figcaption class="mono">STREET — 街头滑板文化</figcaption></figure>
+        </div>
+        <div class="nt-culture-list" data-reveal>
+          <article class="nt-culture-item"><h4>街式滑板的起源</h4><p>1970 年代加州冲浪文化上岸，排干的泳池与阶梯扶手成了第一批"场地"。街式的基因里写着：<b>用有限的城市条件，创造无限的动作可能</b>。</p></article>
+          <article class="nt-culture-item"><h4>不是炫技，是空间对话</h4><p>一组台阶在普通人眼里是障碍，在滑手眼里是线（line）。滑板重新定义了城市家具的用途——栏杆、平台、斜面都是可以"阅读"的地形。</p></article>
+          <article class="nt-culture-item"><h4>街头滑手精神</h4><p>一个动作摔几十次再成是常态。滑板没有对手，最大的对手是上一次失败的自己；<b>成了击板相庆，摔了没人嘲笑</b>，这是街头默认的礼仪。</p></article>
+          <article class="nt-culture-item"><h4>社群文化与片（video）</h4><p>从 VHS 滑板片到手机直出，滑手始终用影像互相激励。城市里的板店、板场与本地 crew 构成真实社群，新人最该做的第一件事是去认识本地的板友。</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 模块 3：赛场竞技运动文化 ============ -->
+  <section class="nt-sec">
+    <div class="container">
+      <div class="nt-sec-head" data-reveal>
+        <span class="nt-sec-label mono">MODULE 03 — COURT CULTURE · 赛场竞技运动文化</span>
+        <h2 class="nt-sec-title">赛场之上，规则之内的四种气质<span style="color:var(--accent)">.</span></h2>
+        <p class="nt-sec-note mono">BASKETBALL / FENCING / FOOTBALL / BADMINTON</p>
+      </div>
+      <div class="nt-culture-list">
+        <article class="nt-culture-item" data-reveal><h4>篮球 · 团队文化</h4><p>位置分工、挡拆传导、信任轮转——篮球的美学是五个人像一个整体那样移动。<b>个人能力决定上限，团队默契决定冠军相</b>，野球场上最受欢迎的永远是愿意传球的人。</p></article>
+        <article class="nt-culture-item" data-reveal style="transition-delay:70ms"><h4>击剑 · 绅士竞技文化</h4><p>敬礼、持剑致意、主动承认击中——击剑保留着完整的骑士礼仪。面罩之下是毫秒级的心理博弈，<b>外表克制，内心激烈</b>，这是"身体象棋"独有的优雅。</p></article>
+        <article class="nt-culture-item" data-reveal><h4>足球 · 旷野式团队对抗</h4><p>十一人在开阔场地上的奔跑与协作，是最接近旷野追逐本能的集体运动。不同地域的足球气质截然不同，但<em>"整体大于巨星"</em>在这项运动里被反复验证。</p></article>
+        <article class="nt-culture-item" data-reveal style="transition-delay:70ms"><h4>羽毛球 · 专注竞技美学</h4><p>最快球速与极小的容错空间，让羽毛球成为高度自我对话的项目。步法、呼吸、预判在拍线振动的一瞬间完成，<b>安静的场地上，专注本身就是一种美感</b>。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 模块 4：品牌旷野理念专栏 ============ -->
+  <section class="nt-sec nt-sec-dark">
+    <div class="container">
+      <div class="nt-sec-head" data-reveal>
+        <span class="nt-sec-label mono">MODULE 04 — BRAND COLUMN · 品牌旷野理念专栏</span>
+      </div>
+      <figure class="nt-manifesto" data-reveal>
+        <span class="mk">“</span>
+        <blockquote>我们不鼓励盲目冒险，<br>推崇<em>「有准备的探险」</em>。<br>装备是伙伴，<br>不是用来挑战自然的武器。</blockquote>
+        <figcaption class="mono">— OROGEN FIELD MANIFESTO · 奥罗根旷野宣言</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 模块 5：社群 · 探险者手记（含内容文章清单） ============ -->
+  <section class="nt-sec" id="ntCommunity">
+    <div class="container">
+      <div class="nt-sec-head" data-reveal>
+        <span class="nt-sec-label mono">MODULE 05 — EXPLORER'S NOTES · 社群板块</span>
+        <h2 class="nt-sec-title">探险者手记：把你的故事讲给旷野听<span style="color:var(--accent)">.</span></h2>
+        <p class="nt-sec-note mono">USER SUBMISSION — 上传探险照片与旅途故事，精选内容在官网展示</p>
+      </div>
+
+      <div class="nt-community nt-sec-alt" data-reveal style="border:1px solid var(--line)">
+        <div class="nt-community-media"><img src="assets/nt-cul-community.jpg" alt="探险者围坐帐篷外翻看旅途照片，暖色营地灯，纪实氛围" loading="lazy"></div>
+        <div class="nt-community-body" style="background:var(--bg)">
+          <h3>投稿你的探险手记</h3>
+          <p style="color:var(--ink2)">一张照片、一段路线笔记、一次下撤的决定——真实经历比任何大片都有价值。入选内容将在官网「探险者手记」专栏展示，并获得 OROGEN 社群装备礼遇。</p>
+          <form class="nt-upload-field" onsubmit="return false;">
+            <input type="email" placeholder="YOUR EMAIL — 留下邮箱接收入选通知" aria-label="邮箱">
+            <button type="button" id="ntSubmitBtn">SUBMIT 投稿 →</button>
+          </form>
+          <p class="nt-upload-note mono" id="ntSubmitNote">支持照片 + 200 字以上故事 · 内容需为本人真实经历 · 每月精选 6 篇</p>
+        </div>
+      </div>
+
+      <div class="nt-sec-head" style="margin-top:clamp(40px,6vh,72px)" data-reveal>
+        <span class="nt-sec-label mono">FIELD ESSAYS — 内容落地文章</span>
+        <h2 class="nt-sec-title" style="font-size:clamp(20px,2.6vw,30px)">本期三篇<span style="color:var(--accent)">.</span></h2>
+      </div>
+      <div class="nt-articles">
+        <a class="nt-article" href="javascript:void(0)"><span class="a-no mono">ESSAY-01</span><div><h5>《登山：我们不是征服雪山，只是短暂造访》</h5><p>一位普通上班族的第一座六千米：训练、恐惧、放弃冲顶的决定，以及下山后为什么更爱雪山。</p><span class="a-go mono">READ ESSAY →</span></div></a>
+        <a class="nt-article" href="javascript:void(0)"><span class="a-no mono">ESSAY-02</span><div><h5>《街头滑板：在城市混凝土里寻找旷野》</h5><p>没有门禁的板场、凌晨空荡的广场、一群不服输的人——城市滑手如何在钢筋森林里找到自由的边界。</p><span class="a-go mono">READ ESSAY →</span></div></a>
+        <a class="nt-article" href="javascript:void(0)"><span class="a-no mono">ESSAY-03</span><div><h5>《野雪文化：尊重雪山，才是滑雪的第一课》</h5><p>从雪场安全道到野雪大门，老滑手讲雪崩课、结伴规则与"今天不滑"的智慧。</p><span class="a-go mono">READ ESSAY →</span></div></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="index.html#top"><svg viewBox="0 0 32 32" class="logo-mark" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 0v9M16 23v9M0 16h9M23 16h9" stroke="currentColor" stroke-width="2.5"/></svg>OROGEN <span class="logo-cn">奥罗根</span></a>
+      <p class="caption mono">PREPARED ADVENTURE.<br>有准备的探险。</p>
+    </div>
+    <nav class="footer-cols mono" aria-label="页脚导航">
+      <div class="f-col"><h4 class="f-head">旷野极限系列</h4><a href="climbing.html">高海拔登山</a><a href="snowboard.html">单板滑雪</a><a href="hiking.html">荒野徒步</a><h4 class="f-head f-head-gap">街头极限系列</h4><a href="skateboard.html">城市滑板 · 全品类</a></div>
+      <div class="f-col"><h4 class="f-head">赛场竞技系列</h4><a href="basketball.html">篮球</a><a href="football.html">足球</a><a href="badminton.html">羽毛球</a><a href="fencing.html">击剑</a><h4 class="f-head f-head-gap">装备指南</h4><a href="outfits.html">全场景穿搭</a><a href="knowledge.html">选型知识库</a></div>
+      <div class="f-col"><h4 class="f-head">探险笔记</h4><a href="notes-science.html">科普</a><a href="notes-culture.html">户外文化</a><a href="notes-gear.html">装备干货</a><h4 class="f-head f-head-gap">关于品牌</h4><a href="index.html#origin">品牌故事</a></div>
+    </nav>
+  </div>
+  <div class="footer-word" aria-hidden="true" data-parallax="0.06">OROGEN®</div>
+  <div class="container footer-bottom mono"><span>© <span id="year">2026</span> OROGEN 奥罗根 — 探险笔记 · 户外文化</span><span>隐私政策 — 服务条款 — Cookie 设置</span><span>PREPARED ADVENTURE</span></div>
+</footer>
+
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
+  <div class="cart-head"><span class="cart-title mono">BAG (<span id="cartCount">0</span>)</span><button class="overlay-close mono" id="cartClose" aria-label="Close bag">CLOSE ✕</button></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty mono" id="cartEmpty"><span class="cart-empty-mark">⌖</span>YOUR BAG IS EMPTY.</div>
+  <div class="cart-foot"><div class="cart-subtotal mono"><span>SUBTOTAL</span><b id="cartSubtotal">$ 0</b></div><button class="btn btn-solid-dark cart-checkout" id="cartCheckout">CHECKOUT <span class="arr">→</span></button></div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<div class="toast mono" id="toast" role="status"></div>
+
+<script src="js/main.js"></script>
+<script>
+/* 投稿按钮极简反馈 */
+document.getElementById("ntSubmitBtn").addEventListener("click", () => {
+  const input = document.querySelector(".nt-upload-field input");
+  const note = document.getElementById("ntSubmitNote");
+  if (!input.value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
+    note.textContent = "请先填写有效邮箱 — PLEASE ENTER A VALID EMAIL";
+    note.style.color = "#ff5a2e";
+    return;
+  }
+  note.textContent = "已收到投稿意向 ✓ 我们会通过邮件发送完整投稿通道";
+  note.style.color = "#2e7d4f";
+});
+</script>
+</body>
+</html>
