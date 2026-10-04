@@ -262,6 +262,21 @@ body.loaded .wl-hero-desc, body.loaded .wl-hero-cta{ opacity:1; transform:transl
 }
 .pcard-add:hover{ background:var(--accent); border-color:var(--accent); color:#fff; transform:rotate(90deg); }
 
+/* 可跳转详情的商品卡（核心爆款等） */
+.pcard-link{ cursor:pointer; }
+.pcard-view{
+  position:absolute; left:0; right:0; bottom:0;
+  display:flex; align-items:center; justify-content:center;
+  padding:11px 0;
+  background:rgba(20,20,18,.82); color:#fff;
+  font-size:9px; letter-spacing:.22em;
+  transform:translateY(100%);
+  transition:transform .45s var(--ease);
+}
+.pcard-link:hover .pcard-view{ transform:translateY(0); }
+.pcard-link .pcard-name{ transition:color .3s; }
+.pcard-link:hover .pcard-name{ color:var(--accent); }
+
 /* ============ 成套方案 ============ */
 .kits{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
 .kit{

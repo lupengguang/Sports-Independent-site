@@ -10,14 +10,14 @@
 
   const P = {
     "sk-boards": [
-      {c:"ORG-SB1", n:"街式双翘 · 新手入门整板",   p:89,  img:"sk-deck-rookie",    spec:"七层枫木整板，免组装开箱即滑，稳定容错", tags:["街式","整板","新手"], badge:"爆款"},
-      {c:"ORG-SB2", n:"街式双翘 · 进阶动作整板",   p:129, img:"sk-deck-pro",       spec:"强回弹板面 + 中空支架，Ollie、尖翻利器", tags:["街式","整板","进阶"]},
-      {c:"ORG-SB3", n:"Pro 签名款板面（单板面）",  p:65,  img:"sk-deck-sig",       spec:"原创涂鸦板面，七层加枫压制，DIY 首选", tags:["板面","签名款","DIY"], badge:"新增"},
-      {c:"ORG-SC1", n:"陆地冲浪板 · 城市通勤款",   p:159, img:"sk-surfskate-city", spec:"弹簧转向支架，小角度灵活转向，免蹬地滑行", tags:["陆冲","通勤","刷街"], badge:"爆款"},
-      {c:"ORG-SC2", n:"陆地冲浪板 · 泵道碗池进阶款", p:189, img:"sk-surfskate-pump", spec:"深脚窝板面 + 高回弹支架，泵道 carving 利器", tags:["陆冲","泵道","碗池"]},
-      {c:"ORG-SL1", n:"长板 · 平花舞板",           p:179, img:"sk-long-dance",     spec:"超长板面，dancing 走板空间充裕，弹性适中", tags:["长板","平花","dancing"]},
-      {c:"ORG-SL2", n:"长板 · 速降长板",           p:199, img:"sk-long-downhill",  spec:"下沉式板面低重心，高速稳定不晃，速降专用", tags:["长板","速降"]},
-      {c:"ORG-SL3", n:"长板 · 代步巡航长板",       p:149, img:"sk-long-cruiser",   spec:"减震软轮，长距离刷街舒适省力，强承重", tags:["长板","巡航","代步"]}
+      {c:"ORG-SB1", n:"街式双翘 · 新手入门整板",   p:89,  img:"sk-deck-rookie",    spec:"七层枫木整板，免组装开箱即滑，稳定容错", tags:["街式","整板","新手"], badge:"爆款", link:"sk-sb1.html"},
+      {c:"ORG-SB2", n:"街式双翘 · 进阶动作整板",   p:129, img:"sk-deck-pro",       spec:"强回弹板面 + 中空支架，Ollie、尖翻利器", tags:["街式","整板","进阶"], link:"sk-sb2.html"},
+      {c:"ORG-SB3", n:"Pro 签名款板面（单板面）",  p:65,  img:"sk-deck-sig",       spec:"原创涂鸦板面，七层加枫压制，DIY 首选", tags:["板面","签名款","DIY"], badge:"新增", link:"sk-sb3.html"},
+      {c:"ORG-SC1", n:"陆地冲浪板 · 城市通勤款",   p:159, img:"sk-surfskate-city", spec:"弹簧转向支架，小角度灵活转向，免蹬地滑行", tags:["陆冲","通勤","刷街"], badge:"爆款", link:"sk-sc1.html"},
+      {c:"ORG-SC2", n:"陆地冲浪板 · 泵道碗池进阶款", p:189, img:"sk-surfskate-pump", spec:"深脚窝板面 + 高回弹支架，泵道 carving 利器", tags:["陆冲","泵道","碗池"], badge:"爆款", link:"sk-sc2.html"},
+      {c:"ORG-SL1", n:"长板 · 平花舞板",           p:179, img:"sk-long-dance",     spec:"超长板面，dancing 走板空间充裕，弹性适中", tags:["长板","平花","dancing"], link:"sk-sl1.html"},
+      {c:"ORG-SL2", n:"长板 · 速降长板",           p:199, img:"sk-long-downhill",  spec:"下沉式板面低重心，高速稳定不晃，速降专用", tags:["长板","速降"], link:"sk-sl2.html"},
+      {c:"ORG-SL3", n:"长板 · 代步巡航长板",       p:149, img:"sk-long-cruiser",   spec:"减震软轮，长距离刷街舒适省力，强承重", tags:["长板","巡航","代步"], link:"sk-sl3.html"}
     ],
     "sk-hardware": [
       {c:"ORG-SH1", n:"防滑砂纸（单板份）",        p:9,   img:"sk-grip",    spec:"高摩擦碳化硅砂粒，防水背胶，附刮板", tags:["砂纸","防滑"]},
@@ -49,11 +49,12 @@
   $$("[data-grid]").forEach(host => {
     const grp = host.dataset.grid;
     host.innerHTML = P[grp].map((it,i) => `
-      <article class="pcard" data-code="${it.c}" data-reveal style="transition-delay:${(i%4)*70}ms">
+      <article class="pcard${it.link?" pcard-link":""}" data-code="${it.c}" ${it.link?`data-link="${it.link}"`:""} data-reveal style="transition-delay:${(i%4)*70}ms">
         <figure class="pcard-media img-reveal">
           <img src="assets/${it.img}.jpg" alt="${it.n}" loading="lazy">
           <span class="pcard-code mono">${it.c}</span>
           ${it.badge ? `<span class="pcard-badge">${it.badge}</span>` : ""}
+          ${it.link ? `<span class="pcard-view mono">查看详情 VIEW →</span>` : ""}
         </figure>
         <div class="pcard-info">
           <h3 class="pcard-name">${it.n}</h3>
@@ -105,8 +106,13 @@
   document.addEventListener("click", e => {
     const add = e.target.closest("[data-add]");
     const qty = e.target.closest("[data-qty]");
+    const card = e.target.closest(".pcard[data-link]");
     if (add){ addToCart(add.dataset.add); return; }
     if (qty){ const [i,d]=qty.dataset.qty.split(":"); cart[+i].q+=+d; if(cart[+i].q<=0)cart.splice(+i,1); renderCart(); }
+    if (card && !e.target.closest("[data-add]")){
+      try{ sessionStorage.setItem("orogen_ptc","1"); }catch(_){}
+      location.href = card.dataset.link;
+    }
   });
 
   function openCart(){ cartEl.classList.add("open"); backdrop.classList.add("show"); document.body.style.overflow="hidden"; }
