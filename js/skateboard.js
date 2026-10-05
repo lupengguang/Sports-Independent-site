@@ -20,11 +20,11 @@
       {c:"ORG-SL3", n:"长板 · 代步巡航长板",       p:149, img:"sk-long-cruiser",   spec:"减震软轮，长距离刷街舒适省力，强承重", tags:["长板","巡航","代步"], link:"sk-sl3.html"}
     ],
     "sk-hardware": [
-      {c:"ORG-SH1", n:"防滑砂纸（单板份）",        p:9,   img:"sk-grip",    spec:"高摩擦碳化硅砂粒，防水背胶，附刮板", tags:["砂纸","防滑"]},
-      {c:"ORG-SH2", n:"高强度支架（桥）一对",      p:55,  img:"sk-trucks",  spec:"航空铝合金铸造，抗冲击不断裂，转向顺滑", tags:["支架","桥","铝合金"], badge:"爆款"},
-      {c:"ORG-SH3", n:"高速轴承（8 颗装）",        p:25,  img:"sk-bearings",spec:"ABEC-9 精度，防尘盖设计，空转持久", tags:["轴承","ABEC-9"]},
-      {c:"ORG-SH4", n:"耐磨配方轮（4 颗装）",      p:39,  img:"sk-wheels",  spec:"高回弹 PU 配方，硬轮街式 / 软轮刷街可选", tags:["轮子","耐磨"]},
-      {c:"ORG-SH5", n:"维修工具套装 + 五金包",     p:29,  img:"sk-tools",   spec:"T 型工具 + 板钉 + 板尾保护条，随身调校", tags:["工具","板钉","保护条"]}
+      {c:"ORG-SH1", n:"防滑砂纸（单板份）",        p:9,   img:"sk-grip",    spec:"高摩擦碳化硅砂粒，防水背胶，附刮板", tags:["砂纸","防滑"], link:"sk-sh1.html"},
+      {c:"ORG-SH2", n:"高强度支架（桥）一对",      p:55,  img:"sk-trucks",  spec:"航空铝合金铸造，抗冲击不断裂，转向顺滑", tags:["支架","桥","铝合金"], badge:"爆款", link:"sk-sh2.html"},
+      {c:"ORG-SH3", n:"高速轴承（8 颗装）",        p:25,  img:"sk-bearings",spec:"ABEC-9 精度，防尘盖设计，空转持久", tags:["轴承","ABEC-9"], link:"sk-sh3.html"},
+      {c:"ORG-SH4", n:"耐磨配方轮（4 颗装）",      p:39,  img:"sk-wheels",  spec:"高回弹 PU 配方，硬轮街式 / 软轮刷街可选", tags:["轮子","耐磨"], link:"sk-sh4.html"},
+      {c:"ORG-SH5", n:"维修工具套装 + 五金包",     p:29,  img:"sk-tools",   spec:"T 型工具 + 板钉 + 板尾保护条，随身调校", tags:["工具","板钉","保护条"], link:"sk-sh5.html"}
     ],
     "sk-apparel": [
       {c:"ORG-SA1", n:"重磅耐磨滑板 T 恤",         p:35,  img:"sk-tee",     spec:"280g 重磅棉，做旧水洗，落肩宽松剪裁", tags:["T恤","重磅","宽松"], badge:"爆款"},

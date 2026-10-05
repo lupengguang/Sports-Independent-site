@@ -314,6 +314,199 @@
         ["承重 100kg 是极限吗？", "100kg 为安全承重上限，超重会降低板面使用寿命。"]
       ],
       fb: "Studio product photo of a 44 inch cruiser longboard, seven layer maple in natural wood tone, lightweight cast alloy trucks, 70mm 76A soft shock absorbing wheels, on a quiet greenway path, moody editorial product photography, soft daylight"
+    },
+    "ORG-SH1": {
+      url: "sk-sh1.html",
+      img: "sk-grip",
+      badge: null,
+      tag: "HW 01 — GRIP TAPE · 防滑砂纸",
+      title: "防滑砂纸（单板份）",
+      en: "OROGEN SKATEBOARD GRIP TAPE — SILICON CARBIDE GRIT WATERPROOF ADHESIVE",
+      slogan: "抓脚稳定，做招不打滑。",
+      desc: "专为城市街头滑板打造，高摩擦碳化硅砂粒，强粘性防水背胶，适配绝大多数双翘滑板板面，自由 DIY 改装，抓脚稳定，做招不打滑。",
+      feats: ["碳化硅砂粒", "防水背胶", "易贴易裁", "薄底不增厚"],
+      price: 9,
+      colorLabel: "款式 TYPE",
+      colors: ["纯黑", "镂空 LOGO 款"],
+      sizeLabel: "规格 SIZE",
+      sizes: ["220 × 840mm 标准双翘"],
+      spec: [
+        ["产品型号", "ORG-SH1"],
+        ["材质", "碳化硅砂粒 + 防水 PET 底膜 + 强力压敏背胶"],
+        ["尺寸", "220mm × 840mm（标准双翘板尺寸，可自行裁剪）"],
+        ["厚度", "0.8mm"],
+        ["颜色", "纯黑（可定制少量镂空 logo 款）"],
+        ["包装", "单片独立塑封"],
+        ["售价", "$9 / 件"]
+      ],
+      material: "高密度碳化硅砂粒，颗粒锋利均匀，脚感抓握力强，Ollie、尖翻等动作不脱脚；防水背胶配方，雨天/潮湿地面不易起边、翘皮，城市通勤、街式刷街耐用；底膜易撕设计，贴板不易残留残胶，裁剪简单，新手也能自行贴板；薄底设计，不增加板面额外厚度，不影响板面弹性。",
+      scene: ["街式双翘滑板", "DIY 组装滑板", "板面翻新替换", "道具动作练习"],
+      people: "新手入门、城市滑手日常刷街、DIY 改装玩家。",
+      tips: [
+        "一张砂纸适配一块标准双翘板面，长板/大鱼板需单独选购大尺寸款。",
+        "贴之前清理板面灰尘，按压完整，正常使用数月不会起边。",
+        "大面积沾水浸泡会降低寿命。"
+      ],
+      faq: [
+        ["砂纸贴上去会不会容易掉？", "背胶粘性强，贴之前清理板面灰尘，按压完整，正常使用数月不会起边；大面积沾水浸泡会降低寿命。"],
+        ["可以裁剪吗？", "可以，美工刀即可沿板面轮廓裁剪，适配异形板面。"]
+      ],
+      reco: [["ORG-SH2 高强度支架", "sk-sh2.html"], ["ORG-SH4 耐磨配方轮", "sk-sh4.html"]],
+      fb: "Studio product photo of a sheet of black skateboard grip tape with fine silicon carbide grit texture, slightly rolled at one corner showing adhesive backing, on a dark concrete surface, moody editorial product photography, dramatic side light"
+    },
+    "ORG-SH2": {
+      url: "sk-sh2.html",
+      img: "sk-trucks",
+      badge: "爆款",
+      tag: "HW 02 — TRUCKS · 高强度支架",
+      title: "高强度支架（桥）一对",
+      en: "OROGEN SKATEBOARD TRUCKS PAIR — AEROSPACE ALUMINUM ALLOY LIGHTWEIGHT IMPACT RESISTANT",
+      slogan: "抗冲击不断裂，转向顺滑稳定。",
+      desc: "航空铝合金一体锻造滑板支架，抗冲击不易断裂，转向顺滑稳定，城市街式动作、道具杆上动作专用，DIY 组装首选爆款硬件。",
+      feats: ["航空铝合金", "一体锻造", "高回弹 PU", "标准孔位"],
+      price: 55,
+      colorLabel: "配色 COLOR",
+      colors: ["哑光银", "曜石黑"],
+      sizeLabel: "尺寸 SIZE",
+      sizes: ["5.0 英寸", "5.25 英寸", "5.5 英寸"],
+      spec: [
+        ["产品型号", "ORG-SH2"],
+        ["材质", "航空级铝合金主体，PU 避震胶，钢制主钉"],
+        ["套装", "一对（2 支支架）"],
+        ["可选尺寸", "5.0 英寸 / 5.25 英寸 / 5.5 英寸"],
+        ["重量", "320g / 对（5.25 寸）"],
+        ["工艺", "一体浇筑 + CNC 精铣"],
+        ["售价", "$55 / 件"]
+      ],
+      material: "航空铝合金一体锻造，轻量化同时抗冲击，落地大动作不易弯桥断裂；高回弹 PU 避震，转向灵敏，可通过主钉螺丝松紧调节软硬，适配不同滑手习惯；钢制主钉耐磨抗形变，频繁道具磨杆、台阶落地，不易滑丝；标准孔位，市面绝大多数双翘板面通用，DIY 组装直接安装。",
+      scene: ["城市街式滑板", "台阶 / 杆道具动作", "新手进阶", "重度刷街"],
+      people: "5.0 寸适配窄板面，5.25 寸主流通用，5.5 寸宽板稳定款。",
+      tips: [
+        "板面宽度匹配支架尺寸，板面 8.0 英寸优先选 5.25 寸支架。",
+        "全套含原装 PU 避震胶，到手直接安装。",
+        "重度道具使用可定期检查主钉损耗。"
+      ],
+      faq: [
+        ["支架收到包含 PU 垫吗？", "全套含原装 PU 避震胶，到手直接安装。"],
+        ["可以做 grind 磨杆动作吗？", "桥基经过硬化处理，支持街式磨杆道具动作，重度道具使用可定期检查主钉损耗。"]
+      ],
+      reco: [["ORG-SH3 高速轴承", "sk-sh3.html"], ["ORG-SH4 耐磨配方轮", "sk-sh4.html"]],
+      fb: "Studio product photo of a pair of matte silver aerospace aluminum skateboard trucks with steel kingpins and PU bushings, standing on dark concrete, moody editorial product photography, dramatic side light, charcoal tones"
+    },
+    "ORG-SH3": {
+      url: "sk-sh3.html",
+      img: "sk-bearings",
+      badge: null,
+      tag: "HW 03 — BEARINGS · 高速轴承",
+      title: "高速轴承（8 颗装）",
+      en: "OROGEN ABEC-9 SKATEBOARD BEARINGS 8 PACK — DUST SHIELD HIGH SPEED",
+      slogan: "空转持久顺滑，刷街续航更强。",
+      desc: "ABEC-9 精度专业滑板轴承，双面防尘盖设计，空转持久顺滑，减少灰尘泥沙侵入，城市街头刷街、动作练习通用，一套满足整板使用。",
+      feats: ["ABEC-9 精度", "双面防尘盖", "预注润滑", "通用 8mm"],
+      price: 25,
+      colorLabel: "款式 TYPE",
+      colors: ["标准防尘款"],
+      sizeLabel: "规格 SIZE",
+      sizes: ["8 颗 / 套（整板用量）"],
+      spec: [
+        ["产品型号", "ORG-SH3"],
+        ["精度等级", "ABEC-9"],
+        ["数量", "8 颗 / 套（一块滑板全套用量）"],
+        ["材质", "高碳钢内芯，尼龙保持架，橡胶防尘盖"],
+        ["内径", "8mm，标准滑板轮通用孔径"],
+        ["润滑", "出厂预注高速润滑脂"],
+        ["售价", "$25 / 件"]
+      ],
+      material: "ABEC-9 高精度，转动阻力低，滑行省力，长距离城市刷街续航更强；双面橡胶防尘盖，隔绝街道沙土、雨水，减少内部进灰卡顿，延长轴承寿命；高碳钢内芯，抗冲击，频繁落地不易爆珠，适配街式动作；标准通用尺寸，适配绝大多数滑板轮子，DIY 改装直接替换。",
+      scene: ["城市刷街", "街式动作练习", "新手进阶", "专业滑手替换"],
+      people: "适配双翘、小鱼板；一套 8 颗刚好装配一块滑板。",
+      tips: [
+        "潮湿多沙尘路面，建议定期拆开清洁保养。",
+        "出厂预上高速润滑脂，新轴承无需额外上油。",
+        "长期使用卡顿后可清洁补油。"
+      ],
+      faq: [
+        ["需要自己上油吗？", "出厂预上高速润滑脂，新轴承无需额外上油；长期使用卡顿后可清洁补油。"],
+        ["和普通轴承差距在哪？", "精度更高，空转阻力更小，同样蹬板力度滑行距离更远。"]
+      ],
+      reco: [["ORG-SH4 滑板轮子", "sk-sh4.html"], ["ORG-SH5 维修工具套装", "sk-sh5.html"]],
+      fb: "Studio product photo of eight ABEC-9 skateboard bearings arranged in a row, high carbon steel cores with black rubber dust shields, on dark concrete, macro detail, moody editorial product photography, dramatic light"
+    },
+    "ORG-SH4": {
+      url: "sk-sh4.html",
+      img: "sk-wheels",
+      badge: null,
+      tag: "HW 04 — WHEELS · 耐磨配方轮",
+      title: "耐磨配方轮（4 颗装）",
+      en: "OROGEN SKATEBOARD PU WHEELS 4 PACK — HIGH REBOUND STREET HARD / CRUISE SOFT",
+      slogan: "硬轮做招干脆，软轮刷街稳。",
+      desc: "高弹 PU 配方滑板轮，分街式硬轮、刷街软轮两种硬度可选，耐磨抗裂，城市街头道具动作、路面刷街两种玩法自由选择，一套 4 颗适配整板。",
+      feats: ["耐磨抗裂", "双硬度可选", "精密内孔", "圆角轮边"],
+      price: 39,
+      colorLabel: "硬度 HARDNESS",
+      colors: ["99A 街式硬轮", "78A 刷街软轮"],
+      sizeLabel: "直径 DIAMETER",
+      sizes: ["52mm", "54mm", "56mm"],
+      spec: [
+        ["产品型号", "ORG-SH4"],
+        ["材质", "高弹性 PU"],
+        ["数量", "4 颗 / 套"],
+        ["可选硬度", "99A（街式硬轮，道具动作） / 78A（刷街软轮，粗糙路面）"],
+        ["可选直径", "52mm / 54mm / 56mm"],
+        ["售价", "$39 / 件"]
+      ],
+      material: "改良耐磨 PU 配方，抗开裂，频繁落地、道具摩擦损耗更慢；双硬度方案：99A 硬轮，抓板干脆，适合 Ollie、道具杆动作；78A 软轮，减震强，粗糙柏油路面刷街更稳；精密内孔，和轴承贴合紧密，高速滑行不晃动；圆角轮边设计，落地不易卡轮，降低卡板摔倒风险。",
+      scene: ["99A 硬轮：滑板场 / 光滑水泥地 / 台阶道具", "78A 软轮：城市柏油马路 / 粗糙路面刷街"],
+      people: "做招式选 99A；日常城市通勤刷街选 78A。直径 52mm 灵活，54mm 通用性最强。",
+      tips: [
+        "做招式选 99A；日常城市通勤刷街选 78A。",
+        "直径 52mm 灵活，54mm 通用性最强。",
+        "轮子不含轴承，需搭配 ORG-SH3 轴承使用。"
+      ],
+      faq: [
+        ["一套 4 颗包含轴承吗？", "不含轴承，轮子单独售卖，需要搭配 ORG-SH3 轴承使用。"],
+        ["轮子会容易断吗？", "高弹 PU 材质，正常街式落地不易断裂，重度撞击、尖锐硬物剐蹭会造成损伤。"]
+      ],
+      reco: [["ORG-SH2 高强度支架", "sk-sh2.html"], ["ORG-SH3 高速轴承", "sk-sh3.html"]],
+      fb: "Studio product photo of four white PU skateboard wheels with rounded edges, 52mm street wheels, on dark concrete, macro detail, moody editorial product photography, dramatic side light"
+    },
+    "ORG-SH5": {
+      url: "sk-sh5.html",
+      img: "sk-tools",
+      badge: null,
+      tag: "HW 05 — TOOLS · 维修工具套装",
+      title: "维修工具套装 + 五金包",
+      en: "OROGEN SKATEBOARD TOOL KIT — T-TOOL + HARDWARE + TAIL GUARD POUCH",
+      slogan: "一把搞定全部螺丝调校。",
+      desc: "滑板全套随身维修五金包，T 型多功能调校工具 + 板钉套装 + 板尾保护条，街头随时调桥松紧、拆装板面，DIY 组装、日常维护必备配件。",
+      feats: ["T 型多功能", "备用板钉", "板尾保护条", "便携收纳"],
+      price: 29,
+      colorLabel: "款式 TYPE",
+      colors: ["标准套装"],
+      sizeLabel: "规格 SPEC",
+      sizes: ["T 工具 + 8 板钉 + 保护条 + 收纳袋"],
+      spec: [
+        ["产品型号", "ORG-SH5"],
+        ["套装内含", "T 型多功能滑板工具 1 把、板面固定板钉 8 颗、板尾保护条 1 根、收纳布袋"],
+        ["T 工具功能", "调主钉、调桥座、拆装板钉"],
+        ["板钉规格", "标准 8mm 滑板板钉"],
+        ["保护条材质", "高弹性耐磨橡胶"],
+        ["售价", "$29 / 件"]
+      ],
+      material: "一体式 T 型多功能工具，一把搞定滑板全部螺丝调校，街头随时调整支架松紧；备用板钉套装，拆装板面、更换支架砂纸直接使用，防止螺丝滑丝无替换件；板尾橡胶保护条，减少板尾落地磨损，延长板面使用寿命；便携收纳布袋，全部配件收纳，背包随身携带，外滑出行不占空间。",
+      scene: ["滑板 DIY 组装", "外出外滑随身维修", "板面硬件更换", "日常保养维护"],
+      people: "新手组装滑板必备工具包；一套工具适配绝大多数双翘滑板。",
+      tips: [
+        "一套工具适配绝大多数双翘滑板，长板需单独选购加长板钉。",
+        "T 工具适配市面主流标准规格滑板支架。",
+        "保护条自带背胶，清理干净板尾按压粘贴即可。"
+      ],
+      faq: [
+        ["T 工具可以调所有品牌滑板支架吗？", "适配市面主流标准规格滑板支架，支持调节主钉、桥钉。"],
+        ["板尾保护条怎么安装？", "自带背胶，清理干净板尾按压粘贴，减少做动作时板尾磨损。"]
+      ],
+      reco: [["ORG-SH3 高速轴承", "sk-sh3.html"], ["ORG-SH2 高强度支架", "sk-sh2.html"]],
+      fb: "Studio product photo of a skateboard T-tool, eight mounting bolts and a rubber tail guard strip in a canvas pouch, laid out on dark concrete, moody editorial product photography, dramatic side light"
     }
   };
 
@@ -329,7 +522,12 @@
     "sk-surfskate-pump": [DATA["ORG-SC2"].fb, "portrait_4_3"],
     "sk-long-dance": [DATA["ORG-SL1"].fb, "portrait_4_3"],
     "sk-long-downhill": [DATA["ORG-SL2"].fb, "portrait_4_3"],
-    "sk-long-cruiser": [DATA["ORG-SL3"].fb, "portrait_4_3"]
+    "sk-long-cruiser": [DATA["ORG-SL3"].fb, "portrait_4_3"],
+    "sk-grip": [DATA["ORG-SH1"].fb, "portrait_4_3"],
+    "sk-trucks": [DATA["ORG-SH2"].fb, "portrait_4_3"],
+    "sk-bearings": [DATA["ORG-SH3"].fb, "portrait_4_3"],
+    "sk-wheels": [DATA["ORG-SH4"].fb, "portrait_4_3"],
+    "sk-tools": [DATA["ORG-SH5"].fb, "portrait_4_3"]
   };
   function bindFallback(img){
     img.addEventListener("error", () => {
@@ -384,14 +582,14 @@
       </div>
 
       <div class="skd-opt" data-opt="color">
-        <div class="skd-opt-label mono"><span>板面图案 COLOR</span><b id="optColor">${d.colors[0]}</b></div>
+        <div class="skd-opt-label mono"><span>${d.colorLabel || "板面图案 COLOR"}</span><b id="optColor">${d.colors[0]}</b></div>
         <div class="skd-opt-chips">
           ${d.colors.map((c,i) => `<button class="skd-opt-chip ${i===0?"active":""}" data-val="${c}">${c}</button>`).join("")}
         </div>
       </div>
 
       <div class="skd-opt" data-opt="size">
-        <div class="skd-opt-label mono"><span>尺寸 SIZE</span><b id="optSize">${d.sizes[0]}</b></div>
+        <div class="skd-opt-label mono"><span>${d.sizeLabel || "尺寸 SIZE"}</span><b id="optSize">${d.sizes[0]}</b></div>
         <div class="skd-opt-chips">
           ${d.sizes.map((s,i) => `<button class="skd-opt-chip ${i===0?"active":""}" data-val="${s}">${s}</button>`).join("")}
         </div>
