@@ -703,6 +703,240 @@
       ],
       reco: [["ORG-SA1 重磅滑板T恤", "sk-sa1.html"], ["ORG-SA3 工装阔腿长裤", "sk-sa3.html"]],
       fb: "Studio product photo of low-top skate shoes in black and white with reinforced rubber toe cap and herringbone grip outsole, standing on dark concrete beside a skateboard deck, moody editorial product photography, dramatic side light"
+    },
+    "ORG-SP1": {
+      url: "sk-sp1.html",
+      img: "sk-set-rookie",
+      badge: "爆款",
+      tag: "PT 01 — ROOKIE SET · 新手护具三件套",
+      title: "新手护具三件套（膝/肘/腕）",
+      en: "OROGEN ROOKIE PAD SET — KNEE / ELBOW / WRIST GUARDS 3-IN-1",
+      slogan: "初学摔倒缓冲，三大关节一次配齐。",
+      desc: "专为滑板新手设计入门防护三件套，基础防撞海绵，高性价比，学习 Ollie、基础滑行必备，摔倒缓冲减震，保护膝盖、手肘、手腕三大易受伤关节。",
+      feats: ["膝肘腕全套 6 件", "EVA 缓冲", "魔术贴可调", "轻量化"],
+      price: 35,
+      colorLabel: "颜色 COLOR",
+      colors: ["炭黑", "哑光灰"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["S", "M", "L", "XL"],
+      spec: [
+        ["产品型号", "ORG-SP1"],
+        ["套装内容", "护膝一对 + 护肘一对 + 护腕护掌一对（全套 6 件）"],
+        ["外壳", "弹性耐磨尼龙布，EVA 防撞缓冲海绵"],
+        ["绑带", "魔术贴可调节绑带"],
+        ["尺码", "S / M / L / XL"],
+        ["颜色", "炭黑、哑光灰"],
+        ["售价", "$35 / 件"]
+      ],
+      material: "EVA 高密度缓冲海绵，基础滑行摔倒有效吸收冲击力，降低擦伤磕碰风险；可调节魔术贴绑带，松紧自由调节，穿戴便捷，剧烈运动不易滑落移位；轻量化设计，不会笨重卡动作，练习基础招、滑行时肢体活动不受限；耐磨尼龙面料，地面摩擦不易破损，一套配齐三大关节，新手入门一步到位。",
+      scene: ["滑板新手入门练习", "基础滑行", "Ollie 基础动作练习"],
+      people: "适合儿童、青少年、成人初学滑手；测量大腿围、小臂围选择尺码；新手初学强烈推荐整套佩戴。",
+      tips: [
+        "测量大腿围、小臂围选择尺码。",
+        "新手初学强烈推荐整套佩戴。",
+        "护具带透气开孔，长时间高强度训练建议间歇取下通风。"
+      ],
+      faq: [
+        ["这套护具可以做大台阶动作吗？", "属于基础入门款，适合平地、小落差练习；大台阶、碗池等高风险动作建议选用 Pro 硬质护具。"],
+        ["出汗会不会闷？", "护具带透气开孔，日常练习透气；长时间高强度训练建议间歇取下通风。"]
+      ],
+      reco: [["ORG-SP5 专业滑板头盔", "sk-sp5.html"], ["ORG-SP2 Pro 高强度护膝", "sk-sp2.html"]],
+      fb: "Studio product photo of a skateboard rookie pad set with knee pads, elbow pads and wrist guards in charcoal black with EVA foam and velcro straps, laid out on dark concrete, moody editorial product photography, dramatic side light"
+    },
+    "ORG-SP2": {
+      url: "sk-sp2.html",
+      img: "sk-knee",
+      badge: null,
+      tag: "PT 02 — PRO KNEE PADS · Pro高强度护膝",
+      title: "Pro 高强度护膝",
+      en: "OROGEN PRO KNEE PADS — HARD SHELL HIGH-DENSITY FOAM IMPACT PROTECTION",
+      slogan: "硬质外壳强力缓冲，碗池大台阶专用。",
+      desc: "专业高阶滑板护膝，硬质外壳搭配高密度缓冲层，针对碗池、大台阶等高风险动作，落地摔倒强力缓冲，保护膝关节，进阶滑手专用。",
+      feats: ["PE 硬质外壳", "加厚 EVA 缓冲", "双重固定", "人体工学弧形"],
+      price: 39,
+      colorLabel: "颜色 COLOR",
+      colors: ["哑光黑"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["S", "M", "L", "XL"],
+      spec: [
+        ["产品型号", "ORG-SP2"],
+        ["外壳", "高强度抗冲击硬质 PE 外壳"],
+        ["缓冲层", "加厚高密度 EVA 缓冲垫层"],
+        ["固定", "加宽魔术贴 + 弹性束带，双重固定"],
+        ["尺码", "S / M / L / XL"],
+        ["颜色", "哑光黑"],
+        ["售价", "$39 / 件"]
+      ],
+      material: "PE 硬质抗冲击外壳，直接抵抗地面硬撞击，做台阶、碗池动作，防磕碰、防擦伤；加厚缓冲垫层，吸收落地巨大冲击力，保护膝盖软骨；人体工学弧形剪裁，屈膝、下蹲、跳跃不受阻碍，做招灵活不卡腿；加宽防滑绑带，高速落地、大幅度动作时护膝不会移位滑落。",
+      scene: ["碗池", "大台阶", "街式道具", "高难度动作练习"],
+      people: "进阶 / 职业滑手，重度街式玩家；硬质护膝建议搭配同系列 Pro 护肘使用，全套防护更安全。",
+      tips: [
+        "硬质护膝建议搭配同系列 Pro 护肘使用，全套防护更安全。",
+        "内层带厚缓冲垫层，贴合人体膝盖曲面，正常屈膝不会硌腿。",
+        "可拆下内衬海绵清洗，硬质外壳湿布擦拭即可，不可浸泡。"
+      ],
+      faq: [
+        ["硬质外壳会不会硌腿？", "内层带厚缓冲垫层，贴合人体膝盖曲面，正常屈膝不会硌腿。"],
+        ["可以水洗吗？", "可拆下内衬海绵清洗，硬质外壳湿布擦拭即可，不可浸泡。"]
+      ],
+      reco: [["ORG-SP3 Pro 高强度护肘", "sk-sp3.html"], ["ORG-SP4 护腕护掌", "sk-sp4.html"]],
+      fb: "Studio product photo of matte black pro skateboard knee pads with hard PE shell and thick EVA foam padding and wide velcro straps, on dark concrete, moody editorial product photography, dramatic side light"
+    },
+    "ORG-SP3": {
+      url: "sk-sp3.html",
+      img: "sk-elbow",
+      badge: null,
+      tag: "PT 03 — PRO ELBOW PADS · Pro高强度护肘",
+      title: "Pro 高强度护肘",
+      en: "OROGEN PRO ELBOW PADS — HARD SHELL IMPACT PROTECTION FOR STREET & BOWL",
+      slogan: "手肘触地瞬间分散冲击。",
+      desc: "专业高阶滑板护肘，抗冲击硬质外壳，关节弯曲自如，摔倒时保护手肘，应对台阶、碗池、道具动作，搭配 Pro 护膝组成全套高阶防护。",
+      feats: ["PE 硬质外壳", "EVA 缓冲棉", "双条加宽绑带", "透气不闷"],
+      price: 35,
+      colorLabel: "颜色 COLOR",
+      colors: ["哑光黑"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["S", "M", "L", "XL"],
+      spec: [
+        ["产品型号", "ORG-SP3"],
+        ["外壳", "高强度 PE 硬质防撞外壳"],
+        ["缓冲层", "加厚 EVA 缓冲棉"],
+        ["固定方式", "双条加宽魔术贴绑带"],
+        ["尺码", "S / M / L / XL"],
+        ["颜色", "哑光黑"],
+        ["售价", "$35 / 件"]
+      ],
+      material: "硬质抗冲击外壳，手肘触地瞬间分散冲击力，防止骨折、大面积擦伤；人体工学弧形结构，弯曲手臂、撑地、跳跃完全不受限制，不影响动作发挥；内层透气缓冲棉，吸湿排汗，长时间练习不闷汗；防滑绑带设计，落地冲击下护肘不会翻转移位。",
+      scene: ["碗池", "街式大台阶", "杆类道具", "高风险动作"],
+      people: "进阶、职业滑手；一对装（左右手肘），建议和 Pro 护膝配套购买。",
+      tips: [
+        "一对装（左右手肘），建议和 Pro 护膝配套购买。",
+        "双绑带固定，正常撑地动作不易滑动；穿戴时绑带拉紧即可。",
+        "同样适配长板速降、自由式，其他极限运动轮滑也可使用。"
+      ],
+      faq: [
+        ["撑地动作的时候护肘会不会滑动？", "双绑带固定，正常撑地动作不易滑动；穿戴时绑带拉紧即可。"],
+        ["适合长板使用吗？", "同样适配长板速降、自由式，其他极限运动轮滑也可使用。"]
+      ],
+      reco: [["ORG-SP2 Pro 高强度护膝", "sk-sp2.html"], ["ORG-SP4 护腕护掌", "sk-sp4.html"]],
+      fb: "Studio product photo of matte black pro skateboard elbow pads with hard PE shell and EVA foam padding and double velcro straps, on dark concrete, moody editorial product photography, dramatic side light"
+    },
+    "ORG-SP4": {
+      url: "sk-sp4.html",
+      img: "sk-wrist",
+      badge: null,
+      tag: "PT 04 — WRIST GUARDS · 护腕护掌",
+      title: "护腕护掌（一对）",
+      en: "OROGEN SKATE WRIST GUARDS — PALM SPLINT WRIST SUPPORT ANTI-SPRAIN",
+      slogan: "摔倒撑地，护住手腕不弯折。",
+      desc: "滑板专用护腕护掌，内置硬质支撑板，摔倒下意识撑地时支撑手腕，防止手腕弯折扭伤，保护手掌，新手与进阶滑手通用。",
+      feats: ["内置硬质支撑板", "掌面加厚", "弹性针织", "魔术贴可调"],
+      price: 25,
+      colorLabel: "颜色 COLOR",
+      colors: ["黑色", "深灰"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["S", "M", "L", "XL"],
+      spec: [
+        ["产品型号", "ORG-SP4"],
+        ["结构", "内置工程塑料支撑板，弹性针织面料"],
+        ["套装", "一对（左手 + 右手）"],
+        ["尺码", "S / M / L / XL"],
+        ["颜色", "黑色、深灰"],
+        ["售价", "$25 / 件"]
+      ],
+      material: "内置硬质支撑片，摔倒手掌撑地，限制手腕过度后翻，避免手腕骨折、扭伤；掌面加厚耐磨垫，降低手掌擦伤、磨破风险；弹性针织面料，贴合手腕，透气不闷，手部抓握、翻板动作不受限制；可调节魔术贴绑带，适配粗细不同手腕，穿戴快速。",
+      scene: ["新手初学练习", "街式动作", "碗池练习"],
+      people: "所有滑手必备，手腕是滑板最高受伤部位；强烈建议所有滑手佩戴，无论新手还是 Pro，摔倒撑地是最常见受伤场景。",
+      tips: [
+        "强烈建议所有滑手佩戴，无论新手还是 Pro。",
+        "掌部做了镂空剪裁，手指活动自由，翻板、抓板动作不受阻碍。",
+        "取出支撑板，面料部分冷水手洗，晾干后装回。"
+      ],
+      faq: [
+        ["戴护掌会不会影响抓板？", "掌部做了镂空剪裁，手指活动自由，翻板、抓板动作不受阻碍。"],
+        ["可以水洗吗？", "取出支撑板，面料部分冷水手洗，晾干后装回。"]
+      ],
+      reco: [["ORG-SP1 新手三件套", "sk-sp1.html"], ["ORG-SP2 Pro 高强度护膝", "sk-sp2.html"]],
+      fb: "Studio product photo of black skateboard wrist guards with built-in rigid palm splints and velcro straps, laid on dark concrete, moody editorial product photography, dramatic side light"
+    },
+    "ORG-SP5": {
+      url: "sk-sp5.html",
+      img: "sk-helmet",
+      badge: "新增",
+      tag: "PT 05 — HELMET · 专业滑板头盔",
+      title: "专业滑板头盔",
+      en: "OROGEN PRO SKATE HELMET — ABS SHELL EPS FOAM MULTI-VENT CERTIFIED",
+      slogan: "头部撞击吸能，高风险场景必备。",
+      desc: "专业滑板安全头盔，ABS 硬外壳 + EPS 吸震缓冲内层，多孔透气设计，碗池、台阶、速降等高风险场景必备，降低头部撞击伤害。",
+      feats: ["ABS 硬壳", "EPS 缓冲", "多孔透气", "头围旋钮微调"],
+      price: 59,
+      colorLabel: "颜色 COLOR",
+      colors: ["哑光黑", "石灰白", "复古卡其"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["S (52-55cm)", "M (55-58cm)", "L (58-61cm)"],
+      spec: [
+        ["产品型号", "ORG-SP5"],
+        ["外壳", "高强度 ABS 工程塑料外壳"],
+        ["内层", "高密度 EPS 吸震缓冲层"],
+        ["通风", "多通道透气开孔"],
+        ["调节", "头围旋钮微调 + 下巴安全扣"],
+        ["尺码", "S(52-55cm) / M(55-58cm) / L(58-61cm)"],
+        ["颜色", "哑光黑、石灰白、复古卡其"],
+        ["售价", "$59 / 件"]
+      ],
+      material: "ABS 硬质外壳 + EPS 缓冲层，撞击时吸收冲击能量，保护头部，符合极限运动安全标准；多组大面积透气孔，长时间滑行头部不闷热，减少出汗；尾部旋钮可微调头围，适配不同头型；卡扣式下巴绑带，牢固不易脱落；轻量化一体成型，长时间佩戴头部无沉重压迫感。",
+      scene: ["碗池", "大台阶", "速降", "高难度街式动作"],
+      people: "新手练习、专业滑手通用；测量头部最大周长（额头绕后脑勺）选择尺码；头盔为一次性防护，撞击后建议更换。",
+      tips: [
+        "测量头部最大周长（额头绕后脑勺）选择尺码。",
+        "头盔为一次性防护，撞击后建议更换。",
+        "如果外壳开裂、内层 EPS 凹陷，内部缓冲结构已经损坏，必须更换头盔。"
+      ],
+      faq: [
+        ["头盔摔过一次之后还能用吗？", "如果外壳开裂、内层 EPS 凹陷，内部缓冲结构已经损坏，必须更换头盔，无法继续保护。"],
+        ["夏天戴会不会很热？", "多通风孔设计，透气性能优秀，适合长时间户外滑板。"]
+      ],
+      reco: [["ORG-SP2 Pro 高强度护膝", "sk-sp2.html"], ["ORG-SP3 Pro 高强度护肘", "sk-sp3.html"]],
+      fb: "Studio product photo of a matte black pro skateboard helmet with ABS shell, multi ventilation holes and chin strap, on dark concrete, moody editorial product photography, dramatic side light"
+    },
+    "ORG-SP6": {
+      url: "sk-sp6.html",
+      img: "sk-bag",
+      badge: null,
+      tag: "PT 06 — BACKPACK · 滑板双肩包",
+      title: "滑板双肩包（可背板）",
+      en: "OROGEN SKATE BACKPACK — BOARD CARRY STRAPS BALLISTIC NYLON SHOE COMPARTMENT",
+      slogan: "外挂滑板，收纳全套装备。",
+      desc: "滑手专用双肩背包，侧边自带板面背负织带，可以直接外挂携带滑板，耐磨弹道尼龙面料，独立鞋仓，外滑出行收纳全套装备。",
+      feats: ["板面外挂织带", "独立鞋仓", "弹道尼龙", "28L 多分区"],
+      price: 65,
+      colorLabel: "颜色 COLOR",
+      colors: ["炭黑", "深灰"],
+      sizeLabel: "规格 SIZE",
+      sizes: ["28L · 48×32×18cm"],
+      spec: [
+        ["产品型号", "ORG-SP6"],
+        ["面料", "加厚耐磨弹道尼龙"],
+        ["容量", "28L"],
+        ["结构", "外侧滑板背负织带、独立鞋仓、多隔层收纳袋、加厚减压肩带"],
+        ["尺寸", "48cm × 32cm × 18cm"],
+        ["颜色", "炭黑、深灰"],
+        ["售价", "$65 / 件"]
+      ],
+      material: "外置可调节绑带，可固定双翘滑板板面，无需手持，解放双手通勤出行；独立隔离鞋仓，放置滑板鞋，隔离脏污，不污染衣物；多分区收纳，可放置护具、维修工具、水杯、手机等全套滑板配件；加厚减压肩带，负重背装备减轻肩部压力；耐磨弹道尼龙抗撕裂防水溅。",
+      scene: ["外出滑板", "滑板场通勤", "短途出行"],
+      people: "收纳滑板全套硬件、服饰、护具；适配标准双翘滑板，长板无法外挂。",
+      tips: [
+        "适配标准双翘滑板，长板无法外挂。",
+        "双层弹力织带 + 卡扣设计，固定牢固，正常步行、骑行不会脱落。",
+        "面料防泼溅，小雨可以短暂防护，不适合长时间暴雨浸泡。"
+      ],
+      faq: [
+        ["绑带固定滑板牢固吗，跑动会不会掉？", "双层弹力织带 + 卡扣设计，固定牢固，正常步行、骑行不会脱落。"],
+        ["防水吗？", "面料防泼溅，小雨可以短暂防护，不适合长时间暴雨浸泡。"]
+      ],
+      reco: [["ORG-SP1 新手三件套", "sk-sp1.html"], ["ORG-SP5 专业滑板头盔", "sk-sp5.html"]],
+      fb: "Studio product photo of a charcoal black ballistic nylon skateboard backpack with external board carry straps and shoe compartment, standing on dark concrete with a skateboard deck attached, moody editorial product photography, dramatic side light"
     }
   };
 
@@ -728,7 +962,13 @@
     "sk-hoodie": [DATA["ORG-SA2"].fb, "portrait_4_3"],
     "sk-pants": [DATA["ORG-SA3"].fb, "portrait_4_3"],
     "sk-shorts": [DATA["ORG-SA4"].fb, "portrait_4_3"],
-    "sk-shoes": [DATA["ORG-SA5"].fb, "portrait_4_3"]
+    "sk-shoes": [DATA["ORG-SA5"].fb, "portrait_4_3"],
+    "sk-set-rookie": [DATA["ORG-SP1"].fb, "portrait_4_3"],
+    "sk-knee": [DATA["ORG-SP2"].fb, "portrait_4_3"],
+    "sk-elbow": [DATA["ORG-SP3"].fb, "portrait_4_3"],
+    "sk-wrist": [DATA["ORG-SP4"].fb, "portrait_4_3"],
+    "sk-helmet": [DATA["ORG-SP5"].fb, "portrait_4_3"],
+    "sk-bag": [DATA["ORG-SP6"].fb, "portrait_4_3"]
   };
   function bindFallback(img){
     img.addEventListener("error", () => {

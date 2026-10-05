@@ -34,12 +34,12 @@
       {c:"ORG-SA5", n:"低帮耐磨滑板鞋",            p:95,  img:"sk-shoes",   spec:"加厚橡胶鞋头，强抓地大底，砂纸摩擦不易破", tags:["滑板鞋","低帮","抓地"], badge:"爆款", link:"sk-sa5.html"}
     ],
     "sk-protect": [
-      {c:"ORG-SP1", n:"新手护具三件套（膝/肘/腕）", p:35,  img:"sk-set-rookie", spec:"基础防撞海绵，性价比高，初学练习必备", tags:["新手","套装","三件"], badge:"爆款"},
-      {c:"ORG-SP2", n:"Pro 高强度护膝",            p:39,  img:"sk-knee",    spec:"硬质外壳 + 高密度缓冲层，碗池大台阶适用", tags:["护膝","Pro","硬壳"]},
-      {c:"ORG-SP3", n:"Pro 高强度护肘",            p:35,  img:"sk-elbow",   spec:"抗冲击外壳，关节弯曲自如，强力防护", tags:["护肘","Pro"]},
-      {c:"ORG-SP4", n:"护腕护掌（一对）",          p:25,  img:"sk-wrist",   spec:"掌部支撑板，摔倒撑地保护手腕", tags:["护腕","护掌"]},
-      {c:"ORG-SP5", n:"专业滑板头盔",              p:59,  img:"sk-helmet",  spec:"ABS 外壳 + EPS 缓冲，多孔透气，速降必备", tags:["头盔","认证"], badge:"新增"},
-      {c:"ORG-SP6", n:"滑板双肩包（可背板）",      p:65,  img:"sk-bag",     spec:"板面背负织带，独立鞋仓，耐磨弹道尼龙", tags:["滑板包","背板"]}
+      {c:"ORG-SP1", n:"新手护具三件套（膝/肘/腕）", p:35,  img:"sk-set-rookie", spec:"基础防撞海绵，性价比高，初学练习必备", tags:["新手","套装","三件"], badge:"爆款", link:"sk-sp1.html"},
+      {c:"ORG-SP2", n:"Pro 高强度护膝",            p:39,  img:"sk-knee",    spec:"硬质外壳 + 高密度缓冲层，碗池大台阶适用", tags:["护膝","Pro","硬壳"], link:"sk-sp2.html"},
+      {c:"ORG-SP3", n:"Pro 高强度护肘",            p:35,  img:"sk-elbow",   spec:"抗冲击外壳，关节弯曲自如，强力防护", tags:["护肘","Pro"], link:"sk-sp3.html"},
+      {c:"ORG-SP4", n:"护腕护掌（一对）",          p:25,  img:"sk-wrist",   spec:"掌部支撑板，摔倒撑地保护手腕", tags:["护腕","护掌"], link:"sk-sp4.html"},
+      {c:"ORG-SP5", n:"专业滑板头盔",              p:59,  img:"sk-helmet",  spec:"ABS 外壳 + EPS 缓冲，多孔透气，速降必备", tags:["头盔","认证"], badge:"新增", link:"sk-sp5.html"},
+      {c:"ORG-SP6", n:"滑板双肩包（可背板）",      p:65,  img:"sk-bag",     spec:"板面背负织带，独立鞋仓，耐磨弹道尼龙", tags:["滑板包","背板"], link:"sk-sp6.html"}
     ]
   };
 
