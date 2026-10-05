@@ -27,11 +27,11 @@
       {c:"ORG-SH5", n:"维修工具套装 + 五金包",     p:29,  img:"sk-tools",   spec:"T 型工具 + 板钉 + 板尾保护条，随身调校", tags:["工具","板钉","保护条"], link:"sk-sh5.html"}
     ],
     "sk-apparel": [
-      {c:"ORG-SA1", n:"重磅耐磨滑板 T 恤",         p:35,  img:"sk-tee",     spec:"280g 重磅棉，做旧水洗，落肩宽松剪裁", tags:["T恤","重磅","宽松"], badge:"爆款"},
-      {c:"ORG-SA2", n:"宽松连帽卫衣",              p:69,  img:"sk-hoodie",  spec:"磨毛内里，oversize 版型，蹲跳无束缚", tags:["卫衣","宽松"]},
-      {c:"ORG-SA3", n:"工装阔腿长裤",              p:75,  img:"sk-pants",   spec:"裤膝双层加固，摔倒摩擦不易破，弹力腰头", tags:["长裤","工装","加固"]},
-      {c:"ORG-SA4", n:"耐磨滑板短裤",              p:45,  img:"sk-shorts",  spec:"抗撕裂面料，立体剪裁，大幅动作无牵绊", tags:["短裤","耐磨"]},
-      {c:"ORG-SA5", n:"低帮耐磨滑板鞋",            p:95,  img:"sk-shoes",   spec:"加厚橡胶鞋头，强抓地大底，砂纸摩擦不易破", tags:["滑板鞋","低帮","抓地"], badge:"爆款"}
+      {c:"ORG-SA1", n:"重磅耐磨滑板 T 恤",         p:35,  img:"sk-tee",     spec:"280g 重磅棉，做旧水洗，落肩宽松剪裁", tags:["T恤","重磅","宽松"], badge:"爆款", link:"sk-sa1.html"},
+      {c:"ORG-SA2", n:"宽松连帽卫衣",              p:69,  img:"sk-hoodie",  spec:"磨毛内里，oversize 版型，蹲跳无束缚", tags:["卫衣","宽松"], link:"sk-sa2.html"},
+      {c:"ORG-SA3", n:"工装阔腿长裤",              p:75,  img:"sk-pants",   spec:"裤膝双层加固，摔倒摩擦不易破，弹力腰头", tags:["长裤","工装","加固"], link:"sk-sa3.html"},
+      {c:"ORG-SA4", n:"耐磨滑板短裤",              p:45,  img:"sk-shorts",  spec:"抗撕裂面料，立体剪裁，大幅动作无牵绊", tags:["短裤","耐磨"], link:"sk-sa4.html"},
+      {c:"ORG-SA5", n:"低帮耐磨滑板鞋",            p:95,  img:"sk-shoes",   spec:"加厚橡胶鞋头，强抓地大底，砂纸摩擦不易破", tags:["滑板鞋","低帮","抓地"], badge:"爆款", link:"sk-sa5.html"}
     ],
     "sk-protect": [
       {c:"ORG-SP1", n:"新手护具三件套（膝/肘/腕）", p:35,  img:"sk-set-rookie", spec:"基础防撞海绵，性价比高，初学练习必备", tags:["新手","套装","三件"], badge:"爆款"},

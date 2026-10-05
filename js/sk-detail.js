@@ -507,6 +507,202 @@
       ],
       reco: [["ORG-SH3 高速轴承", "sk-sh3.html"], ["ORG-SH2 高强度支架", "sk-sh2.html"]],
       fb: "Studio product photo of a skateboard T-tool, eight mounting bolts and a rubber tail guard strip in a canvas pouch, laid out on dark concrete, moody editorial product photography, dramatic side light"
+    },
+    "ORG-SA1": {
+      url: "sk-sa1.html",
+      img: "sk-tee",
+      badge: "爆款",
+      tag: "AP 01 — HEAVY TEE · 重磅滑板T恤",
+      title: "重磅耐磨滑板T恤",
+      en: "OROGEN HEAVYWEIGHT SKATE TEE — 280G WASHED DROP-SHOULDER STREET TEE",
+      slogan: "厚实耐磨，大幅度动作无束缚。",
+      desc: "专为城市滑板运动打造，280g 重磅棉面料，做旧水洗质感，宽松落肩剪裁，大幅度动作无束缚，面料加固耐磨，摔倒摩擦不易破损，日常刷街、道具练习两用。",
+      feats: ["280g 重磅棉", "做旧水洗", "落肩宽松", "加固抗撕裂"],
+      price: 35,
+      colorLabel: "颜色 COLOR",
+      colors: ["炭黑", "石灰白", "复古卡其"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      spec: [
+        ["产品型号", "ORG-SA1"],
+        ["面料", "280g 重磅精梳棉，做旧水洗工艺"],
+        ["版型", "落肩宽松 oversize 滑板版型"],
+        ["可选尺码", "S / M / L / XL / XXL"],
+        ["可选颜色", "炭黑、石灰白、复古卡其"],
+        ["工艺", "肩线加固，侧缝锁边，抗撕裂车缝"],
+        ["售价", "$35 / 件"]
+      ],
+      material: "280g 重磅棉，厚实不透，反复摩擦不易起球，滑板摔倒地面摩擦不容易磨破；做旧水洗处理，自带复古街头质感，洗后不易缩水变形；落肩宽松剪裁，抬臂、下蹲、Ollie 跳跃无紧绷束缚，动作流畅；加固肩线与锁边工艺，高强度运动拉扯不开线，耐用性拉满。",
+      scene: ["城市滑板刷街", "滑板场动作练习", "日常街头穿搭"],
+      people: "新手滑手、进阶滑手通用；滑板穿搭建议选大一码，保证大幅度动作空间。",
+      tips: [
+        "滑板穿搭建议选大一码，保证大幅度动作空间。",
+        "出厂预水洗工艺，缩水率控制在 3% 以内，正常冷水机洗不易大幅缩水。",
+        "重磅棉密度高但透气，适合春秋；夏季长时间暴晒会偏热，推荐搭配速干内搭。"
+      ],
+      faq: [
+        ["这件 T 恤洗了会缩水吗？", "出厂预水洗工艺，缩水率控制在 3% 以内，正常冷水机洗不易大幅缩水。"],
+        ["面料会不会很厚夏天闷热？", "重磅棉密度高但透气，适合春秋；夏季长时间暴晒会偏热，推荐搭配速干内搭。"]
+      ],
+      reco: [["ORG-SA3 工装阔腿长裤", "sk-sa3.html"], ["ORG-SA5 低帮滑板鞋", "sk-sa5.html"]],
+      fb: "Studio product photo of a heavy 280g washed drop-shoulder skate t-shirt in charcoal black, laid flat on dark concrete with a skateboard deck beside, moody editorial apparel photography, dramatic side light, film grain"
+    },
+    "ORG-SA2": {
+      url: "sk-sa2.html",
+      img: "sk-hoodie",
+      badge: null,
+      tag: "AP 02 — HOODIE · 宽松连帽卫衣",
+      title: "宽松连帽卫衣",
+      en: "OROGEN OVERSIZE SKATE HOODIE — BRUSHED FLEECE LOOSE FIT STREET HOODIE",
+      slogan: "秋冬外滑保暖，做招不卡动作。",
+      desc: "oversize 宽松滑板版型，内里磨毛柔软，下蹲、跳跃无束缚，面料抗撕裂，秋冬外滑保暖，兼顾街头穿搭与滑板动作需求。",
+      feats: ["360g 磨毛抓绒", "oversize 版型", "加长衣长", "加固袋鼠兜"],
+      price: 69,
+      colorLabel: "颜色 COLOR",
+      colors: ["深灰", "炭黑", "军绿"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      spec: [
+        ["产品型号", "ORG-SA2"],
+        ["面料", "360g 棉混磨毛抓绒"],
+        ["版型", "落肩 oversize 宽松版型，加长衣长"],
+        ["可选尺码", "S / M / L / XL / XXL"],
+        ["可选颜色", "深灰、炭黑、军绿"],
+        ["细节", "加固袋鼠兜、加厚抽绳、袖口罗纹防松脱"],
+        ["售价", "$69 / 件"]
+      ],
+      material: "内里磨毛抓绒，秋冬户外滑板保温锁温，城市低温刷街不冻身；超大宽松剪裁，下蹲、豚跳、台阶落地没有紧绷束缚，不卡动作；加固袋鼠口袋，放滑板工具、手机不易撕裂；加厚罗纹袖口，运动不往上跑；抗撕裂面料，摔倒与地面摩擦耐磨损，不易勾丝破洞。",
+      scene: ["秋冬城市滑板外滑", "滑板场练习", "街头日常穿搭"],
+      people: "适合喜欢宽松街头风格滑手；版型偏宽大，追求极强松弛感可直接选常规码，想要更宽松可加大一码。",
+      tips: [
+        "版型偏宽大，追求极强松弛感可直接选常规码，想要更宽松可加大一码。",
+        "帽型做轻量化处理，帽绳可调节松紧，做招时收紧帽绳，不会遮挡视线。",
+        "建议冷水反面机洗，不要高温烘干，减少抓绒起球。"
+      ],
+      faq: [
+        ["卫衣帽子会不会在做动作的时候遮挡视线？", "帽型做轻量化处理，帽绳可调节松紧，做招时收紧帽绳，不会遮挡视线。"],
+        ["可以机洗吗？", "建议冷水反面机洗，不要高温烘干，减少抓绒起球。"]
+      ],
+      reco: [["ORG-SA4 耐磨滑板短裤", "sk-sa4.html"], ["ORG-SA5 低帮滑板鞋", "sk-sa5.html"]],
+      fb: "Studio product photo of an oversize fleece-lined skate hoodie in dark charcoal grey with reinforced kangaroo pocket and thick drawstrings, laid on dark concrete, moody editorial apparel photography, dramatic side light"
+    },
+    "ORG-SA3": {
+      url: "sk-sa3.html",
+      img: "sk-pants",
+      badge: null,
+      tag: "AP 03 — CARGO PANTS · 工装阔腿长裤",
+      title: "工装阔腿长裤",
+      en: "OROGEN SKATE CARGO WIDE-LEG PANTS — DOUBLE-KNEE REINFORCED ELASTIC WAIST",
+      slogan: "膝盖双层加固，摔倒摩擦不易破。",
+      desc: "街式滑板专用工装阔腿裤，膝盖双层加固补强，摔倒摩擦不易磨破，弹力腰头，阔腿版型不卡板，做 Ollie、尖翻动作无牵绊。",
+      feats: ["膝盖双层补强", "弹力腰头", "阔腿不卡板", "多工装口袋"],
+      price: 75,
+      colorLabel: "颜色 COLOR",
+      colors: ["炭黑", "深卡其", "军绿"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      spec: [
+        ["产品型号", "ORG-SA3"],
+        ["面料", "加厚斜纹工装布，微弹力混纺"],
+        ["版型", "阔腿直筒，裤脚预留空间，不卡滑板"],
+        ["可选尺码", "S / M / L / XL / XXL"],
+        ["可选颜色", "炭黑、深卡其、军绿"],
+        ["细节", "膝盖双层补强布、弹力松紧腰、多工装口袋、防磨裤脚"],
+        ["售价", "$75 / 件"]
+      ],
+      material: "膝盖双层加固面料，滑板摔倒、膝盖摩擦地面，大幅降低磨破风险；阔腿直筒剪裁，裤脚宽松，不会卡住滑板板头，做招不受阻碍；弹力腰头，大幅度跳跃不会勒腰；多口袋设计，可放置 T 型工具、砂纸等小配件；抗污耐磨斜纹面料，灰尘、轻微污渍容易擦拭，户外刷街更省心。",
+      scene: ["街式滑板", "台阶道具练习", "城市长距离刷街"],
+      people: "适合经常做动作、容易摔倒的滑手；裤长偏长，滑手可根据自身需求自行裁剪裤脚，不影响加固性能。",
+      tips: [
+        "裤长偏长，滑手可根据自身需求自行裁剪裤脚，不影响加固性能。",
+        "裤脚做了微收设计，正常滑行不容易踩板；做高难度动作可以卷裤脚。",
+        "膝盖补强布采用柔性工艺，不僵硬，下蹲、屈膝动作流畅无阻碍。"
+      ],
+      faq: [
+        ["阔腿裤会不会踩裤脚卡板？", "裤脚做了微收设计，正常滑行不容易踩板；做高难度动作可以卷裤脚。"],
+        ["膝盖加固层会不会很硬，影响屈膝？", "补强布采用柔性工艺，不僵硬，下蹲、屈膝动作流畅无阻碍。"]
+      ],
+      reco: [["ORG-SA1 重磅滑板T恤", "sk-sa1.html"], ["ORG-SA5 低帮滑板鞋", "sk-sa5.html"]],
+      fb: "Studio product photo of charcoal black skate cargo wide-leg pants with double-knee reinforcement panels and elastic waistband, laid on dark concrete with a skateboard deck, moody editorial apparel photography, dramatic side light"
+    },
+    "ORG-SA4": {
+      url: "sk-sa4.html",
+      img: "sk-shorts",
+      badge: null,
+      tag: "AP 04 — SHORTS · 耐磨滑板短裤",
+      title: "耐磨滑板短裤",
+      en: "OROGEN RIPSTOP SKATE SHORTS — LOOSE FIT FIVE-POINT STREET SHORTS",
+      slogan: "夏季滑场练招，大动作不勒腿。",
+      desc: "夏季滑板专用五分短裤，抗撕裂面料，立体剪裁，大幅度跳跃、下蹲不受束缚，耐磨抗摩擦，适合炎热天气滑板场练习与城市刷街。",
+      feats: ["抗撕裂面料", "立体宽松", "弹力腰头", "轻量化透气"],
+      price: 45,
+      colorLabel: "颜色 COLOR",
+      colors: ["炭黑", "深灰", "复古棕"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      spec: [
+        ["产品型号", "ORG-SA4"],
+        ["面料", "高韧性抗撕裂棉混纺面料"],
+        ["版型", "五分立体宽松版型"],
+        ["可选尺码", "S / M / L / XL / XXL"],
+        ["可选颜色", "炭黑、深灰、复古棕"],
+        ["细节", "弹力腰头，侧缝加固，内侧防磨包边"],
+        ["售价", "$45 / 件"]
+      ],
+      material: "高韧性抗撕裂面料，摔倒摩擦不易勾丝破损，专为滑板运动设计；立体宽松剪裁，大腿位置预留充足活动空间，Ollie、kickflip 动作不会勒腿；弹力腰头，适配不同腰围，剧烈跑动跳跃不滑落；内侧包边加固，长时间反复拉扯不开线，轻量化透气，夏季不闷汗。",
+      scene: ["夏季滑板场动作练习", "城市短途刷街", "街头休闲穿搭"],
+      people: "适合夏季滑板爱好者；五分裤长度至膝盖附近，不影响护具佩戴；搭配护膝推荐正常尺码。",
+      tips: [
+        "五分裤长度至膝盖附近，不影响护具佩戴；搭配护膝推荐正常尺码。",
+        "面料轻薄透气，吸湿排汗，适合夏季长时间滑板练习。",
+        "内侧做防磨包边，降低摩擦损伤；高难度动作建议搭配护膝。"
+      ],
+      faq: [
+        ["短裤面料透气性怎么样？", "面料轻薄透气，吸湿排汗，适合夏季长时间滑板练习。"],
+        ["摔倒的时候会不会磨大腿？", "内侧做防磨包边，降低摩擦损伤；高难度动作建议搭配护膝。"]
+      ],
+      reco: [["ORG-SA1 重磅滑板T恤", "sk-sa1.html"], ["ORG-SA5 低帮滑板鞋", "sk-sa5.html"]],
+      fb: "Studio product photo of ripstop loose-fit skate shorts in dark grey with elastic waist and reinforced inner seams, laid on dark concrete, moody editorial apparel photography, dramatic side light"
+    },
+    "ORG-SA5": {
+      url: "sk-sa5.html",
+      img: "sk-shoes",
+      badge: "爆款",
+      tag: "AP 05 — SKATE SHOES · 低帮耐磨滑板鞋",
+      title: "低帮耐磨滑板鞋",
+      en: "OROGEN LOW-TOP PRO SKATE SHOES — REINFORCED TOE CAP GRIP OUTSOLE",
+      slogan: "砂纸摩擦不易破，翻板抓板精准。",
+      desc: "专业街式滑板低帮鞋，加厚橡胶鞋头，强抓地橡胶大底，鞋面耐砂纸摩擦，适合长时间练招，脚感灵活，翻板、尖翻操控精准。",
+      feats: ["加厚橡胶鞋头", "人字防滑大底", "低帮灵活", "鞋舌加厚缓冲"],
+      price: 95,
+      colorLabel: "颜色 COLOR",
+      colors: ["黑白", "全黑", "复古米黑"],
+      sizeLabel: "尺码 SIZE",
+      sizes: ["US 6", "US 7", "US 8", "US 9", "US 10", "US 11", "US 12"],
+      spec: [
+        ["产品型号", "ORG-SA5"],
+        ["鞋面", "帆布 + 耐磨橡胶补强"],
+        ["鞋底", "高抓地耐磨橡胶大底，人字防滑纹路"],
+        ["鞋型", "低帮滑板鞋，鞋头加厚橡胶"],
+        ["可选尺码", "US 6 ~ US 12"],
+        ["可选颜色", "黑白、全黑、复古米黑"],
+        ["细节", "加厚鞋头、鞋舌填充、侧边加固、防磨鞋边"],
+        ["售价", "$95 / 件"]
+      ],
+      material: "加厚橡胶鞋头：滑板砂纸高频摩擦区域，不易起毛破洞，延长鞋子使用寿命；高密度人字防滑大底，抓板性能强，翻板、尖翻动作时，脚与板面贴合稳定；低帮设计，脚踝自由度高，大幅度动作灵活，不会束缚脚踝；鞋舌加厚填充，缓冲减震，落地减轻脚部冲击；侧边加固，防止鞋面撕裂。",
+      scene: ["街式滑板", "道具杆 / 台阶动作练习", "城市刷街"],
+      people: "新手进阶、Pro 滑手通用；滑板鞋建议选正常运动鞋尺码；脚宽滑手建议大半码。",
+      tips: [
+        "滑板鞋建议选正常运动鞋尺码；脚宽滑手建议大半码。",
+        "专业滑板橡胶配方，耐磨度高于普通休闲板鞋；高强度每日练招，正常可维持数月。",
+        "低帮主打动作灵活性，适合熟练滑手；新手练习高难度动作建议佩戴护踝。"
+      ],
+      faq: [
+        ["鞋底耐磨吗，频繁砂纸翻板多久磨损？", "专业滑板橡胶配方，耐磨度高于普通休闲板鞋；高强度每日练招，正常可维持数月。"],
+        ["低帮会不会容易崴脚？", "低帮主打动作灵活性，适合熟练滑手；新手练习高难度动作建议佩戴护踝。"]
+      ],
+      reco: [["ORG-SA1 重磅滑板T恤", "sk-sa1.html"], ["ORG-SA3 工装阔腿长裤", "sk-sa3.html"]],
+      fb: "Studio product photo of low-top skate shoes in black and white with reinforced rubber toe cap and herringbone grip outsole, standing on dark concrete beside a skateboard deck, moody editorial product photography, dramatic side light"
     }
   };
 
@@ -527,7 +723,12 @@
     "sk-trucks": [DATA["ORG-SH2"].fb, "portrait_4_3"],
     "sk-bearings": [DATA["ORG-SH3"].fb, "portrait_4_3"],
     "sk-wheels": [DATA["ORG-SH4"].fb, "portrait_4_3"],
-    "sk-tools": [DATA["ORG-SH5"].fb, "portrait_4_3"]
+    "sk-tools": [DATA["ORG-SH5"].fb, "portrait_4_3"],
+    "sk-tee": [DATA["ORG-SA1"].fb, "portrait_4_3"],
+    "sk-hoodie": [DATA["ORG-SA2"].fb, "portrait_4_3"],
+    "sk-pants": [DATA["ORG-SA3"].fb, "portrait_4_3"],
+    "sk-shorts": [DATA["ORG-SA4"].fb, "portrait_4_3"],
+    "sk-shoes": [DATA["ORG-SA5"].fb, "portrait_4_3"]
   };
   function bindFallback(img){
     img.addEventListener("error", () => {
